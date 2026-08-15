@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HSK3 书写练习平台 | Writing Practice</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand" id="brandBtn">
+      <div class="seal">写</div>
+      <div>
+        <h1>HSK3 书写练习</h1>
+        <small>Writing Practice Platform · 第71–80题</small>
+      </div>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="topbar-stats" id="globalStats"></div>
+  </div>
+</header>
+
+<main id="view"></main>
+
+<footer>题库来源：HSK3 真题 20 套 · 书写部分（排列顺序 71-75 / 汉字填空 76-80）</footer>
+
+<script src="data.js"></script>
+<script>
+"use strict";
+
+const LS_KEY = "hsk3writing_progress_v1";
+const state = {
+  currentExam: null,
+  currentPart: 1,          // 1 = reorder (71-75), 2 = fill blank (76-80)
+  part1Order: [],          // selected chunk indices in order
+  part1Shuffled: [],
+  part2Answers: {},        // q -> typed character
+  results: {},             // examNum -> { part1: {q:bool}, part2: {q:bool}, total, correct }
+};
+
+/* ---------------- persistence ---------------- */
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY)) || {}; }
+  catch (e) { return {}; }
+}
+function saveProgress(progress) {
+  localStorage.setItem(LS_KEY, JSON.stringify(progress));
+}
+
+function getExamStats(examNum) {
+  const p = loadProgress();
+  const e = p[String(examNum)] || {};
+  const correct = (e.p1 || 0) + (e.p2 || 0);
+  return { correct, total: 10, p1: e.p1 || 0, p2: e.p2 || 0 };
+}
+
+function recordResult(examNum, part, q, isCorrect) {
+  const p = loadProgress();
+  const key = String(examNum);
+  const e = p[key] || {};
+  const qKey = "q" + q;
+  if (part === 1) {
+    e.p1map = e.p1map || {};
+    if (!e.p1map[qKey]) e.p1map[qKey] = isCorrect;
+    e.p1 = Object.values(e.p1map).filter(Boolean).length;
+  } else {
+    e.p2map = e.p2map || {};
+    if (!e.p2map[qKey]) e.p2map[qKey] = isCorrect;
+    e.p2 = Object.values(e.p2map).filter(Boolean).length;
+  }
+  p[key] = e;
+  saveProgress(p);
+}
+
+/* ---------------- helpers ---------------- */
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function stripPunct(s) {
+  return s.replace(/[。！？，、；：""''—…\s]/g, "");
+}
+
+function esc(s) {
+  const d = document.createElement("div");
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+/* ---------------- rendering ---------------- */
+const view = document.getElementById("view");
+const globalStats = document.getElementById("globalStats");
+
+function renderGlobalStats() {
+  const p = loadProgress();
+  let done = 0;
+  for (const k of Object.keys(p)) if (p[k].p1 + p[k].p2 >= 10) done++;
+  globalStats.innerHTML = "已完成 <b>" + done + "</b> / 20 套";
+}
+
+function renderHome() {
+  state.currentExam = null;
+  renderGlobalStats();
+  let cards = "";
+  for (const ex of EXAM_DATA) {
+    const s = getExamStats(ex.num);
+    const pct = Math.round((s.correct / s.total) * 100);
+    const tag = s.correct === 0 ? ' <span class="tag">未开始</span>'
+              : s.correct === 10 ? ' <span class="tag">已掌握</span>'
+              : ' <span class="tag">练习中</span>';
+    cards += `
+      <div class="exam-card" data-exam="${ex.num}">
+        <div class="num">ĐỀ ${ex.num}</div>
+        <div class="code">${ex.code} · 书写</div>
+        ${tag}
+        <div class="progress">
+          <span>答对 ${s.correct}/${s.total} 题</span>
+          <span>${pct}%</span>
+        </div>
+        <div class="bar"><span style="width:${pct}%"></span></div>
+      </div>`;
+  }
+  view.innerHTML = `
+    <div class="page-title">
+      <h2>书写题 · 第 71–80 题</h2>
+      <p>第一部分 排列顺序（71-75）· 第二部分 汉字填空（76-80）— 共 20 套真题</p>
+    </div>
+    <div class="exam-grid">${cards}</div>`;
+
+  view.querySelectorAll(".exam-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const n = parseInt(card.dataset.exam, 10);
+      const ex = EXAM_DATA.find(e => e.num === n);
+      if (ex) startExam(ex);
+    });
+  });
+}
+
+function startExam(ex) {
+  state.currentExam = ex;
+  state.currentPart = 1;
+  state.results = { part1: {}, part2: {} };
+  state.part2Answers = {};
+  renderExam();
+}
+
+function renderExam() {
+  const ex = state.currentExam;
+  if (!ex) { renderHome(); return; }
+  const s = getExamStats(ex.num);
+  const pct = Math.round((s.correct / s.total) * 100);
+
+  const tabs = `
+    <div class="tabs">
+      <button class="tab ${state.currentPart === 1 ? "active" : ""}" data-part="1">排列顺序 <small>第71-75题</small></button>
+      <button class="tab ${state.currentPart === 2 ? "active" : ""}" data-part="2">汉字填空 <small>第76-80题</small></button>
+    </div>`;
+
+  view.innerHTML = `
+    <div class="exam-head">
+      <button class="back-btn" id="backBtn">← 返回题库</button>
+      <div>
+        <div class="title">ĐỀ ${ex.num} · ${ex.code}</div>
+        <div class="sub">书写部分 · 已答对 ${s.correct}/${s.total} 题</div>
+      </div>
+      <div class="score-pill ${pct === 100 ? "good" : ""}">${pct}%</div>
+    </div>
+    ${tabs}
+    <div id="partBody"></div>`;
+
+  document.getElementById("backBtn").addEventListener("click", renderHome);
+  view.querySelectorAll(".tab").forEach(t => {
+    t.addEventListener("click", () => {
+      state.currentPart = parseInt(t.dataset.part, 10);
+      renderExam();
+    });
+  });
+
+  if (state.currentPart === 1) renderPart1(ex);
+  else renderPart2(ex);
+}
+
+/* ================= Part 1: reorder ================= */
+function renderPart1(ex) {
+  const items = ex.part1;
+  const idx = state.part1Index = state.part1Index || 0;
+  const body = document.getElementById("partBody");
+  body.innerHTML = `<div id="p1card"></div>`;
+  renderPart1Item(items[idx], idx, items.length);
+}
+
+function renderPart1Item(item, idx, total) {
+  const card = document.getElementById("p1card");
+  if (!card) return;
+
+  if (!state.part1Shuffled || state.part1Shuffled.length === 0) {
+    state.part1Shuffled = shuffle(item.chunks.map((_, i) => i));
+  }
+  if (!state.part1Order) state.part1Order = [];
+  if (!state.feedback) state.feedback = null;
+
+  let chips = "";
+  state.part1Shuffled.forEach(ci => {
+    const used = state.part1Order.includes(ci);
+    chips += `<span class="chip ${used ? "used" : ""}" data-ci="${ci}">${esc(item.chunks[ci])}</span>`;
+  });
+
+  let answerSlots = "";
+  if (state.part1Order.length === 0) {
+    answerSlots = `<span class="placeholder">点击词语，按正确顺序排列成一句话</span>`;
+  } else {
+    answerSlots = state.part1Order.map(ci =>
+      `<span class="slot" data-slot="${ci}">${esc(item.chunks[ci])}</span>`).join("");
+  }
+
+  let fb = "";
+  if (state.feedback) {
+    const cls = state.feedback.correct ? "correct" : "wrong";
+    fb = `<div class="feedback show ${cls}">
+            <b>${state.feedback.correct ? "✓ 正确！" : "✗ 不正确"}</b>
+            <div class="answer">正确答案：${esc(item.answer)}</div>
+          </div>`;
+  }
+
+  card.innerHTML = `
+    <div class="q-card">
+      <div class="q-head">
+        <div class="q-num">${item.q}</div>
+        <div class="q-label">第 ${idx + 1} / ${total} 题 · 将词语排列成一句正确的话</div>
+      </div>
+      <div class="chips">${chips}</div>
+      <div class="answer-box">${answerSlots}</div>
+      <div class="controls">
+        <button class="btn btn-primary" id="check1" ${state.part1Order.length ? "" : "disabled"}>检查</button>
+        <button class="btn btn-ghost" id="showAns1">看答案</button>
+        <button class="btn btn-ghost" id="clear1">清空</button>
+        ${idx < total - 1
+          ? `<button class="btn btn-primary" id="next1">下一题 →</button>`
+          : `<button class="btn btn-primary" id="finish1">完成 ✓</button>`}
+      </div>
+      ${fb}
+    </div>`;
+
+  card.querySelectorAll(".chip").forEach(ch => {
+    ch.addEventListener("click", () => {
+      const ci = parseInt(ch.dataset.ci, 10);
+      if (state.part1Order.includes(ci)) return;
+      state.part1Order.push(ci);
+      state.feedback = null;
+      renderPart1Item(item, idx, total);
+    });
+  });
+  card.querySelectorAll(".slot").forEach(sl => {
+    sl.addEventListener("click", () => {
+      const ci = parseInt(sl.dataset.slot, 10);
+      state.part1Order = state.part1Order.filter(c => c !== ci);
+      state.feedback = null;
+      renderPart1Item(item, idx, total);
+    });
+  });
+
+  const check = document.getElementById("check1");
+  if (check) check.addEventListener("click", () => {
+    const built = state.part1Order.map(ci => item.chunks[ci]).join("");
+    const ok = stripPunct(built) === stripPunct(item.answer);
+    state.feedback = { correct: ok };
+    recordResult(state.currentExam.num, 1, item.q, ok);
+    state.results.part1[item.q] = ok;
+    renderPart1Item(item, idx, total);
+  });
+
+  const showAns = document.getElementById("showAns1");
+  if (showAns) showAns.addEventListener("click", () => {
+    state.feedback = { correct: false };
+    renderPart1Item(item, idx, total);
+  });
+
+  const clear = document.getElementById("clear1");
+  if (clear) clear.addEventListener("click", () => {
+    state.part1Order = [];
+    state.feedback = null;
+    renderPart1Item(item, idx, total);
+  });
+
+  const next = document.getElementById("next1");
+  if (next) next.addEventListener("click", () => {
+    state.part1Index++;
+    state.part1Shuffled = [];
+    state.part1Order = [];
+    state.feedback = null;
+    renderPart1(state.currentExam);
+  });
+
+  const finish = document.getElementById("finish1");
+  if (finish) finish.addEventListener("click", () => {
+    state.currentPart = 2;
+    state.part1Index = 0;
+    state.part1Shuffled = [];
+    state.part1Order = [];
+    state.feedback = null;
+    renderExam();
+  });
+}
+
+/* ================= Part 2: fill blank ================= */
+function renderPart2(ex) {
+  const idx = state.part2Index = state.part2Index || 0;
+  const body = document.getElementById("partBody");
+  body.innerHTML = `<div id="p2card"></div>`;
+  renderPart2Item(ex.part2[idx], idx, ex.part2.length);
+}
+
+function renderPart2Item(item, idx, total) {
+  const card = document.getElementById("p2card");
+  if (!card) return;
+
+  const typed = state.part2Answers[item.q] || "";
+  const answered = typed !== "";
+  const got = answered && typed.trim() === item.answer;
+
+  const [before, after] = item.sentence.split("〔〕");
+  const blankCls = answered ? (got ? "blank done" : "blank filled") : "blank";
+  const blankTxt = answered ? esc(typed) : "";
+
+  let fb = "";
+  if (answered && !got) {
+    fb = `<div class="feedback show wrong">
+            <b>✗ 不正确</b>
+            <div class="answer">正确答案：${esc(item.answer)}</div>
+          </div>`;
+  } else if (answered && got) {
+    fb = `<div class="feedback show correct"><b>✓ 正确！</b></div>`;
+  }
+
+  card.innerHTML = `
+    <div class="q-card">
+      <div class="q-head">
+        <div class="q-num">${item.q}</div>
+        <div class="q-label">第 ${idx + 1} / ${total} 题 · 根据拼音填写正确的汉字</div>
+      </div>
+      <div class="pinyin-hint">🔈 ${esc(item.pinyin)}</div>
+      <div class="sentence">
+        <span>${esc(before)}</span><span class="${blankCls}">${blankTxt}</span><span>${esc(after)}</span>
+      </div>
+      <div class="controls">
+        <input class="char-input" id="charInput" maxlength="2" placeholder="汉字"
+               value="${esc(typed)}" ${answered ? "disabled" : ""}>
+        <button class="btn btn-primary" id="confirm2" ${answered ? "disabled" : ""}>确认</button>
+        <button class="btn btn-ghost" id="showAns2" ${answered ? "disabled" : ""}>看答案</button>
+        <button class="btn btn-ghost" id="reset2">重做</button>
+        ${idx < total - 1
+          ? `<button class="btn btn-primary" id="next2">下一题 →</button>`
+          : `<button class="btn btn-primary" id="finish2">完成 ✓</button>`}
+      </div>
+      ${fb}
+    </div>`;
+
+  const input = document.getElementById("charInput");
+  if (input && !answered) {
+    input.focus();
+    input.addEventListener("keydown", e => {
+      if (e.key === "Enter") confirm();
+    });
+  }
+
+  const confirm = () => {
+    const v = input.value.trim();
+    if (!v) return;
+    state.part2Answers[item.q] = v;
+    const ok = v === item.answer;
+    recordResult(state.currentExam.num, 2, item.q, ok);
+    state.results.part2[item.q] = ok;
+    renderPart2Item(item, idx, total);
+  };
+
+  const confirmBtn = document.getElementById("confirm2");
+  if (confirmBtn) confirmBtn.addEventListener("click", confirm);
+
+  const showAns = document.getElementById("showAns2");
+  if (showAns) showAns.addEventListener("click", () => {
+    state.part2Answers[item.q] = item.answer;
+    recordResult(state.currentExam.num, 2, item.q, false);
+    renderPart2Item(item, idx, total);
+  });
+
+  const reset = document.getElementById("reset2");
+  if (reset) reset.addEventListener("click", () => {
+    delete state.part2Answers[item.q];
+    renderPart2Item(item, idx, total);
+  });
+
+  const next = document.getElementById("next2");
+  if (next) next.addEventListener("click", () => {
+    state.part2Index++;
+    renderPart2(state.currentExam);
+  });
+
+  const finish = document.getElementById("finish2");
+  if (finish) finish.addEventListener("click", () => {
+    renderResult();
+  });
+}
+
+/* ================= Result ================= */
+function renderResult() {
+  const ex = state.currentExam;
+  const s = getExamStats(ex.num);
+  const pct = Math.round((s.correct / s.total) * 100);
+  view.innerHTML = `
+    <div class="exam-head">
+      <button class="back-btn" id="backBtn">← 返回题库</button>
+      <div>
+        <div class="title">ĐỀ ${ex.num} · ${ex.code} 完成</div>
+        <div class="sub">书写部分练习结束</div>
+      </div>
+    </div>
+    <div class="result ${pct === 100 ? "good" : ""}">
+      <div class="big-score">${s.correct} / ${s.total}</div>
+      <h3>${pct === 100 ? "太棒了！全部正确 🎉" : pct >= 70 ? "很好，继续加油！" : "再练习几次就会更好"}</h3>
+      <p>正确率 ${pct}%</p>
+      <div class="row-again">
+        <button class="btn btn-primary" id="retry">再练一次</button>
+        <button class="btn btn-ghost" id="backHome">返回题库</button>
+      </div>
+    </div>`;
+
+  document.getElementById("backBtn").addEventListener("click", renderHome);
+  document.getElementById("backHome").addEventListener("click", renderHome);
+  document.getElementById("retry").addEventListener("click", () => startExam(ex));
+}
+
+/* ---------------- init ---------------- */
+document.getElementById("brandBtn").addEventListener("click", renderHome);
+renderHome();
+</script>
+</body>
+</html>
