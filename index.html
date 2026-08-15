@@ -120,6 +120,18 @@ function esc(s) {
 
 const LI = s => "ABCDEF".indexOf(s);
 
+const thudAudio = (function () {
+  try { return new Audio("SE/thud.mp3"); }
+  catch (e) { return null; }
+})();
+function playWrong() {
+  try {
+    if (!thudAudio) return;
+    thudAudio.currentTime = 0;
+    thudAudio.play();
+  } catch (e) {}
+}
+
 /* ---------------- rendering ---------------- */
 const view = document.getElementById("view");
 const globalStats = document.getElementById("globalStats");
@@ -330,6 +342,7 @@ function renderPart1Item(item, idx, total) {
     const built = state.part1Order.map(ci => item.chunks[ci]).join("");
     const ok = stripPunct(built) === stripPunct(item.answer);
     state.feedback = { correct: ok };
+    if (!ok) playWrong();
     recordResult(state.currentExam.num, 1, item.q, ok);
     state.results.part1[item.q] = ok;
     renderPart1Item(item, idx, total);
@@ -338,6 +351,7 @@ function renderPart1Item(item, idx, total) {
   const showAns = document.getElementById("showAns1");
   if (showAns) showAns.addEventListener("click", () => {
     state.feedback = { correct: false };
+    playWrong();
     renderPart1Item(item, idx, total);
   });
 
@@ -438,6 +452,7 @@ function renderPart2Item(item, idx, total) {
     if (!v) return;
     state.part2Answers[item.q] = v;
     const ok = v === item.answer;
+    if (!ok) playWrong();
     recordResult(state.currentExam.num, 2, item.q, ok);
     state.results.part2[item.q] = ok;
     renderPart2Item(item, idx, total);
@@ -456,6 +471,7 @@ function renderPart2Item(item, idx, total) {
   if (showAns) showAns.addEventListener("click", () => {
     state.part2Answers[item.q] = item.answer;
     recordResult(state.currentExam.num, 2, item.q, false);
+    playWrong();
     renderPart2Item(item, idx, total);
   });
 
@@ -588,6 +604,7 @@ function renderReadingItem(ex) {
   if (rcheck) rcheck.addEventListener("click", () => {
     const ok = sel === item.a;
     rd.checked[item.q] = ok;
+    if (!ok) playWrong();
     recordReading(ex.num, rd.part, item.q, ok);
     renderReadingItem(ex);
   });
@@ -597,6 +614,7 @@ function renderReadingItem(ex) {
     rd.answers[item.q] = item.a;
     rd.checked[item.q] = false;
     recordReading(ex.num, rd.part, item.q, false);
+    playWrong();
     renderReadingItem(ex);
   });
 
