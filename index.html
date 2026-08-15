@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HSK3 Luyện tập Phần Viết | Writing Practice</title>
+<title>HSK3 Luyện tập Viết & Đọc | Writing & Reading Practice</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <div class="brand" id="brandBtn">
       <div class="seal">写</div>
       <div>
-        <h1>HSK3 Luyện viết</h1>
-        <small>Nền tảng luyện phần viết · Câu 71–80</small>
+        <h1>HSK3 Luyện tập</h1>
+        <small>Nền tảng luyện tập HSK3 · Viết 71–80 & Đọc hiểu 41–70</small>
       </div>
     </div>
     <div class="topbar-spacer"></div>
@@ -24,7 +24,7 @@
 
 <main id="view"></main>
 
-<footer>Nguồn: 20 đề thi thật HSK3 · Phần viết (Sắp xếp câu 71–75 / Điền chữ Hán 76–80)</footer>
+<footer>Nguồn: 20 đề thi thật HSK3 · Phần viết (Sắp xếp câu 71–75 / Điền chữ Hán 76–80) · Phần đọc hiểu (41–70)</footer>
 
 <script src="data.js"></script>
 <script>
@@ -33,11 +33,16 @@
 const LS_KEY = "hsk3writing_progress_v1";
 const state = {
   currentExam: null,
-  currentPart: 1,          // 1 = reorder (71-75), 2 = fill blank (76-80)
+  currentPart: 1,          // 1 = reorder (71-75), 2 = fill blank (76-80), 3 = reading (41-70)
+  part1Index: 0,
   part1Order: [],          // selected chunk indices in order
   part1Shuffled: [],
+  part1Saved: {},          // q -> { order, shuffled } so back button restores work
+  part2Index: 0,
   part2Answers: {},        // q -> typed character
+  feedback: null,
   results: {},             // examNum -> { part1: {q:bool}, part2: {q:bool}, total, correct }
+  reading: { part: 1, index: 0, answers: {}, checked: {} },
 };
 
 /* ---------------- persistence ---------------- */
@@ -52,8 +57,10 @@ function saveProgress(progress) {
 function getExamStats(examNum) {
   const p = loadProgress();
   const e = p[String(examNum)] || {};
-  const correct = (e.p1 || 0) + (e.p2 || 0);
-  return { correct, total: 10, p1: e.p1 || 0, p2: e.p2 || 0 };
+  const w = { correct: (e.p1 || 0) + (e.p2 || 0), total: 10 };
+  const r = e.read || {};
+  const rc = (r.p1 || 0) + (r.p2 || 0) + (r.p3 || 0) + (r.p4 || 0) + (r.p5 || 0);
+  return { correct: w.correct + rc, total: 40, w: w.correct, r: rc, p1: e.p1 || 0, p2: e.p2 || 0 };
 }
 
 function recordResult(examNum, part, q, isCorrect) {
@@ -70,6 +77,23 @@ function recordResult(examNum, part, q, isCorrect) {
     if (!e.p2map[qKey]) e.p2map[qKey] = isCorrect;
     e.p2 = Object.values(e.p2map).filter(Boolean).length;
   }
+  p[key] = e;
+  saveProgress(p);
+}
+
+function recordReading(examNum, part, q, isCorrect) {
+  const p = loadProgress();
+  const key = String(examNum);
+  const e = p[key] || {};
+  e.readmap = e.readmap || {};
+  const qk = "p" + part + "_q" + q;
+  if (e.readmap[qk] === undefined) e.readmap[qk] = isCorrect;
+  const c = { p1: 0, p2: 0, p3: 0, p4: 0, p5: 0 };
+  for (const k of Object.keys(e.readmap)) {
+    const m = k.match(/^p(\d)_q/);
+    if (m && e.readmap[k]) c["p" + m[1]]++;
+  }
+  e.read = c;
   p[key] = e;
   saveProgress(p);
 }
@@ -94,6 +118,8 @@ function esc(s) {
   return d.innerHTML;
 }
 
+const LI = s => "ABCDEF".indexOf(s);
+
 /* ---------------- rendering ---------------- */
 const view = document.getElementById("view");
 const globalStats = document.getElementById("globalStats");
@@ -101,7 +127,7 @@ const globalStats = document.getElementById("globalStats");
 function renderGlobalStats() {
   const p = loadProgress();
   let done = 0;
-  for (const k of Object.keys(p)) if (p[k].p1 + p[k].p2 >= 10) done++;
+  for (const k of Object.keys(p)) if ((p[k].p1 || 0) + (p[k].p2 || 0) >= 10) done++;
   globalStats.innerHTML = "Đã hoàn thành <b>" + done + "</b> / 20 đề";
 }
 
@@ -113,24 +139,24 @@ function renderHome() {
     const s = getExamStats(ex.num);
     const pct = Math.round((s.correct / s.total) * 100);
     const tag = s.correct === 0 ? ' <span class="tag">Chưa bắt đầu</span>'
-              : s.correct === 10 ? ' <span class="tag">Đã nắm vững</span>'
+              : s.correct === 40 ? ' <span class="tag">Đã nắm vững</span>'
               : ' <span class="tag">Đang luyện</span>';
     cards += `
       <div class="exam-card" data-exam="${ex.num}">
         <div class="num">ĐỀ ${ex.num}</div>
-        <div class="code">${ex.code} · Phần viết</div>
+        <div class="code">${ex.code} · Viết + Đọc</div>
         ${tag}
         <div class="progress">
-          <span>Đúng ${s.correct}/${s.total} câu</span>
-          <span>${pct}%</span>
+          <span>Viết ${s.w}/10</span>
+          <span>Đọc ${s.r}/30</span>
         </div>
         <div class="bar"><span style="width:${pct}%"></span></div>
       </div>`;
   }
   view.innerHTML = `
     <div class="page-title">
-      <h2>Bài tập viết · Câu 71–80</h2>
-      <p>Phần 1 · Sắp xếp câu (71–75) · Phần 2 · Điền chữ Hán (76–80) — 20 đề thi thật</p>
+      <h2>Luyện tập HSK3 · 20 đề thi thật</h2>
+      <p>Phần viết (Sắp xếp câu 71–75 / Điền chữ Hán 76–80) · Phần đọc hiểu (Chọn câu đúng 41–50 / Chọn từ 51–60 / Đọc hiểu 61–70)</p>
     </div>
     <div class="exam-grid">${cards}</div>`;
 
@@ -147,7 +173,14 @@ function startExam(ex) {
   state.currentExam = ex;
   state.currentPart = 1;
   state.results = { part1: {}, part2: {} };
+  state.part1Index = 0;
+  state.part2Index = 0;
+  state.part1Order = [];
+  state.part1Shuffled = [];
+  state.part1Saved = {};
   state.part2Answers = {};
+  state.feedback = null;
+  state.reading = { part: 1, index: 0, answers: {}, checked: {} };
   renderExam();
 }
 
@@ -161,6 +194,7 @@ function renderExam() {
     <div class="tabs">
       <button class="tab ${state.currentPart === 1 ? "active" : ""}" data-part="1">Sắp xếp câu <small>Câu 71–75</small></button>
       <button class="tab ${state.currentPart === 2 ? "active" : ""}" data-part="2">Điền chữ Hán <small>Câu 76–80</small></button>
+      <button class="tab ${state.currentPart === 3 ? "active" : ""}" data-part="3">Đọc hiểu <small>Câu 41–70</small></button>
     </div>`;
 
   view.innerHTML = `
@@ -168,7 +202,7 @@ function renderExam() {
       <button class="back-btn" id="backBtn">← Về danh sách đề</button>
       <div>
         <div class="title">ĐỀ ${ex.num} · ${ex.code}</div>
-        <div class="sub">Phần viết · Đã đúng ${s.correct}/${s.total} câu</div>
+        <div class="sub">Viết ${s.w}/10 · Đọc ${s.r}/30 · Tổng ${s.correct}/${s.total} câu đúng</div>
       </div>
       <div class="score-pill ${pct === 100 ? "good" : ""}">${pct}%</div>
     </div>
@@ -184,13 +218,21 @@ function renderExam() {
   });
 
   if (state.currentPart === 1) renderPart1(ex);
-  else renderPart2(ex);
+  else if (state.currentPart === 2) renderPart2(ex);
+  else renderReading(ex);
 }
 
 /* ================= Part 1: reorder ================= */
+function savePart1Current(item) {
+  state.part1Saved[item.q] = {
+    order: (state.part1Order || []).slice(),
+    shuffled: (state.part1Shuffled || []).slice()
+  };
+}
+
 function renderPart1(ex) {
   const items = ex.part1;
-  const idx = state.part1Index = state.part1Index || 0;
+  const idx = state.part1Index = Math.min(state.part1Index, items.length - 1);
   const body = document.getElementById("partBody");
   body.innerHTML = `<div id="p1card"></div>`;
   renderPart1Item(items[idx], idx, items.length);
@@ -200,8 +242,13 @@ function renderPart1Item(item, idx, total) {
   const card = document.getElementById("p1card");
   if (!card) return;
 
-  if (!state.part1Shuffled || state.part1Shuffled.length === 0) {
+  const saved = state.part1Saved[item.q];
+  if (saved) {
+    state.part1Shuffled = saved.shuffled;
+    state.part1Order = saved.order;
+  } else if (!state.part1Shuffled || state.part1Shuffled.length === 0) {
     state.part1Shuffled = shuffle(item.chunks.map((_, i) => i));
+    state.part1Order = [];
   }
   if (!state.part1Order) state.part1Order = [];
   if (!state.feedback) state.feedback = null;
@@ -239,6 +286,7 @@ function renderPart1Item(item, idx, total) {
       <div class="chips">${chips}</div>
       <div class="answer-box">${answerSlots}</div>
       <div class="controls">
+        ${idx > 0 ? `<button class="btn btn-ghost" id="prev1">← Câu trước</button>` : ""}
         <button class="btn btn-primary" id="check1" ${state.part1Order.length ? "" : "disabled"}>Kiểm tra</button>
         <button class="btn btn-ghost" id="showAns1">Xem đáp án</button>
         <button class="btn btn-ghost" id="clear1">Xóa</button>
@@ -267,6 +315,16 @@ function renderPart1Item(item, idx, total) {
     });
   });
 
+  const prev = document.getElementById("prev1");
+  if (prev) prev.addEventListener("click", () => {
+    savePart1Current(item);
+    state.part1Index--;
+    state.part1Shuffled = [];
+    state.part1Order = [];
+    state.feedback = null;
+    renderPart1(state.currentExam);
+  });
+
   const check = document.getElementById("check1");
   if (check) check.addEventListener("click", () => {
     const built = state.part1Order.map(ci => item.chunks[ci]).join("");
@@ -287,11 +345,13 @@ function renderPart1Item(item, idx, total) {
   if (clear) clear.addEventListener("click", () => {
     state.part1Order = [];
     state.feedback = null;
+    delete state.part1Saved[item.q];
     renderPart1Item(item, idx, total);
   });
 
   const next = document.getElementById("next1");
   if (next) next.addEventListener("click", () => {
+    savePart1Current(item);
     state.part1Index++;
     state.part1Shuffled = [];
     state.part1Order = [];
@@ -312,7 +372,7 @@ function renderPart1Item(item, idx, total) {
 
 /* ================= Part 2: fill blank ================= */
 function renderPart2(ex) {
-  const idx = state.part2Index = state.part2Index || 0;
+  const idx = state.part2Index = Math.min(state.part2Index, ex.part2.length - 1);
   const body = document.getElementById("partBody");
   body.innerHTML = `<div id="p2card"></div>`;
   renderPart2Item(ex.part2[idx], idx, ex.part2.length);
@@ -352,6 +412,7 @@ function renderPart2Item(item, idx, total) {
         <span>${esc(before)}</span><span class="${blankCls}">${blankTxt}</span><span>${esc(after)}</span>
       </div>
       <div class="controls">
+        ${idx > 0 ? `<button class="btn btn-ghost" id="prev2">← Câu trước</button>` : ""}
         <input class="char-input" id="charInput" maxlength="2" placeholder="Chữ Hán"
                value="${esc(typed)}" ${answered ? "disabled" : ""}>
         <button class="btn btn-primary" id="confirm2" ${answered ? "disabled" : ""}>Xác nhận</button>
@@ -382,6 +443,12 @@ function renderPart2Item(item, idx, total) {
     renderPart2Item(item, idx, total);
   };
 
+  const prev = document.getElementById("prev2");
+  if (prev) prev.addEventListener("click", () => {
+    state.part2Index--;
+    renderPart2(state.currentExam);
+  });
+
   const confirmBtn = document.getElementById("confirm2");
   if (confirmBtn) confirmBtn.addEventListener("click", confirm);
 
@@ -410,6 +477,148 @@ function renderPart2Item(item, idx, total) {
   });
 }
 
+/* ================= Reading (41-70) ================= */
+function renderReading(ex) {
+  const rd = state.reading;
+  const body = document.getElementById("partBody");
+  const subtabs = `
+    <div class="subtabs">
+      <button class="subtab ${rd.part === 1 ? "active" : ""}" data-rp="1">P1 · Chọn câu đúng <small>41–45</small></button>
+      <button class="subtab ${rd.part === 2 ? "active" : ""}" data-rp="2">P2 · Chọn câu đúng <small>46–50</small></button>
+      <button class="subtab ${rd.part === 3 ? "active" : ""}" data-rp="3">P3 · Chọn từ <small>51–55</small></button>
+      <button class="subtab ${rd.part === 4 ? "active" : ""}" data-rp="4">P4 · Chọn từ <small>56–60</small></button>
+      <button class="subtab ${rd.part === 5 ? "active" : ""}" data-rp="5">P5 · Đọc hiểu <small>61–70</small></button>
+    </div>`;
+  body.innerHTML = subtabs + `<div id="readcard"></div>`;
+  body.querySelectorAll(".subtab").forEach(b => {
+    b.addEventListener("click", () => {
+      rd.part = parseInt(b.dataset.rp, 10);
+      rd.index = 0;
+      renderReading(ex);
+    });
+  });
+  renderReadingItem(ex);
+}
+
+function renderReadingItem(ex) {
+  const rd = state.reading;
+  const card = document.getElementById("readcard");
+  if (!card) return;
+
+  const part = ex.reading["p" + rd.part];
+  const total = part.items.length;
+  const idx = Math.min(rd.index, total - 1);
+  rd.index = idx;
+  const item = part.items[idx];
+  const sel = rd.answers[item.q];
+  const chk = rd.checked[item.q];
+
+  const opts = rd.part === 5 ? item.opts : part.options;
+  let label;
+  if (rd.part === 5) label = "Đọc đoạn văn và chọn đáp án đúng";
+  else if (rd.part >= 3) label = "Chọn từ đúng điền vào chỗ trống";
+  else label = "Chọn câu có nghĩa hợp với câu đã cho";
+
+  let optionsHtml = `<div class="options-grid">` + opts.map((o, i) => {
+    const L = "ABCDEF"[i];
+    const cls = "opt-btn" + (sel === L ? " sel" : "");
+    return `<button class="${cls}" data-letter="${L}" ${chk !== undefined ? "disabled" : ""}><b>${L}.</b><span>${esc(o)}</span></button>`;
+  }).join("") + `</div>`;
+
+  let bodyHtml = "";
+  if (rd.part >= 3 && rd.part <= 4) {
+    const word = sel ? opts[LI(sel)] : "";
+    const filled = word
+      ? item.text.replace("（　）", `<span class="blank done">${esc(word)}</span>`)
+      : item.text.replace("（　）", `<span class="blank"></span>`);
+    bodyHtml = optionsHtml + `<div class="read-sentence">${filled}</div>`;
+  } else if (rd.part === 5) {
+    bodyHtml = `<div class="passage">${esc(item.passage)}</div>
+                <div class="read-qtext">★ ${esc(item.question)}</div>` + optionsHtml;
+  } else {
+    bodyHtml = `<div class="read-qtext">${esc(item.text)}</div>` + optionsHtml;
+  }
+
+  let fb = "";
+  if (chk !== undefined) {
+    const ok = chk;
+    const ansText = rd.part === 5 ? item.opts[LI(item.a)] : opts[LI(item.a)];
+    fb = `<div class="feedback show ${ok ? "correct" : "wrong"}">
+            <b>${ok ? "✓ Đúng rồi!" : "✗ Chưa đúng"}</b>
+            <div class="answer">Đáp án đúng: ${item.a}. ${esc(ansText)}</div>
+          </div>`;
+  }
+
+  card.innerHTML = `
+    <div class="q-card">
+      <div class="q-head">
+        <div class="q-num">${item.q}</div>
+        <div class="q-label">Phần ${rd.part} · Câu ${idx + 1} / ${total} · ${label}</div>
+      </div>
+      ${bodyHtml}
+      <div class="controls">
+        <button class="btn btn-ghost" id="rprev" ${idx > 0 ? "" : "disabled"}>← Câu trước</button>
+        <button class="btn btn-primary" id="rcheck" ${sel && chk === undefined ? "" : "disabled"}>Kiểm tra</button>
+        <button class="btn btn-ghost" id="rshow" ${chk === undefined ? "" : "disabled"}>Xem đáp án</button>
+        <button class="btn btn-ghost" id="rclear">Xóa chọn</button>
+        ${idx < total - 1
+          ? `<button class="btn btn-primary" id="rnext">Câu tiếp theo →</button>`
+          : `<button class="btn btn-primary" id="rfinish">Hoàn thành ✓</button>`}
+      </div>
+      ${fb}
+    </div>`;
+
+  card.querySelectorAll(".opt-btn").forEach(b => {
+    b.addEventListener("click", () => {
+      const L = b.dataset.letter;
+      if (state.reading.answers[item.q] === L) delete state.reading.answers[item.q];
+      else state.reading.answers[item.q] = L;
+      delete state.reading.checked[item.q];
+      renderReadingItem(ex);
+    });
+  });
+
+  const rprev = document.getElementById("rprev");
+  if (rprev) rprev.addEventListener("click", () => {
+    rd.index = Math.max(0, idx - 1);
+    renderReadingItem(ex);
+  });
+
+  const rcheck = document.getElementById("rcheck");
+  if (rcheck) rcheck.addEventListener("click", () => {
+    const ok = sel === item.a;
+    rd.checked[item.q] = ok;
+    recordReading(ex.num, rd.part, item.q, ok);
+    renderReadingItem(ex);
+  });
+
+  const rshow = document.getElementById("rshow");
+  if (rshow) rshow.addEventListener("click", () => {
+    rd.answers[item.q] = item.a;
+    rd.checked[item.q] = false;
+    recordReading(ex.num, rd.part, item.q, false);
+    renderReadingItem(ex);
+  });
+
+  const rclear = document.getElementById("rclear");
+  if (rclear) rclear.addEventListener("click", () => {
+    delete rd.answers[item.q];
+    delete rd.checked[item.q];
+    renderReadingItem(ex);
+  });
+
+  const rnext = document.getElementById("rnext");
+  if (rnext) rnext.addEventListener("click", () => {
+    rd.index = Math.min(total - 1, idx + 1);
+    renderReadingItem(ex);
+  });
+
+  const rfinish = document.getElementById("rfinish");
+  if (rfinish) rfinish.addEventListener("click", () => {
+    renderResult();
+  });
+}
+
 /* ================= Result ================= */
 function renderResult() {
   const ex = state.currentExam;
@@ -420,13 +629,13 @@ function renderResult() {
       <button class="back-btn" id="backBtn">← Về danh sách đề</button>
       <div>
         <div class="title">ĐỀ ${ex.num} · ${ex.code} Hoàn thành</div>
-        <div class="sub">Đã kết thúc phần luyện viết</div>
+        <div class="sub">Đã kết thúc phần luyện tập</div>
       </div>
     </div>
     <div class="result ${pct === 100 ? "good" : ""}">
       <div class="big-score">${s.correct} / ${s.total}</div>
       <h3>${pct === 100 ? "Tuyệt vời! Đúng hết 🎉" : pct >= 70 ? "Rất tốt, cố lên nhé!" : "Luyện thêm vài lần sẽ tốt hơn"}</h3>
-      <p>Tỷ lệ đúng ${pct}%</p>
+      <p>Tỷ lệ đúng ${pct}% · Phần viết ${s.w}/10 · Phần đọc ${s.r}/30</p>
       <div class="row-again">
         <button class="btn btn-primary" id="retry">Luyện lại</button>
         <button class="btn btn-ghost" id="backHome">Về danh sách đề</button>

@@ -1,3 +1,4 @@
 # HSK3 source materials (PDFs / MP3s) are kept out of git
 # to keep the repository small. Re-extract from data.js instead.
 HSK3/
+SE/
