@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HSK3 书写练习平台 | Writing Practice</title>
+<title>HSK3 Luyện tập Phần Viết | Writing Practice</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <div class="brand" id="brandBtn">
       <div class="seal">写</div>
       <div>
-        <h1>HSK3 书写练习</h1>
-        <small>Writing Practice Platform · 第71–80题</small>
+        <h1>HSK3 Luyện viết</h1>
+        <small>Nền tảng luyện phần viết · Câu 71–80</small>
       </div>
     </div>
     <div class="topbar-spacer"></div>
@@ -24,7 +24,7 @@
 
 <main id="view"></main>
 
-<footer>题库来源：HSK3 真题 20 套 · 书写部分（排列顺序 71-75 / 汉字填空 76-80）</footer>
+<footer>Nguồn: 20 đề thi thật HSK3 · Phần viết (Sắp xếp câu 71–75 / Điền chữ Hán 76–80)</footer>
 
 <script src="data.js"></script>
 <script>
@@ -102,7 +102,7 @@ function renderGlobalStats() {
   const p = loadProgress();
   let done = 0;
   for (const k of Object.keys(p)) if (p[k].p1 + p[k].p2 >= 10) done++;
-  globalStats.innerHTML = "已完成 <b>" + done + "</b> / 20 套";
+  globalStats.innerHTML = "Đã hoàn thành <b>" + done + "</b> / 20 đề";
 }
 
 function renderHome() {
@@ -112,16 +112,16 @@ function renderHome() {
   for (const ex of EXAM_DATA) {
     const s = getExamStats(ex.num);
     const pct = Math.round((s.correct / s.total) * 100);
-    const tag = s.correct === 0 ? ' <span class="tag">未开始</span>'
-              : s.correct === 10 ? ' <span class="tag">已掌握</span>'
-              : ' <span class="tag">练习中</span>';
+    const tag = s.correct === 0 ? ' <span class="tag">Chưa bắt đầu</span>'
+              : s.correct === 10 ? ' <span class="tag">Đã nắm vững</span>'
+              : ' <span class="tag">Đang luyện</span>';
     cards += `
       <div class="exam-card" data-exam="${ex.num}">
         <div class="num">ĐỀ ${ex.num}</div>
-        <div class="code">${ex.code} · 书写</div>
+        <div class="code">${ex.code} · Phần viết</div>
         ${tag}
         <div class="progress">
-          <span>答对 ${s.correct}/${s.total} 题</span>
+          <span>Đúng ${s.correct}/${s.total} câu</span>
           <span>${pct}%</span>
         </div>
         <div class="bar"><span style="width:${pct}%"></span></div>
@@ -129,8 +129,8 @@ function renderHome() {
   }
   view.innerHTML = `
     <div class="page-title">
-      <h2>书写题 · 第 71–80 题</h2>
-      <p>第一部分 排列顺序（71-75）· 第二部分 汉字填空（76-80）— 共 20 套真题</p>
+      <h2>Bài tập viết · Câu 71–80</h2>
+      <p>Phần 1 · Sắp xếp câu (71–75) · Phần 2 · Điền chữ Hán (76–80) — 20 đề thi thật</p>
     </div>
     <div class="exam-grid">${cards}</div>`;
 
@@ -159,16 +159,16 @@ function renderExam() {
 
   const tabs = `
     <div class="tabs">
-      <button class="tab ${state.currentPart === 1 ? "active" : ""}" data-part="1">排列顺序 <small>第71-75题</small></button>
-      <button class="tab ${state.currentPart === 2 ? "active" : ""}" data-part="2">汉字填空 <small>第76-80题</small></button>
+      <button class="tab ${state.currentPart === 1 ? "active" : ""}" data-part="1">Sắp xếp câu <small>Câu 71–75</small></button>
+      <button class="tab ${state.currentPart === 2 ? "active" : ""}" data-part="2">Điền chữ Hán <small>Câu 76–80</small></button>
     </div>`;
 
   view.innerHTML = `
     <div class="exam-head">
-      <button class="back-btn" id="backBtn">← 返回题库</button>
+      <button class="back-btn" id="backBtn">← Về danh sách đề</button>
       <div>
         <div class="title">ĐỀ ${ex.num} · ${ex.code}</div>
-        <div class="sub">书写部分 · 已答对 ${s.correct}/${s.total} 题</div>
+        <div class="sub">Phần viết · Đã đúng ${s.correct}/${s.total} câu</div>
       </div>
       <div class="score-pill ${pct === 100 ? "good" : ""}">${pct}%</div>
     </div>
@@ -214,7 +214,7 @@ function renderPart1Item(item, idx, total) {
 
   let answerSlots = "";
   if (state.part1Order.length === 0) {
-    answerSlots = `<span class="placeholder">点击词语，按正确顺序排列成一句话</span>`;
+    answerSlots = `<span class="placeholder">Nhấn vào từ, sắp xếp đúng thứ tự để tạo thành câu</span>`;
   } else {
     answerSlots = state.part1Order.map(ci =>
       `<span class="slot" data-slot="${ci}">${esc(item.chunks[ci])}</span>`).join("");
@@ -224,8 +224,9 @@ function renderPart1Item(item, idx, total) {
   if (state.feedback) {
     const cls = state.feedback.correct ? "correct" : "wrong";
     fb = `<div class="feedback show ${cls}">
-            <b>${state.feedback.correct ? "✓ 正确！" : "✗ 不正确"}</b>
-            <div class="answer">正确答案：${esc(item.answer)}</div>
+            <b>${state.feedback.correct ? "✓ Đúng rồi!" : "✗ Chưa đúng"}</b>
+            <div class="answer">Đáp án đúng: ${esc(item.answer)}</div>
+            <div class="explain">💡 Giải thích: ${esc(item.exp)}</div>
           </div>`;
   }
 
@@ -233,17 +234,17 @@ function renderPart1Item(item, idx, total) {
     <div class="q-card">
       <div class="q-head">
         <div class="q-num">${item.q}</div>
-        <div class="q-label">第 ${idx + 1} / ${total} 题 · 将词语排列成一句正确的话</div>
+        <div class="q-label">Câu ${idx + 1} / ${total} · Sắp xếp các từ thành một câu đúng</div>
       </div>
       <div class="chips">${chips}</div>
       <div class="answer-box">${answerSlots}</div>
       <div class="controls">
-        <button class="btn btn-primary" id="check1" ${state.part1Order.length ? "" : "disabled"}>检查</button>
-        <button class="btn btn-ghost" id="showAns1">看答案</button>
-        <button class="btn btn-ghost" id="clear1">清空</button>
+        <button class="btn btn-primary" id="check1" ${state.part1Order.length ? "" : "disabled"}>Kiểm tra</button>
+        <button class="btn btn-ghost" id="showAns1">Xem đáp án</button>
+        <button class="btn btn-ghost" id="clear1">Xóa</button>
         ${idx < total - 1
-          ? `<button class="btn btn-primary" id="next1">下一题 →</button>`
-          : `<button class="btn btn-primary" id="finish1">完成 ✓</button>`}
+          ? `<button class="btn btn-primary" id="next1">Câu tiếp theo →</button>`
+          : `<button class="btn btn-primary" id="finish1">Hoàn thành ✓</button>`}
       </div>
       ${fb}
     </div>`;
@@ -332,32 +333,33 @@ function renderPart2Item(item, idx, total) {
   let fb = "";
   if (answered && !got) {
     fb = `<div class="feedback show wrong">
-            <b>✗ 不正确</b>
-            <div class="answer">正确答案：${esc(item.answer)}</div>
+            <b>✗ Chưa đúng</b>
+            <div class="answer">Đáp án đúng: ${esc(item.answer)}</div>
+            <div class="explain">💡 Giải thích: ${esc(item.exp)}</div>
           </div>`;
   } else if (answered && got) {
-    fb = `<div class="feedback show correct"><b>✓ 正确！</b></div>`;
+    fb = `<div class="feedback show correct"><b>✓ Đúng rồi!</b> <span class="explain-inline">${esc(item.exp)}</span></div>`;
   }
 
   card.innerHTML = `
     <div class="q-card">
       <div class="q-head">
         <div class="q-num">${item.q}</div>
-        <div class="q-label">第 ${idx + 1} / ${total} 题 · 根据拼音填写正确的汉字</div>
+        <div class="q-label">Câu ${idx + 1} / ${total} · Điền chữ Hán đúng theo phiên âm</div>
       </div>
       <div class="pinyin-hint">🔈 ${esc(item.pinyin)}</div>
       <div class="sentence">
         <span>${esc(before)}</span><span class="${blankCls}">${blankTxt}</span><span>${esc(after)}</span>
       </div>
       <div class="controls">
-        <input class="char-input" id="charInput" maxlength="2" placeholder="汉字"
+        <input class="char-input" id="charInput" maxlength="2" placeholder="Chữ Hán"
                value="${esc(typed)}" ${answered ? "disabled" : ""}>
-        <button class="btn btn-primary" id="confirm2" ${answered ? "disabled" : ""}>确认</button>
-        <button class="btn btn-ghost" id="showAns2" ${answered ? "disabled" : ""}>看答案</button>
-        <button class="btn btn-ghost" id="reset2">重做</button>
+        <button class="btn btn-primary" id="confirm2" ${answered ? "disabled" : ""}>Xác nhận</button>
+        <button class="btn btn-ghost" id="showAns2" ${answered ? "disabled" : ""}>Xem đáp án</button>
+        <button class="btn btn-ghost" id="reset2">Làm lại</button>
         ${idx < total - 1
-          ? `<button class="btn btn-primary" id="next2">下一题 →</button>`
-          : `<button class="btn btn-primary" id="finish2">完成 ✓</button>`}
+          ? `<button class="btn btn-primary" id="next2">Câu tiếp theo →</button>`
+          : `<button class="btn btn-primary" id="finish2">Hoàn thành ✓</button>`}
       </div>
       ${fb}
     </div>`;
@@ -415,19 +417,19 @@ function renderResult() {
   const pct = Math.round((s.correct / s.total) * 100);
   view.innerHTML = `
     <div class="exam-head">
-      <button class="back-btn" id="backBtn">← 返回题库</button>
+      <button class="back-btn" id="backBtn">← Về danh sách đề</button>
       <div>
-        <div class="title">ĐỀ ${ex.num} · ${ex.code} 完成</div>
-        <div class="sub">书写部分练习结束</div>
+        <div class="title">ĐỀ ${ex.num} · ${ex.code} Hoàn thành</div>
+        <div class="sub">Đã kết thúc phần luyện viết</div>
       </div>
     </div>
     <div class="result ${pct === 100 ? "good" : ""}">
       <div class="big-score">${s.correct} / ${s.total}</div>
-      <h3>${pct === 100 ? "太棒了！全部正确 🎉" : pct >= 70 ? "很好，继续加油！" : "再练习几次就会更好"}</h3>
-      <p>正确率 ${pct}%</p>
+      <h3>${pct === 100 ? "Tuyệt vời! Đúng hết 🎉" : pct >= 70 ? "Rất tốt, cố lên nhé!" : "Luyện thêm vài lần sẽ tốt hơn"}</h3>
+      <p>Tỷ lệ đúng ${pct}%</p>
       <div class="row-again">
-        <button class="btn btn-primary" id="retry">再练一次</button>
-        <button class="btn btn-ghost" id="backHome">返回题库</button>
+        <button class="btn btn-primary" id="retry">Luyện lại</button>
+        <button class="btn btn-ghost" id="backHome">Về danh sách đề</button>
       </div>
     </div>`;
 
