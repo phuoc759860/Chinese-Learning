@@ -119,27 +119,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "生日快乐！这是我给你买的礼物，喜欢不喜欢？",
-            "a": "C"
+            "a": "C",
+            "exp": "Người được tặng quà sinh nhật đáp lại: 我还以为你忘了呢，你真好！(Tôi cứ tưởng bạn quên mất, bạn thật tốt!) – lời cảm ơn tự nhiên khi nhận được quà."
           },
           {
             "q": 42,
             "text": "天阴了，我怕一会儿要下雨，明天吧？",
-            "a": "D"
+            "a": "D",
+            "exp": "Người thứ nhất ngại trời âm u sắp mưa (下雨 = trời mưa) nên đề nghị hoãn sang hôm sau; đối phương hỏi dồn: 决定了没？去还是不去？(Quyết định chưa? Đi hay không đi?) – cặp ghép chính thức của đề, ý liên hệ khá lỏng."
           },
           {
             "q": 43,
             "text": "现在去看字典吧，字典里有。",
-            "a": "B"
+            "a": "B",
+            "exp": "Khi gặp từ không biết (不会的词语 = từ không biết) thì tra từ điển (看字典 = xem từ điển); đáp án B '做作业遇到不会的词语时，你用铅笔在旁边记一下'(Khi làm bài gặp từ không biết, em dùng bút chì ghi chú bên cạnh) – cặp ghép chính thức của đề."
           },
           {
             "q": 44,
             "text": "你的游泳水平最近提高很快啊。",
-            "a": "A"
+            "a": "A",
+            "exp": "Lời khen trình độ bơi (游泳 = bơi lội) tiến bộ nhanh; đáp án A '爷爷教了我很多次。'(Ông nội đã dạy tôi rất nhiều lần) giải thích lý do tiến bộ – cặp ghép chính thức của đề."
           },
           {
             "q": 45,
             "text": "我饿了，冰箱里有什么吃的吗？",
-            "a": "F"
+            "a": "F",
+            "exp": "Người nói đói bụng (饿了 = đói) hỏi có gì ăn; đối phương đề nghị: 你先吃个苹果吧，我去给你做面条儿。(Anh ăn táo trước đi, tôi đi làm mì cho anh) – lời đề nghị ăn uống phù hợp."
           }
         ]
       },
@@ -155,27 +160,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "安静，你需要换一个眼镜了。",
-            "a": "B"
+            "a": "B",
+            "exp": "Trong lớp, thầy yêu cầu '安静'(im lặng) rồi nhắc bạn cần thay kính mới; đáp án B '他在黑板上写的字太小！我们都看不清楚！'(Chữ ông ấy viết trên bảng nhỏ quá! Chúng tôi nhìn không rõ!) – lý do phải thay kính; cặp ghép chính thức của đề."
           },
           {
             "q": 47,
             "text": "其实，主要是他对自己的要求太高了。",
-            "a": "E"
+            "a": "E",
+            "exp": "Giải thích vì sao chưa hài lòng: anh ấy yêu cầu với chính mình quá cao (要求太高 = yêu cầu quá cao); đáp án E '他对自己画的画儿总是不满意'(Anh ấy luôn không hài lòng với bức tranh mình vẽ) rất phù hợp."
           },
           {
             "q": 48,
             "text": "我准备给你妹妹介绍个男朋友。",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu nói định giới thiệu bạn trai (男朋友 = bạn trai) cho em gái; đáp án A '吃完饭以后，你来洗碗。'(Sau bữa cơm, bạn rửa bát) là cặp ghép chính thức của đề, ý không liên quan trực tiếp."
           },
           {
             "q": 49,
             "text": "为什么总是我啊？",
-            "a": "A"
+            "a": "A",
+            "exp": "Lời than phiền 'tại sao lúc nào cũng là tôi?' trả lời cho đáp án A '吃完饭以后，你来洗碗。'(Sau bữa cơm, bạn rửa bát) – vì lại bị sai đi rửa bát nên bất mãn."
           },
           {
             "q": 50,
             "text": "今天的节目看了吗？那些学生的表演好极了。",
-            "a": "D"
+            "a": "D",
+            "exp": "Khen màn biểu diễn (表演 = biểu diễn) của học sinh rất hay; đáp án D '他们很认真、很努力地练习了一个夏天。'(Họ rất nghiêm túc, cố gắng luyện tập suốt một mùa hè) giải thích vì sao biểu diễn tốt."
           }
         ]
       },
@@ -192,27 +202,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "除了数学，弟弟的（　）成绩都不错。",
-            "a": "D"
+            "a": "D",
+            "exp": "其他 = những môn khác. '除了数学，弟弟的其他成绩都不错' = Ngoài môn toán, các môn khác của em trai đều tốt. Cấu trúc 除了…都… = ngoài… ra thì đều…"
           },
           {
             "q": 52,
             "text": "我特别想买这（　）鞋，问题是我的脚太大。",
-            "a": "B"
+            "a": "B",
+            "exp": "双 = đôi (lượng từ cho giày, tất). 一双鞋 = một đôi giày. '我特别想买这双鞋' = Tôi rất muốn mua đôi giày này."
           },
           {
             "q": 53,
             "text": "这条裤子昨天洗过了，是（　）的。",
-            "a": "F"
+            "a": "F",
+            "exp": "干净 = sạch sẽ. Quần vừa giặt hôm qua (洗过了 = đã giặt) nên sạch: '这条裤子是干净的' = chiếc quần này là sạch."
           },
           {
             "q": 54,
             "text": "现在是三点一（　），别担心，我们不会迟到。",
-            "a": "A"
+            "a": "A",
+            "exp": "刻 = khắc (15 phút). 三点一刻 = 3 giờ 15 phút. Vì mới hơn 3 giờ 15 một chút nên không muộn (不会迟到 = sẽ không đến muộn)."
           },
           {
             "q": 55,
             "text": "姐姐从小就喜欢唱歌，现在她是一位（　）老师。",
-            "a": "C"
+            "a": "C",
+            "exp": "音乐 = âm nhạc. 音乐老师 = giáo viên âm nhạc. Chị thích hát từ nhỏ (喜欢唱歌 = thích hát) nên trở thành giáo viên âm nhạc là hợp lý."
           }
         ]
       },
@@ -229,27 +244,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：这个问题你们准备什么时候解决？B：我们正在想（　），今天应该可以解决。",
-            "a": "E"
+            "a": "E",
+            "exp": "办法 = biện pháp, cách giải quyết. '我们正在想办法' = Chúng tôi đang tìm cách, hôm nay chắc sẽ giải quyết được."
           },
           {
             "q": 57,
             "text": "A：怎么样，听（　）了吗？B：对不起，您读得太快，我没听懂。",
-            "a": "A"
+            "a": "A",
+            "exp": "明白 = rõ, hiểu. 听明白了吗 = nghe rõ/nghe hiểu chưa? Người B trả lời chưa hiểu vì đối phương đọc nhanh quá (读得太快 = đọc quá nhanh)."
           },
           {
             "q": 58,
             "text": "A：盘子里的肉（　）那只黄猫吃了。B：那你该给它准备点儿水了。",
-            "a": "C"
+            "a": "C",
+            "exp": "被 = bị (cấu trúc bị động 被…+V). '肉被那只黄猫吃了' = Thịt bị con mèo vàng ăn mất. Vì ăn mặn nên cần chuẩn bị nước cho mèo."
           },
           {
             "q": 59,
             "text": "A：菜有点儿（　），但很好吃。B：我妈妈是上海人，她做菜喜欢放糖。",
-            "a": "F"
+            "a": "F",
+            "exp": "甜 = ngọt. Mẹ là người Thượng Hải thích cho đường (放糖 = cho đường) khi nấu ăn nên món ăn hơi ngọt: '菜有点儿甜' = món ăn hơi ngọt."
           },
           {
             "q": 60,
             "text": "A：你好，香蕉怎么卖？B：这种三块五一斤，那种便宜两（　）五分。",
-            "a": "B"
+            "a": "B",
+            "exp": "角 = hào (đơn vị tiền Trung Quốc, 1元 = 10角). 两角五分 = 2 hào 5 phân. Loại kia rẻ hơn '两角五分' = rẻ hơn 0,25 đồng."
           }
         ]
       },
@@ -264,7 +284,8 @@ const EXAM_DATA = [
               "午饭要多吃",
               "不要吃晚饭"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Câu '早饭要吃好，午饭要吃饱，晚饭要吃少' = sáng ăn tốt, trưa ăn no, tối ăn ít → đáp án B '午饭要多吃' (bữa trưa nên ăn nhiều) là đúng."
           },
           {
             "q": 62,
@@ -275,7 +296,8 @@ const EXAM_DATA = [
               "长得像我",
               "长得像我弟弟"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói đồng nghiệp mới trông giống tôi (长得跟我有点儿像) và cùng họ Vương nên nhiều người hỏi có phải anh trai tôi không → đáp án B '长得像我' (trông giống tôi) đúng."
           },
           {
             "q": 63,
@@ -286,7 +308,8 @@ const EXAM_DATA = [
               "非常热",
               "经常刮风"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Mùa thu Bắc Kinh là mùa đẹp nhất: không nóng không lạnh (不冷也不热), ít mưa; còn gió lớn là ở mùa xuân → đáp án A '很舒服' (rất dễ chịu) đúng."
           },
           {
             "q": 64,
@@ -297,7 +320,8 @@ const EXAM_DATA = [
               "到外面去看看",
               "和经理一起吃饭"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn ghi rõ: 5点，我们经理和您见面 (5 giờ giám đốc gặp ông), còn ăn tối là buổi tối → đáp án A '和经理见面' (gặp giám đốc) đúng."
           },
           {
             "q": 65,
@@ -308,7 +332,8 @@ const EXAM_DATA = [
               "小李表示同意",
               "别关洗手间的灯"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Câu cuối nói rõ: 注意洗手间的灯不要关 (chú ý đừng tắt đèn nhà vệ sinh) → đáp án C '别关洗手间的灯' (đừng tắt đèn nhà vệ sinh) đúng."
           },
           {
             "q": 66,
@@ -319,7 +344,8 @@ const EXAM_DATA = [
               "题很多",
               "时间不长"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói: 题很多，但不难，很简单 (đề nhiều nhưng không khó, rất đơn giản) → đáp án B '题很多' (đề nhiều) đúng."
           },
           {
             "q": 67,
@@ -330,7 +356,8 @@ const EXAM_DATA = [
               "有很多节日",
               "去国外看看"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói mong có cơ hội đến nước khác xem (到别的国家看一看), tìm hiểu văn hóa khác nhau → đáp án C '去国外看看' (đi nước ngoài xem) đúng."
           },
           {
             "q": 68,
@@ -341,7 +368,8 @@ const EXAM_DATA = [
               "是蓝色的",
               "是别人的"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn miêu tả xe đạp màu xanh (那辆蓝色的) ở dưới lầu, dùng thoải mái không cần trả gấp → đáp án B '是蓝色的' (màu xanh) đúng."
           },
           {
             "q": 69,
@@ -352,7 +380,8 @@ const EXAM_DATA = [
               "容易生气",
               "热情、快乐"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói trước đây anh ấy cũng nhiệt tình, vui vẻ, biết quan tâm người khác (和以前一样的是，他还是那么热情、快乐) → đáp án C '热情、快乐' đúng."
           },
           {
             "q": 70,
@@ -363,7 +392,8 @@ const EXAM_DATA = [
               "飞机上",
               "出租车上"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Vali để trong cốp taxi (放在了车箱里) và quên lấy khi xuống xe, chưa ai lấy nên nhiều khả năng vẫn ở taxi → đáp án C '出租车上' (trên taxi) đúng."
           }
         ]
       }
@@ -489,27 +519,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "我的作业早就完成了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Học sinh báo bài tập (作业 = bài tập) đã làm xong từ lâu; đối phương nhắc: 你最好再检查一下，看还有没有问题。(Bạn tốt nhất kiểm tra lại xem còn vấn đề gì không) – lời dặn cẩn thận."
           },
           {
             "q": 42,
             "text": "你先来个苹果，我去给你做碗面条儿。",
-            "a": "B"
+            "a": "B",
+            "exp": "Người thứ nhất đói bụng (饿坏了 = đói lắm) hỏi còn gì ăn; đáp án B '今天把我饿坏了，还有什么吃的吗？'(Hôm nay tôi đói quá, còn gì ăn không?) – câu hỏi phù hợp để nhận lời mời ăn táo và mì."
           },
           {
             "q": 43,
             "text": "我终于有了自己的大房子了，明天就可以搬家了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người nói vui vì cuối cùng có nhà to của riêng mình (大房子 = ngôi nhà lớn), mai chuyển nhà (搬家 = chuyển nhà); đối phương đáp: 太好了！需要我帮忙吗？(Tuyệt quá! Cần tôi giúp gì không?) – chúc mừng và đề nghị giúp đỡ."
           },
           {
             "q": 44,
             "text": "这几天我不在家，小狗就请你帮我照顾了。",
-            "a": "D"
+            "a": "D",
+            "exp": "Nhờ chăm sóc con chó (照顾 = chăm sóc) mấy ngày vắng nhà; đáp án D '没问题，你就放心吧。'(Không vấn đề, bạn cứ yên tâm) – lời đồng ý nhận lời."
           },
           {
             "q": 45,
             "text": "姐姐给我买的，我也不太清楚。",
-            "a": "F"
+            "a": "F",
+            "exp": "Ai đó hỏi giá chiếc quần; đáp án F '这条裤子你花了多少钱？'(Chiếc quần này bạn mua hết bao nhiêu tiền?) – câu hỏi giá cả, chủ quần trả lời là chị mua nên không rõ."
           }
         ]
       },
@@ -525,27 +560,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "这个小孩儿胖胖的，真可爱。",
-            "a": "B"
+            "a": "B",
+            "exp": "Khen đứa bé bụ bẫm (胖胖的 = mũm mĩm) đáng yêu; đáp án B '那是我叔叔的儿子，一岁多了。'(Đó là con trai chú tôi, hơn một tuổi rồi) – giới thiệu về đứa bé."
           },
           {
             "q": 47,
             "text": "我哥是司机，我问问他，看他有没有时间。",
-            "a": "D"
+            "a": "D",
+            "exp": "Anh trai là tài xế (司机 = tài xế) nên hỏi xem có rảnh không; đáp án D '我的几个同事周末想去北京玩儿，但他们都不会开车。'(Mấy đồng nghiệp cuối tuần muốn đi Bắc Kinh chơi nhưng không ai biết lái xe) – lý do cần nhờ tài xế."
           },
           {
             "q": 48,
             "text": "你怎么又生病了？",
-            "a": "E"
+            "a": "E",
+            "exp": "Hỏi vì sao lại bị ốm (生病 = bị bệnh); đáp án E '昨天的雨下得非常大，我没带伞。'(Hôm qua mưa rất to, tôi không mang ô) – lý do bị ốm vì dính mưa."
           },
           {
             "q": 49,
             "text": "没关系，我明天去也可以。",
-            "a": "A"
+            "a": "A",
+            "exp": "Ngân hàng sắp đóng cửa; người này trấn an: 没关系 (không sao), mai đi cũng được → đáp án A '银行马上就要关门了。'(Ngân hàng sắp đóng cửa) là lời nhắc ban đầu."
           },
           {
             "q": 50,
             "text": "好的，我也有些渴了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đồng ý vì cũng hơi khát (渴了 = khát); đáp án C '把菜单儿给我，我们喝杯绿茶吧？'(Đưa tôi thực đơn, chúng ta uống chén trà xanh nhé?) – lời mời uống trà."
           }
         ]
       },
@@ -562,27 +602,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "电影马上就要开始了，（　）手机关了吧。",
-            "a": "F"
+            "a": "F",
+            "exp": "把 = trợ từ kết cấu 把…+V (đưa tân ngữ lên trước động từ). 把手机关了吧 = Hãy tắt điện thoại đi. Vì phim sắp bắt đầu nên nhắc tắt điện thoại."
           },
           {
             "q": 52,
             "text": "他很高，这张桌子太低，坐着很不（　）。",
-            "a": "D"
+            "a": "D",
+            "exp": "舒服 = thoải mái, dễ chịu. '坐着很不舒服' = ngồi rất không thoải mái, vì bàn quá thấp so với người cao."
           },
           {
             "q": 53,
             "text": "您可以选择火车站（　）的宾馆，住那儿会更方便。",
-            "a": "C"
+            "a": "C",
+            "exp": "附近 = gần đó, khu lân cận. '火车站附近的宾馆' = khách sạn gần ga tàu – ở đó sẽ thuận tiện hơn."
           },
           {
             "q": 54,
             "text": "天气冷，你多穿点儿衣服，小心（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "感冒 = cảm cúm. Trời lạnh (天气冷) nên mặc thêm áo, cẩn thận kẻo bị cảm: '小心感冒' = cẩn thận kẻo cảm lạnh."
           },
           {
             "q": 55,
             "text": "对一个女人来说，漂亮、聪明都很重要，但（　）更重要的是快乐。",
-            "a": "A"
+            "a": "A",
+            "exp": "其实 = thực ra. '但其实更重要的是快乐' = nhưng thực ra điều quan trọng hơn là niềm vui – thể hiện sự nhấn mạnh ý thật."
           }
         ]
       },
@@ -599,27 +644,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：请问，现在是十一点吗？B：现在十一点十五了，您的表慢了一（　）。",
-            "a": "A"
+            "a": "A",
+            "exp": "刻 = khắc (15 phút). 一刻 = 15 phút. '您的表慢了一刻' = đồng hồ của ông chậm 15 phút, vì thực tế đã 11 giờ 15."
           },
           {
             "q": 57,
             "text": "A：最近怎么（　）没看见他？B：他去旅游了，可能这个周末才能回来。",
-            "a": "B"
+            "a": "B",
+            "exp": "一直 = mãi, suốt. '最近怎么一直没看见他' = dạo này sao mãi không thấy anh ấy – vì anh ấy đi du lịch (旅游 = du lịch)."
           },
           {
             "q": 58,
             "text": "A：牛奶呢？B：一定是（　）猫喝了。",
-            "a": "E"
+            "a": "E",
+            "exp": "被 = bị (cấu trúc bị động 被…+V). '一定是被猫喝了' = chắc chắn là bị mèo uống mất."
           },
           {
             "q": 59,
             "text": "A：你家的厨房真干净！B：当然了，为了欢迎你，我已经（　）了两个多小时了。",
-            "a": "F"
+            "a": "F",
+            "exp": "打扫 = dọn dẹp, lau chùi. '我已经打扫了两个多小时了' = tôi đã dọn dẹp hơn hai tiếng đồng hồ để chào đón bạn."
           },
           {
             "q": 60,
             "text": "A：买这么多鲜花，今天是谁的生日啊？B：今天是9月10日，教师（　）！这是为老师准备的。",
-            "a": "C"
+            "a": "C",
+            "exp": "节 = ngày lễ. 教师节 = Ngày Nhà giáo (10/9). Mua hoa để chuẩn bị cho ngày Nhà giáo, không phải sinh nhật."
           }
         ]
       },
@@ -634,7 +684,8 @@ const EXAM_DATA = [
               "明天会更好",
               "时间过得太快"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Câu '今天工作不努力，明天努力找工作' = hôm nay không chăm chỉ làm việc thì ngày mai phải chăm chỉ tìm việc → nhấn mạnh phải làm việc chăm chỉ → đáp án A '要努力工作' đúng."
           },
           {
             "q": 62,
@@ -645,7 +696,8 @@ const EXAM_DATA = [
               "学生",
               "经理"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Người nói bảo 'các em' chép từ trên bảng đen (黑板 = bảng đen) vào vở và về nhà viết truyện ngắn ít nhất 100 chữ → đó là lời của giáo viên dặn học sinh → đáp án A '老师' đúng."
           },
           {
             "q": 63,
@@ -656,7 +708,8 @@ const EXAM_DATA = [
               "房间很大",
               "离河很近"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Điều làm anh hài lòng là gần sông (离河很近): có cỏ, cây to và chim; dù trời lạnh nhưng phòng không lạnh chút nào → đáp án C '离河很近' đúng."
           },
           {
             "q": 64,
@@ -667,7 +720,8 @@ const EXAM_DATA = [
               "迟到了",
               "忘了关门"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Dậy muộn, đến công ty thì cuộc họp đã bắt đầu, phải đứng ngoài chờ giờ nghỉ → anh ấy đến muộn (迟到了) → đáp án B đúng."
           },
           {
             "q": 65,
@@ -678,7 +732,8 @@ const EXAM_DATA = [
               "上海变化很大",
               "上海人很热情"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói Thượng Hải thay đổi rất lớn (变化非常大), đi qua con đường cũ gần như không nhận ra → đáp án B '上海变化很大' đúng."
           },
           {
             "q": 66,
@@ -689,7 +744,8 @@ const EXAM_DATA = [
               "以前的丈夫",
               "以前的男朋友"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói rõ: bạn trai của Tiểu Trương là đồng nghiệp cũ của vợ tôi (我妻子以前的同事) → đáp án A '以前的同事' đúng."
           },
           {
             "q": 67,
@@ -700,7 +756,8 @@ const EXAM_DATA = [
               "他正在喝咖啡",
               "咖啡馆在公园旁边"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn kể: gặp bạn cũ, ngồi quán cà phê cạnh công ty rồi về nhà muộn (回来晚了) → anh ấy đã về nhà → đáp án A đúng; quán cà phê ở cạnh công ty nên C sai."
           },
           {
             "q": 68,
@@ -711,7 +768,8 @@ const EXAM_DATA = [
               "课讲得好",
               "对学生要求高"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói dù còn trẻ nhưng thầy dạy rất hay (课讲得很好) nên học sinh đều thích → đáp án B '课讲得好' đúng."
           },
           {
             "q": 69,
@@ -722,7 +780,8 @@ const EXAM_DATA = [
               "水果",
               "果汁"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Nhà có rau, cá, thịt cừu nhưng hết hoa quả (没有水果了); cần mua chuối, nho và dưa hấu → cần mua trái cây → đáp án B '水果' đúng."
           },
           {
             "q": 70,
@@ -733,7 +792,8 @@ const EXAM_DATA = [
               "不像妈妈",
               "鼻子像爸爸"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói mũi và tai giống bố (鼻子…像我爸爸), mắt giống mẹ → đáp án C '鼻子像爸爸' đúng."
           }
         ]
       }
@@ -853,27 +913,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "这次比赛，世界很多国家的运动员都来参加。",
-            "a": "A"
+            "a": "A",
+            "exp": "Nói về cuộc thi bơi (比赛 = cuộc thi) có vận động viên nhiều nước; đáp án A '这是一个很好的机会，但我对自己的游泳成绩不太满意。'(Đây là cơ hội rất tốt, nhưng tôi không hài lòng với thành tích bơi của mình) – cặp ghép chính thức, ý liên hệ khá lỏng."
           },
           {
             "q": 42,
             "text": "外面的风刮得真大！",
-            "a": "C"
+            "a": "C",
+            "exp": "Kêu gió thổi to quá (风刮得真大 = gió thổi to thật); đáp án C '这儿的冬天就是这样，慢慢地你就习惯了。'(Mùa đông ở đây là vậy đó, dần dần anh sẽ quen) – lời trấn an cho đặc điểm mùa đông."
           },
           {
             "q": 43,
             "text": "你那个太旧了，换一个吧。很便宜，就两三千块钱。",
-            "a": "D"
+            "a": "D",
+            "exp": "Khuyên đổi cái cũ (太旧了 = cũ quá) vì rẻ; đáp án D '我的电脑又不能用了，你来帮我看看？'(Máy tính của tôi lại không dùng được rồi, anh đến xem giúp nhé?) – máy cũ hỏng nên cần thay, cặp ghép chính thức của đề."
           },
           {
             "q": 44,
             "text": "孩子已经18岁了，知道怎么照顾自己。",
-            "a": "F"
+            "a": "F",
+            "exp": "Con đã 18 tuổi tự biết chăm sóc bản thân (照顾自己 = tự chăm sóc); đáp án F '你们就别担心了。'(Mọi người đừng lo lắng nữa) – lời trấn an phù hợp."
           },
           {
             "q": 45,
             "text": "他让我告诉你，下午两点半在公司会议室开会。",
-            "a": "B"
+            "a": "B",
+            "exp": "Nhắn giúp lịch họp lúc 14:30 ở phòng họp công ty; đáp án B '我刚才在电梯门口遇到经理了。'(Vừa nãy tôi gặp giám đốc ở cửa thang máy) – giám đốc nhờ chuyển lời, cặp ghép chính thức của đề."
           }
         ]
       },
@@ -889,27 +954,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "终于把教室打扫干净了，她洗澡去了。",
-            "a": "B"
+            "a": "B",
+            "exp": "Nói về việc cô ấy (她) dọn xong lớp rồi đi tắm; đáp án B '妹妹在北京上大学，三年级。'(Em gái học đại học ở Bắc Kinh, năm thứ ba) – cặp ghép chính thức của đề, ý liên hệ khá lỏng (cùng nói về '她')."
           },
           {
             "q": 47,
             "text": "你10岁了？体育怎么样？喜欢打篮球吗？",
-            "a": "E"
+            "a": "E",
+            "exp": "Hỏi một đứa trẻ 10 tuổi về môn thể thao, bóng rổ (打篮球 = chơi bóng rổ); đáp án E '叔叔，您愿意教我吗？'(Chú ơi, chú dạy cháu được không?) – lời xin học của đứa trẻ, phù hợp."
           },
           {
             "q": 48,
             "text": "他是我的同事，需要我为你介绍一下吗？",
-            "a": "A"
+            "a": "A",
+            "exp": "Đề nghị giới thiệu đồng nghiệp (同事 = đồng nghiệp) cho bạn; đáp án A '你认识那位先生，是吗？'(Anh quen quý ông kia à?) – câu hỏi trước khi giới thiệu, phù hợp."
           },
           {
             "q": 49,
             "text": "那你在家休息几天吧。",
-            "a": "C"
+            "a": "C",
+            "exp": "Khuyên ở nhà nghỉ ngơi mấy ngày; đáp án C '他感冒了，有点儿发烧。'(Anh ấy bị cảm cúm, hơi sốt) – lý do cần nghỉ ngơi, phù hợp."
           },
           {
             "q": 50,
             "text": "现在，她觉得那是一件非常快乐的事情。",
-            "a": "D"
+            "a": "D",
+            "exp": "Giờ cô ấy thấy đó là chuyện rất vui; đáp án D '女儿第一次骑马的时候比较害怕。'(Lúc đầu con gái cưỡi ngựa khá sợ) – lúc đầu sợ, giờ thấy vui, cặp ghép chính thức của đề."
           }
         ]
       },
@@ -926,27 +996,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "您站中间就可以了，好，再（　）左边一点儿，非常好！",
-            "a": "A"
+            "a": "A",
+            "exp": "向 = về phía, hướng về. '再向左边一点儿' = hơi dịch về phía bên trái một chút nữa – lời chỉnh tư thế chụp ảnh."
           },
           {
             "q": 52,
             "text": "服务员，请你再给我拿一双（　）。",
-            "a": "D"
+            "a": "D",
+            "exp": "筷子 = đũa. 一双筷子 = một đôi đũa. '请你再给我拿一双筷子' = nhờ phục vụ mang thêm một đôi đũa."
           },
           {
             "q": 53,
             "text": "虽然这两个问题有不一样的地方，但是解决的办法是（　）的。",
-            "a": "F"
+            "a": "F",
+            "exp": "相同 = giống nhau. '解决的办法是相同的' = cách giải quyết là giống nhau. Cấu trúc 虽然…但是… = mặc dù… nhưng…"
           },
           {
             "q": 54,
             "text": "这次出去旅游，一共去了7个城市，（　）了一万多块钱。",
-            "a": "C"
+            "a": "C",
+            "exp": "花 = tiêu (tiền). '花了一万多块钱' = tiêu hơn một vạn đồng – khi đi du lịch (旅游 = du lịch) thường tốn tiền."
           },
           {
             "q": 55,
             "text": "明天早上我先去银行，（　）再去找你。",
-            "a": "B"
+            "a": "B",
+            "exp": "然后 = sau đó. '明天早上我先去银行，然后再去找你' = sáng mai tôi đi ngân hàng trước, sau đó đi tìm bạn – diễn tả thứ tự trước sau."
           }
         ]
       },
@@ -963,27 +1038,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：下一个（　）是什么？B：下面为大家唱歌的是王医生，歌的名字是《十五的月亮》，大家欢迎！",
-            "a": "E"
+            "a": "E",
+            "exp": "节目 = tiết mục. '下一个节目是什么' = tiết mục tiếp theo là gì; người B giới thiệu tiết mục hát của bác sĩ Vương."
           },
           {
             "q": 57,
             "text": "A：我的飞机票呢？怎么（　）找不到了？B：是不是和报纸放一起了？",
-            "a": "C"
+            "a": "C",
+            "exp": "突然 = bỗng nhiên, đột nhiên. '怎么突然找不到了' = sao bỗng dưng không tìm thấy – vé máy bay (飞机票 = vé máy bay) đột nhiên không thấy."
           },
           {
             "q": 58,
             "text": "A：现在几点了？我的手表又坏了。B：我看一下，现在（　）一刻九点。",
-            "a": "B"
+            "a": "B",
+            "exp": "差 = kém, thiếu. 差一刻九点 = 9 giờ kém 15 phút (tức 8 giờ 45). Đồng hồ hỏng nên hỏi giờ, người B xem và báo."
           },
           {
             "q": 59,
             "text": "A：那本书你（　）了？B：对，没什么意思，而且很多地方看不懂。",
-            "a": "F"
+            "a": "F",
+            "exp": "还 = trả lại (đọc huán). '那本书你还了？' = cuốn sách đó bạn trả lại rồi à? Người B xác nhận: cuốn sách chán và nhiều chỗ không hiểu."
           },
           {
             "q": 60,
             "text": "A：那个药的作用怎么样？脚好些了吗？B：好多了，谢谢您的（　）。",
-            "a": "A"
+            "a": "A",
+            "exp": "关心 = quan tâm. '谢谢您的关心' = cảm ơn sự quan tâm của ông – lời cảm ơn sau khi được hỏi thăm sức khỏe."
           }
         ]
       },
@@ -998,7 +1078,8 @@ const EXAM_DATA = [
               "椅子上",
               "办公室"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói con mèo già ngủ dưới gốc cây (在树下睡觉) mỗi lần đi qua nhà anh ấy → đáp án A '树下' (dưới gốc cây) đúng."
           },
           {
             "q": 62,
@@ -1009,7 +1090,8 @@ const EXAM_DATA = [
               "帮助别人",
               "发现问题"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói nhiều người Trung Quốc cho rằng 'ăn bảy phần no' rất có ích cho sức khỏe (对身体健康很有帮助) → đáp án A '健康' (sức khỏe) đúng."
           },
           {
             "q": 63,
@@ -1020,7 +1102,8 @@ const EXAM_DATA = [
               "很有名",
               "有很多故事"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói chuối ở đây rất nổi tiếng (非常有名), mỗi năm 8 tháng có lễ hội chuối, mùa hè nhiều người đến chơi → đáp án B '很有名' (rất nổi tiếng) đúng."
           },
           {
             "q": 64,
@@ -1031,7 +1114,8 @@ const EXAM_DATA = [
               "腿很长",
               "有60公斤"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói anh ấy họ Cao nhưng không cao, chỉ 1 mét 6 (只有一米六) → đáp án A '比较矮' (khá thấp) đúng."
           },
           {
             "q": 65,
@@ -1042,7 +1126,8 @@ const EXAM_DATA = [
               "天气不错",
               "他工作很认真"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn lấy làm lạ vì hôm nay anh ấy dậy sớm (怎么这么早就起床了), bình thường anh ngủ đến sau 8 giờ → đáp án A '他起得早' (anh ấy dậy sớm) đúng."
           },
           {
             "q": 66,
@@ -1053,7 +1138,8 @@ const EXAM_DATA = [
               "写短信",
               "做练习"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói ngoài gọi điện, nhắn tin (写短信 = nhắn tin), nhiều điện thoại còn chụp ảnh được → đáp án B '写短信' (nhắn tin) là việc hay được dùng, đúng."
           },
           {
             "q": 67,
@@ -1064,7 +1150,8 @@ const EXAM_DATA = [
               "见面",
               "离开"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn giải thích '再见' (tạm biệt) có nghĩa 'gặp lại lần nữa', nói khi rời đi (离开) với mong muốn gặp lại → đáp án C '离开' (rời đi) đúng."
           },
           {
             "q": 68,
@@ -1075,7 +1162,8 @@ const EXAM_DATA = [
               "低着头",
               "多喝牛奶"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn dặn khi ăn dưa hấu (西瓜 = dưa hấu) nhiều nước phải cúi đầu (低下头) để không dính vào mặt và áo → đáp án B '低着头' (cúi đầu) đúng."
           },
           {
             "q": 69,
@@ -1086,7 +1174,8 @@ const EXAM_DATA = [
               "角",
               "分"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn giải thích: số 1 đầu là 元, số 2 ở giữa là 角, số cuối là 分 → số ở giữa (中间的数字) là '角' → đáp án B đúng."
           },
           {
             "q": 70,
@@ -1097,7 +1186,8 @@ const EXAM_DATA = [
               "手表",
               "铅笔"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn kể lúc nào cũng có học sinh quên mang bút chì (忘了拿铅笔) → đáp án C '铅笔' (bút chì) đúng."
           }
         ]
       }
@@ -1219,27 +1309,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "方便给我们介绍一下吗？他是谁啊？",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu hỏi “方便给我们介绍一下吗？他是谁啊？” (Tiện giới thiệu một chút được không? Anh ấy là ai?) muốn biết người đó là ai, nên đáp án C “这位就是我的新男朋友” (Đây chính là bạn trai mới của tôi) dùng để giới thiệu, rất hợp."
           },
           {
             "q": 42,
             "text": "你和王小姐的关系怎么样？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu hỏi “你和王小姐的关系怎么样？” (Quan hệ giữa anh và cô Vương thế nào?) được đáp án D “一般吧，我们上个月才认识，只是普通朋友” (Bình thường thôi, chúng tôi tháng trước mới quen, chỉ là bạn thường) trả lời trực tiếp về quan hệ."
           },
           {
             "q": 43,
             "text": "800多块，虽然比较贵，但穿着很舒服。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu “800多块，虽然比较贵” (hơn 800 tệ, tuy hơi đắt) nói về giá, nên đáp án B “这双运动鞋是新买的？多少钱买的？” (Đôi giày thể thao này mới mua à? Bao nhiêu tiền?) hỏi về giá giày, liên quan chặt chẽ."
           },
           {
             "q": 44,
             "text": "她在看电视，我去叫她。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “去洗洗手，准备碗筷，吃饭了，你妈妈呢？” (Đi rửa tay, chuẩn bị bát đũa, ăn cơm, mẹ cậu đâu?) hỏi mẹ đang ở đâu, còn câu trả lời “她在看电视，我去叫她” (Cô ấy đang xem tivi, tôi đi gọi) chính là câu trả lời — đây là cặp ghép chính thức."
           },
           {
             "q": 45,
             "text": "小时候奶奶给我讲过，很有名。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “七个小矮人的故事，你听说过吗？” (Chuyện bảy chú lùn, cậu nghe bao giờ chưa?) hỏi về câu chuyện, còn câu trả lời “小时候奶奶给我讲过，很有名” (Hồi nhỏ bà tôi đã kể, rất nổi tiếng) — liên quan đến việc đã nghe kể."
           }
         ]
       },
@@ -1255,27 +1350,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "怎么办啊？我又胖了两公斤。",
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói lo lắng vì “又胖了两公斤” (lại tăng hai ký), đáp án C “没关系，我觉得你这样更可爱。健康才是最重要的” (Không sao, tôi thấy bạn như thế đáng yêu hơn, sức khỏe mới quan trọng nhất) là lời an ủi."
           },
           {
             "q": 47,
             "text": "快点儿吧，再有一个小时就要考试了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Vì “再有一个小时就要考试了” (còn một tiếng nữa là thi) nên phải nhanh, đáp án A “别担心，我坐出租车去，30分钟就到学校了” (Đừng lo, tôi đi taxi, 30 phút là đến trường) trấn an là vẫn kịp."
           },
           {
             "q": 48,
             "text": "在行李箱里呢，我来拿，还是你自己去拿？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu “在行李箱里呢” (ở trong vali ấy) trả lời câu hỏi đồ ở đâu của đáp án D “你不是说给我带礼物了吗？是什么？让我看看” (Chẳng phải anh nói mang quà cho tôi à? Là gì? Cho tôi xem với) — đồ đã được mang về."
           },
           {
             "q": 49,
             "text": "房间很干净，还能上网，那我们先住这儿吧。",
-            "a": "E"
+            "a": "E",
+            "exp": "Câu “那我们先住这儿吧” (Vậy chúng ta cứ ở đây nhé) là lời đồng ý, trả lời đáp án E “我觉得这家宾馆还不错，你说呢？” (Tôi thấy khách sạn này cũng được, bạn thấy sao?) — cùng đề cập chỗ ở."
           },
           {
             "q": 50,
             "text": "面包、水、地图都准备好了，我们还需要带什么？",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu hỏi “还需要带什么？” (còn cần mang gì nữa?) về việc chuẩn bị đồ, đáp án B “我们是去旅游，不是搬家，还是少拿一些吧” (Chúng ta đi du lịch chứ không phải chuyển nhà, mang bớt chút đi) nhắc nhẹ nhàng."
           }
         ]
       },
@@ -1292,27 +1392,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "会议9点半能（　）吗？外面有人找王经理。",
-            "a": "B"
+            "a": "B",
+            "exp": "“结束” (kết thúc). Câu hỏi “会议9点半能结束吗？” (Cuộc họp 9 giờ 30 có kết thúc được không?) vì bên ngoài có người tìm Giám đốc Vương, cần họp xong sớm."
           },
           {
             "q": 52,
             "text": "作业写完了要好好（　）一下，注意别写错字。",
-            "a": "F"
+            "a": "F",
+            "exp": "“检查” (kiểm tra). Viết xong bài tập phải “检查一下” (kiểm tra lại) để tránh viết sai chữ, rất hợp nghĩa."
           },
           {
             "q": 53,
             "text": "他从小就对电子游戏有（　），长大后他选择了和游戏有关的工作。",
-            "a": "C"
+            "a": "C",
+            "exp": "“兴趣” (sở thích, hứng thú). Anh ấy từ nhỏ đã “对电子游戏有兴趣” (có hứng thú với trò chơi điện tử), nên sau này chọn công việc liên quan đến trò chơi."
           },
           {
             "q": 54,
             "text": "现在的（　）人结婚越来越晚了。",
-            "a": "D"
+            "a": "D",
+            "exp": "“年轻” (trẻ). Câu nói “现在的年轻人” (giới trẻ hiện nay) kết hôn ngày càng muộn, đây là cách nói thông dụng."
           },
           {
             "q": 55,
             "text": "（　）更好地解决问题，必须提高自己的水平。",
-            "a": "A"
+            "a": "A",
+            "exp": "“为了” (để). Câu “为了更好地解决问题” (để giải quyết vấn đề tốt hơn) phải nâng cao trình độ của bản thân — “为了” biểu thị mục đích."
           }
         ]
       },
@@ -1329,27 +1434,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：哥，刚才说的那个数学题怎么做啊？B：很简单，我（　）你。",
-            "a": "F"
+            "a": "F",
+            "exp": "“教” (dạy). Người anh đáp “很简单，我教你” (Đơn giản, tôi dạy cậu) — vì em hỏi bài toán làm thế nào nên anh sẽ dạy."
           },
           {
             "q": 57,
             "text": "A：你都很长时间没锻炼了，下午和我去爬山吧。B：我昨天刚打了篮球，今天腿还（　）呢。",
-            "a": "B"
+            "a": "B",
+            "exp": "“疼” (đau). Hôm qua vừa đánh bóng rổ nên “今天腿还疼呢” (hôm nay chân vẫn còn đau), hợp lý."
           },
           {
             "q": 58,
             "text": "A：比赛（　）很简单，5分钟，谁踢进的球最多，谁就是第一。B：明白了，可以开始了吗？",
-            "a": "E"
+            "a": "E",
+            "exp": "“要求” (yêu cầu). “比赛要求很简单” (yêu cầu của trận đấu rất đơn giản): 5 phút, ai ghi được nhiều bàn nhất là nhất — giải thích luật thi đấu."
           },
           {
             "q": 59,
             "text": "A：晚上在哪儿见面？B：就上次我们去过的那个（　），那儿附近有一家咖啡馆很安静。",
-            "a": "C"
+            "a": "C",
+            "exp": "“地方” (nơi, chỗ). “就上次我们去过的那个地方” (đúng chỗ lần trước chúng ta từng đến) trả lời câu hỏi gặp nhau ở đâu."
           },
           {
             "q": 60,
             "text": "A：你喜欢这种音乐节目？B：（　）我只想听听那些老歌。",
-            "a": "A"
+            "a": "A",
+            "exp": "“其实” (thực ra). “其实我只想听听那些老歌” (Thực ra tôi chỉ muốn nghe những bài hát cũ) — nêu ý thật, phủ nhận nhẹ ý ở câu hỏi."
           }
         ]
       },
@@ -1364,7 +1474,8 @@ const EXAM_DATA = [
               "小",
               "清楚"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Người nói bảo “你声音大一点儿好吗？我刚才没听清楚” (bạn nói to lên chút được không, tôi vừa rồi nghe không rõ), vì vậy giọng của người kia rất nhỏ (小)."
           },
           {
             "q": 62,
@@ -1375,7 +1486,8 @@ const EXAM_DATA = [
               "笑能使人聪明",
               "爱笑的人更认真"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói “笑一笑，十年少” (cười một cái trẻ mười tuổi), nên con người nên thường cười, tức là nên vui vẻ (快乐) để trẻ lâu."
           },
           {
             "q": 63,
@@ -1386,7 +1498,8 @@ const EXAM_DATA = [
               "能看到表演",
               "共有上千种啤酒"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói ở lễ hội bia có “歌舞表演更是让人难忘” (biểu diễn ca múa càng đáng nhớ), nên ở lễ hội bia có thể xem biểu diễn (表演)."
           },
           {
             "q": 64,
@@ -1397,7 +1510,8 @@ const EXAM_DATA = [
               "车站有电梯",
               "旁边有火车站"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói “15号地铁经过我家附近” (tuyến metro số 15 đi qua gần nhà tôi), nên ga metro cách nhà anh ấy không xa (离他家不远)."
           },
           {
             "q": 65,
@@ -1408,7 +1522,8 @@ const EXAM_DATA = [
               "声音很小",
               "出现了问题"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói điều hòa (空调) mới “声音非常小，几乎没有声音” (tiếng rất nhỏ, gần như không có tiếng), nên đáp án là tiếng rất nhỏ (声音很小)."
           },
           {
             "q": 66,
@@ -1419,7 +1534,8 @@ const EXAM_DATA = [
               "有更多选择",
               "更相信自己"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói nếu buông (放开) vật trong tay ra thì sẽ “有机会选择其他的” (có cơ hội chọn những thứ khác), tức là có thêm nhiều sự lựa chọn (更多选择)."
           },
           {
             "q": 67,
@@ -1430,7 +1546,8 @@ const EXAM_DATA = [
               "喜欢换环境",
               "喜欢白天休息"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói con mèo nhà tôi “总是习惯白天睡觉” (luôn quen ngủ ban ngày), tức là thích nghỉ ngơi vào ban ngày (喜欢白天休息)."
           },
           {
             "q": 68,
@@ -1441,7 +1558,8 @@ const EXAM_DATA = [
               "没完成工作",
               "很喜欢喝茶"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn mở đầu “茶是我的最爱” (trà là sở thích nhất của tôi), nên có thể biết anh ấy rất thích uống trà (很喜欢喝茶)."
           },
           {
             "q": 69,
@@ -1452,7 +1570,8 @@ const EXAM_DATA = [
               "是卖衣服的",
               "拿错了衣服"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Anh ấy phát hiện “昨天从你们这儿拿回去的衣服不是我的” (quần áo lấy về hôm qua không phải của mình), tức là đã cầm nhầm quần áo (拿错了衣服)."
           },
           {
             "q": 70,
@@ -1463,7 +1582,8 @@ const EXAM_DATA = [
               "很好吃",
               "不想玩了"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói trẻ con dùng khóc cười để biểu lộ “很高兴、很满意” (rất vui, rất hài lòng); trẻ cười có thể vì đồ ăn ngon (很好吃) và hài lòng."
           }
         ]
       }
@@ -1586,27 +1706,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "我天天去游泳，你没发现我瘦了？",
-            "a": "F"
+            "a": "F",
+            "exp": "Câu “我天天去游泳” (tôi ngày nào cũng đi bơi) trả lời đáp án F “你这么忙，有时间去运动吗？” (Bận thế này mà có thời gian vận động à?) — bơi là một môn vận động, liên quan chặt chẽ."
           },
           {
             "q": 42,
             "text": "我丈夫给他介绍了一家电脑公司，但他还没决定去不去。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu nói về việc “我丈夫给他介绍了一家电脑公司” (chồng tôi giới thiệu một công ty máy tính cho nó) là câu trả lời cho đáp án D “你弟弟的工作怎么样了？” (Công việc của em trai cậu thế nào?) — nói về công việc."
           },
           {
             "q": 43,
             "text": "没问题，我昨天下午就准备好了。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “明天的考试要求带铅笔” (Kỳ thi ngày mai yêu cầu mang bút chì) thông báo yêu cầu, câu “没问题，我昨天下午就准备好了” (Không vấn đề, chiều qua tôi đã chuẩn bị xong) là lời xác nhận đã chuẩn bị."
           },
           {
             "q": 44,
             "text": "大家都觉得他又聪明又可爱。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu “大家都觉得他又聪明又可爱” (Ai cũng thấy nó vừa thông minh vừa đáng yêu) khen ngợi một đứa trẻ, cùng nội dung khen ngợi với đáp án C “这么小就会写自己的名字了？真不简单” (Bé vậy mà đã biết viết tên mình, thật không đơn giản)."
           },
           {
             "q": 45,
             "text": "你看见我的眼镜了吗？又找不到了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu hỏi “你看见我的眼镜了吗？” (Cậu thấy kính của tôi không?) tìm kính, đáp án A “问我吗？在报纸下面吧” (Hỏi tôi à? Ở dưới tờ báo đấy) cho biết vị trí chiếc kính."
           }
         ]
       },
@@ -1622,27 +1747,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "你相信吗？这把椅子去年春天卖100万。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu nói “这把椅子去年春天卖100万” (cái ghế này mùa xuân năm ngoái bán 100 vạn) về giá cả, đáp án B “阿姨，那您买的时候花了多少钱？” (Bác ơi, vậy lúc bác mua hết bao nhiêu tiền?) hỏi về giá, liên quan chặt chẽ."
           },
           {
             "q": 47,
             "text": "真的？那我穿裤子好了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “你这条裙子是不是有点儿短？” (Chiếc váy này của cậu hơi ngắn thì phải?) nhận xét về váy, câu “真的？那我穿裤子好了” (Thật à? Vậy tôi mặc quần cho rồi) đồng tình và đổi ý không mặc váy."
           },
           {
             "q": 48,
             "text": "第一次见面我就喜欢上他了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu “第一次见面我就喜欢上他了” (Ngay lần gặp đầu tôi đã thích anh ấy rồi) trả lời đáp án A “你了解他吗？这么快就和他结婚了！” (Cậu hiểu anh ấy không? Kết hôn nhanh thế!) — ngạc nhiên vì quen nhau quá nhanh."
           },
           {
             "q": 49,
             "text": "你累了吧？休息一下，我来做饭。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu đề nghị “我来做饭” (để tôi nấu cơm), đáp án D “不用客气了，你一会儿洗碗筷和盘子吧” (Khỏi khách sáo, lát nữa cậu rửa bát đũa và đĩa nhé) nhận lời giúp và giao việc lại — liên quan việc bếp núc."
           },
           {
             "q": 50,
             "text": "你们上次去的那个饭馆儿离这儿远吗？",
-            "a": "E"
+            "a": "E",
+            "exp": "Câu hỏi “离这儿远吗？” (có xa đây không?) về khoảng cách, đáp án E “很近，就在这条街的后面” (Rất gần, ngay phía sau con phố này) trả lời về khoảng cách."
           }
         ]
       },
@@ -1659,27 +1789,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "蓝天，白云，（　）树，那儿的环境真好。",
-            "a": "B"
+            "a": "B",
+            "exp": "“绿” (xanh). Câu “蓝天，白云，绿树” (trời xanh, mây trắng, cây xanh) miêu tả cảnh đẹp, “绿树” (cây xanh) rất hợp với bối cảnh môi trường tốt."
           },
           {
             "q": 52,
             "text": "妹妹的孩子今年7岁了，应该上一（　）了。",
-            "a": "F"
+            "a": "F",
+            "exp": "“年级” (khối lớp). Trẻ 7 tuổi nên vào “一年级” (lớp một), “上年级” (lên lớp) là cách nói chuẩn."
           },
           {
             "q": 53,
             "text": "有不懂的地方，就去查字典，这是一个比较好的学习（　）。",
-            "a": "D"
+            "a": "D",
+            "exp": "“习惯” (thói quen). “学习习惯” (thói quen học tập): gặp chỗ không hiểu thì tra từ điển là một thói quen tốt."
           },
           {
             "q": 54,
             "text": "爸爸，您每天喝杯红葡萄酒，对（　）很有帮助。",
-            "a": "C"
+            "a": "C",
+            "exp": "“健康” (sức khỏe). Uống một ly rượu vang đỏ mỗi ngày “对健康很有帮助” (rất có ích cho sức khỏe), hợp với lời khuyên dành cho bố."
           },
           {
             "q": 55,
             "text": "跟以前比，我现在的普通话（　）得好多了。",
-            "a": "A"
+            "a": "A",
+            "exp": "“讲” (nói). “普通话讲得好多了” (tiếng phổ thông nói tốt hơn nhiều) — “讲普通话” (nói tiếng phổ thông) là kết hợp thông dụng."
           }
         ]
       },
@@ -1696,27 +1831,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：这是一个（　）好的机会啊！你必须去。B：一共只有两个月？那好吧。",
-            "a": "B"
+            "a": "B",
+            "exp": "“多么” (biết bao). “这是一个多么好的机会啊！” (Đây là một cơ hội tốt biết bao!) — “多么…啊” biểu thị sự cảm thán mạnh."
           },
           {
             "q": 57,
             "text": "A：地图上这儿有条（　），怎么没看见啊？B：你看错了，还在前面呢。",
-            "a": "C"
+            "a": "C",
+            "exp": "“河” (con sông). “地图上这儿有条河” (trên bản đồ chỗ này có một con sông), “条” là lượng từ đi với sông, rất hợp."
           },
           {
             "q": 58,
             "text": "A：我画完了，您看看，（　）吗？B：好极了，你画得越来越好了。",
-            "a": "E"
+            "a": "E",
+            "exp": "“满意” (hài lòng). Câu “您看看，满意吗？” (Bác xem, có hài lòng không?) xin ý kiến, và đáp lại “好极了” (tuyệt vời) là hài lòng."
           },
           {
             "q": 59,
             "text": "A：你（　）回来了，啤酒买了吗？B：医生不让你喝酒吃肉。我买了些果汁和牛奶。",
-            "a": "F"
+            "a": "F",
+            "exp": "“终于” (cuối cùng). “你终于回来了” (Cuối cùng anh cũng về rồi) biểu thị sự chờ đợi lâu, rất hợp với giọng đợi mong."
           },
           {
             "q": 60,
             "text": "A：您做过哪些工作？B：我以前是大学老师，主要（　）东西方文化比较。",
-            "a": "A"
+            "a": "A",
+            "exp": "“教” (giảng dạy). “主要教东西方文化比较” (chủ yếu giảng dạy môn so sánh văn hóa Đông - Tây) — giáo viên đại học “教” (dạy) một môn học."
           }
         ]
       },
@@ -1731,7 +1871,8 @@ const EXAM_DATA = [
               "秋天",
               "冬天"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói rõ “我们用黄色表示秋季” (chúng ta dùng màu vàng để biểu thị mùa thu), nên màu vàng thường được dùng để biểu thị mùa thu (秋天)."
           },
           {
             "q": 62,
@@ -1742,7 +1883,8 @@ const EXAM_DATA = [
               "男朋友很难过",
               "男朋友要送她花"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Cô ấy “看到男朋友拿着鲜花站在门口” (thấy bạn trai cầm hoa tươi đứng ở cửa), nên có thể biết bạn trai muốn tặng hoa cho cô (送她花)."
           },
           {
             "q": 63,
@@ -1753,7 +1895,8 @@ const EXAM_DATA = [
               "很容易做",
               "是一种面包"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói làm “水果饭” (cơm trái cây) “其实很简单” (thật ra rất đơn giản): nấu cơm rồi cho trái cây tươi vào là xong."
           },
           {
             "q": 64,
@@ -1764,7 +1907,8 @@ const EXAM_DATA = [
               "想学习汉语",
               "下星期不在北京"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Vì “我下星期不在北京，没办法去机场送你了” (tuần sau tôi không ở Bắc Kinh, không đến sân bay tiễn được) nên phải tặng quà bây giờ."
           },
           {
             "q": 65,
@@ -1775,7 +1919,8 @@ const EXAM_DATA = [
               "身体不太好",
               "帮我解决问题"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói “在我遇到问题的时候帮助过我” (đã giúp tôi lúc tôi gặp vấn đề), tức là anh ấy giúp tôi giải quyết vấn đề (帮我解决问题)."
           },
           {
             "q": 66,
@@ -1786,7 +1931,8 @@ const EXAM_DATA = [
               "要洗干净",
               "别用太长时间"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Câu tục ngữ “有借有还，再借不难” (mượn có trả, mượn lại chẳng khó) nghĩa là mượn đồ phải trả lại, tức là phải nhớ trả (记得还)."
           },
           {
             "q": 67,
@@ -1797,7 +1943,8 @@ const EXAM_DATA = [
               "一共有两层",
               "下层不能坐人"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói “这辆车有上下两层” (chiếc xe này có tầng trên và tầng dưới), tức là xe có tổng cộng hai tầng (一共有两层)."
           },
           {
             "q": 68,
@@ -1808,7 +1955,8 @@ const EXAM_DATA = [
               "看比赛了",
               "看表演了"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Tiểu Vương tự nói “昨晚看球赛，两点才睡觉” (tối qua xem bóng đá, 2 giờ mới ngủ), tức là tối qua anh ấy đã xem thi đấu (看比赛了)."
           },
           {
             "q": 69,
@@ -1819,7 +1967,8 @@ const EXAM_DATA = [
               "鼻子不舒服",
               "不想说再见"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Cô ấy khóc vì nghe một đứa trẻ hát “月亮船” (Thuyền Trăng), “使她突然想起了很多过去的事情” (làm cô chợt nhớ ra nhiều chuyện quá khứ)."
           },
           {
             "q": 70,
@@ -1830,7 +1979,8 @@ const EXAM_DATA = [
               "在花园里",
               "送吃的东西"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói quán trà này “除了茶水，还送一些吃的” (ngoài trà ra còn tặng thêm đồ ăn), tức là quán trà có tặng đồ ăn (送吃的东西)."
           }
         ]
       }
@@ -1948,27 +2098,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "这个帽子真可爱，你在哪儿买的？",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu hỏi “你在哪儿买的？” (Cậu mua ở đâu thế?) hỏi về chiếc mũ, đáp án B “那是我叔叔去年送我的生日礼物” (Đó là quà sinh nhật năm ngoái chú tôi tặng) trả lời về nguồn gốc chiếc mũ."
           },
           {
             "q": 42,
             "text": "是的，特别是足球比赛，她喜欢踢足球。",
-            "a": "F"
+            "a": "F",
+            "exp": "Câu “是的，特别是足球比赛” (Đúng vậy, nhất là trận bóng đá) xác nhận đáp án F “你妹妹也爱看体育节目啊？” (Em gái cậu cũng thích xem chương trình thể thao à?) — cùng nói về sở thích thể thao."
           },
           {
             "q": 43,
             "text": "又渴又累，腿也疼。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu “又渴又累，腿也疼” (vừa khát vừa mệt, chân cũng đau) là câu trả lời cho đáp án C “跑完一万米后，你觉得怎么样？” (Chạy xong 10.000 mét rồi, cậu thấy thế nào?) — miêu tả cảm giác sau khi chạy."
           },
           {
             "q": 44,
             "text": "这个周末大家都去唱歌，你和我们一起去？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu rủ “你和我们一起去？” (Cậu đi cùng chúng tôi không?) được đáp án D “好的，如果没什么其他事，我一定去” (Được, nếu không có việc gì khác thì tôi nhất định đi) đồng ý nhận lời."
           },
           {
             "q": 45,
             "text": "你认真点儿，其实很简单。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “这是一年级的数学题？这么难！” (Đây là bài toán lớp một à? Khó vậy!) than bài toán khó, còn câu “你认真点儿，其实很简单” (Nghiêm túc chút, thật ra rất đơn giản) trấn an — liên quan đến độ khó của bài."
           }
         ]
       },
@@ -1984,27 +2139,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "你总是这么慢，快7点了，要迟到了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu thúc giục “快7点了，要迟到了” (sắp 7 giờ, sắp muộn rồi), đáp án C “你等我一下，我换件衬衫就来” (Đợi tôi một lát, tôi thay áo sơ mi là đến ngay) cho biết sẽ nhanh chóng đi."
           },
           {
             "q": 47,
             "text": "宾馆附近有银行吗？",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu hỏi “宾馆附近有银行吗？” (Gần khách sạn có ngân hàng không?) được đáp án A “东边有一家，但是要到9点才开门” (Phía đông có một nhà, nhưng 9 giờ mới mở cửa) trả lời về vị trí ngân hàng."
           },
           {
             "q": 48,
             "text": "你出去的时候，记得把灯关上。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu dặn “记得把灯关上” (nhớ tắt đèn), đáp án B “放心吧，我不会忘记的” (Yên tâm, tôi sẽ không quên) hứa sẽ làm theo."
           },
           {
             "q": 49,
             "text": "不能只是着急和生气。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E “孩子，遇到问题时，你应该想办法去解决” (Này con, gặp vấn đề thì phải nghĩ cách giải quyết) là lời khuyên, và câu “不能只是着急和生气” (Không thể chỉ vội vàng và tức giận) chính là ý đó — không nên chỉ lo buồn."
           },
           {
             "q": 50,
             "text": "我也不知道，你去查一下字典吧。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu “你去查一下字典吧” (Cậu tra từ điển đi) trả lời đáp án D “姐姐，这个词是什么意思啊？” (Chị ơi, từ này nghĩa là gì ạ?) — hỏi nghĩa của từ."
           }
         ]
       },
@@ -2021,27 +2181,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "这个城市已经有900多年的历史了，非常（　）。",
-            "a": "A"
+            "a": "A",
+            "exp": "“有名” (nổi tiếng). Thành phố có hơn 900 năm lịch sử nên rất “有名” (nổi tiếng) — vì lịch sử lâu đời nên nổi tiếng, rất hợp."
           },
           {
             "q": 52,
             "text": "因为工作比较忙，小李最近（　）了很多。",
-            "a": "F"
+            "a": "F",
+            "exp": "“瘦” (gầy). Vì công việc bận rộn, Tiểu Lý gần đây “瘦了很多” (gầy đi nhiều) — lý do công việc bận làm người gầy đi, hợp lý."
           },
           {
             "q": 53,
             "text": "春、夏、秋、冬，你最喜欢哪个（　）？",
-            "a": "C"
+            "a": "C",
+            "exp": "“季节” (mùa). Xuân, hạ, thu, đông là bốn “季节” (mùa) trong năm, câu hỏi bạn thích mùa nào nhất."
           },
           {
             "q": 54,
             "text": "你阿姨的（　）真大，我几乎没认出她来。",
-            "a": "B"
+            "a": "B",
+            "exp": "“变化” (thay đổi). “你阿姨的变化真大” (Sự thay đổi của dì cậu thật lớn), đến mức gần như không nhận ra — hợp với ngữ cảnh lâu ngày không gặp."
           },
           {
             "q": 55,
             "text": "从我们学校坐公共汽车去火车站，（　）需要10分钟。",
-            "a": "D"
+            "a": "D",
+            "exp": "“只” (chỉ). “只需要10分钟” (chỉ cần 10 phút) — “只” biểu thị số lượng ít, nhấn mạnh thời gian ngắn."
           }
         ]
       },
@@ -2058,27 +2223,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：音乐会的门票我放在桌子上了，（　）4张。B：我看见了，谢谢你。",
-            "a": "C"
+            "a": "C",
+            "exp": "“一共” (tổng cộng). “一共4张” (tổng cộng 4 tấm vé) — “一共” dùng để nói tổng số, rất hợp với việc đếm vé."
           },
           {
             "q": 57,
             "text": "A：（　）以后不能再吃东西了。B：妈，您说第1001次了。",
-            "a": "A"
+            "a": "A",
+            "exp": "“刷牙” (đánh răng). “刷牙以后不能再吃东西了” (Sau khi đánh răng không được ăn nữa) — mẹ dặn con sau khi đánh răng không ăn, là lời dặn quen thuộc."
           },
           {
             "q": 58,
             "text": "A：小姐，葡萄多少钱一斤？B：3块。今天的葡萄很（　），也很甜。",
-            "a": "F"
+            "a": "F",
+            "exp": "“新鲜” (tươi). Người bán nói “今天的葡萄很新鲜，也很甜” (nho hôm nay rất tươi và cũng rất ngọt) — khen nho tươi ngon để bán hàng."
           },
           {
             "q": 59,
             "text": "A：喂，上次（　）的那本书，晚几天还你可以吗？B：没问题，我现在在外地，回去再说。",
-            "a": "E"
+            "a": "E",
+            "exp": "“借” (mượn). “上次借的那本书” (cuốn sách mượn lần trước) — hỏi trả muộn vài ngày, “借书” (mượn sách) là kết hợp thông dụng."
           },
           {
             "q": 60,
             "text": "A：天终于晴了，好久没看见（　）了。B：天气这么好，我们去河边走走？",
-            "a": "B"
+            "a": "B",
+            "exp": "“太阳” (mặt trời). “好久没看见太阳了” (lâu rồi không thấy mặt trời) — trời mưa lâu ngày nên không thấy mặt trời, và giờ trời tạnh nên thấy lại."
           }
         ]
       },
@@ -2093,7 +2263,8 @@ const EXAM_DATA = [
               "多帮助别人",
               "提高对自己的要求"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói “站得高，才能看得远” (đứng cao mới nhìn xa), muốn hiểu biết nhiều hơn thì “对自己的要求高一些” (yêu cầu bản thân cao hơn), tức là nâng cao yêu cầu với bản thân."
           },
           {
             "q": 62,
@@ -2104,7 +2275,8 @@ const EXAM_DATA = [
               "很聪明",
               "有个黑鼻子"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói tai, mắt, mũi (鼻子) của gấu trúc đều màu đen, nên gấu trúc có cái mũi đen (有个黑鼻子)."
           },
           {
             "q": 63,
@@ -2115,7 +2287,8 @@ const EXAM_DATA = [
               "容易看到月亮",
               "他没去过北京"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Tiểu Minh giải thích “因为我经常可以看到月亮” (vì tôi thường xuyên nhìn thấy mặt trăng) còn muốn thấy Bắc Kinh phải mất rất nhiều thời gian — tức là mặt trăng dễ nhìn thấy (容易看到)."
           },
           {
             "q": 64,
@@ -2126,7 +2299,8 @@ const EXAM_DATA = [
               "有不少错字",
               "被发现还有问题"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói anh ấy “说那本书里还有一个问题” (bảo trong cuốn sách vẫn còn một vấn đề), tức là cuốn sách bị phát hiện vẫn còn vấn đề (被发现还有问题)."
           },
           {
             "q": 65,
@@ -2137,7 +2311,8 @@ const EXAM_DATA = [
               "去机场接人",
               "要照顾病人"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nhờ Tiểu Hoàng “去机场接李先生” (đi sân bay đón ông Lý), nên ngày mai cậu ấy nhiều khả năng nhất là đi sân bay đón người (去机场接人)."
           },
           {
             "q": 66,
@@ -2148,7 +2323,8 @@ const EXAM_DATA = [
               "星期六",
               "星期五"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói “除了星期天，每天晚上都有课” (trừ Chủ nhật ra, tối nào cũng có lớp), nên ngày Chủ nhật (星期日) là ngày không có lớp."
           },
           {
             "q": 67,
@@ -2159,7 +2335,8 @@ const EXAM_DATA = [
               "搬到城里",
               "检查身体"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Ông bà nội “不习惯住楼房” (không quen sống trong nhà chung cư) và không muốn rời hàng xóm cũ, nên không đồng ý chuyển lên thành phố (搬到城里) ở cùng."
           },
           {
             "q": 68,
@@ -2170,7 +2347,8 @@ const EXAM_DATA = [
               "喜欢安静",
               "很了解北京"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói vợ tôi là tài xế taxi, “北京每一条街道的名字她几乎都知道” (hầu như biết tên mọi con phố ở Bắc Kinh), nên cô ấy rất hiểu Bắc Kinh (很了解北京)."
           },
           {
             "q": 69,
@@ -2181,7 +2359,8 @@ const EXAM_DATA = [
               "兴趣很重要",
               "遇事要向前看"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Câu “好马不吃回头草” (Ngựa tốt không ngoảnh đầu ăn cỏ) có nghĩa là “要向前看” (phải nhìn về phía trước), đừng nghĩ lại chuyện đã qua — tức là gặp việc nên hướng về phía trước."
           },
           {
             "q": 70,
@@ -2192,7 +2371,8 @@ const EXAM_DATA = [
               "正在复习",
               "以前是运动员"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói anh trai “只有一个爱好，就是打篮球” (chỉ có một sở thích duy nhất là đánh bóng rổ), nên anh ấy rất thích đánh bóng rổ (爱打篮球)."
           }
         ]
       }
@@ -2313,27 +2493,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "一个人在外面，要照顾好自己。",
-            "a": "B"
+            "a": "B",
+            "exp": "对方叮嘱独自在外要照顾好自己，选项B以感谢回应对方的关心并承诺会做到，符合对话逻辑。"
           },
           {
             "q": 42,
             "text": "虽然离得很近。",
-            "a": "F"
+            "a": "F",
+            "exp": "上半句说离得很近，选项F用“但是”转折，说明虽然近却只来过一次，前后形成转折关系。"
           },
           {
             "q": 43,
             "text": "和别人说话的时候，不要总是看手表。",
-            "a": "C"
+            "a": "C",
+            "exp": "告诫说话时不要总是看手表，选项C解释原因——那样会让人觉得你不够认真听，形成因果关系。"
           },
           {
             "q": 44,
             "text": "叔叔说他过去经常游泳。",
-            "a": "D"
+            "a": "D",
+            "exp": "叔叔过去常游泳说明他擅长游泳，所以想请他教自己（因为自己还不会），回应自然衔接。"
           },
           {
             "q": 45,
             "text": "我们打算先去茶馆儿喝茶，然后再去看电影。",
-            "a": "A"
+            "a": "A",
+            "exp": "虽然计划先去喝茶再去看电影，但选项A说明电影票已经卖完，原来的计划可能无法实现，符合场景。"
           }
         ]
       },
@@ -2349,27 +2534,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "我们今天喝什么？啤酒怎么样？",
-            "a": "B"
+            "a": "B",
+            "exp": "对方建议喝啤酒，选项B说一会儿要开车，开车不能喝酒，所以改喝果汁，回应合理。"
           },
           {
             "q": 47,
             "text": "在前面，左边，407的旁边。",
-            "a": "A"
+            "a": "A",
+            "exp": "这句话是在指路，回答位置“在前面、左边、407的旁边”，正对应询问洗手间在哪里的问题。"
           },
           {
             "q": 48,
             "text": "开始的时候，奶奶担心自己不会用电脑、不会上网。",
-            "a": "D"
+            "a": "D",
+            "exp": "奶奶一开始担心不会用电脑和上网，选项D说经过一个多月的学习水平提高很多，说明担心已消除，前后呼应。"
           },
           {
             "q": 49,
             "text": "踢足球、打篮球，跟体育有关的我都喜欢。",
-            "a": "E"
+            "a": "E",
+            "exp": "对方说各种体育活动都喜欢，选项E概括他的爱好很多，是对前面内容的总结。"
           },
           {
             "q": 50,
             "text": "外面刮风了，有点儿冷，别穿裙子了，穿裤子吧。",
-            "a": "C"
+            "a": "C",
+            "exp": "说话人建议别穿裙子改穿裤子，选项C说时间紧、必须9点前到公司，正好是催促快穿裤子的原因。"
           }
         ]
       },
@@ -2386,27 +2576,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "中秋节晚上和家人一起看月亮，是中国人的（　）。",
-            "a": "F"
+            "a": "F",
+            "exp": "中秋赏月是中国人代代相传的习俗，“习惯”指长期形成的行为方式，搭配最恰当。"
           },
           {
             "q": 52,
             "text": "我不（　）这件事情的经过，你问问其他人吧。",
-            "a": "A"
+            "a": "A",
+            "exp": "“了解”指知道事情的情况，因为不了解事情的经过，所以请对方去问别人，符合语境。"
           },
           {
             "q": 53,
             "text": "咖啡太（　）了，下次不要放这么多糖。",
-            "a": "B"
+            "a": "B",
+            "exp": "后面说下次别放这么多糖，说明咖啡太甜了，“甜”与放糖多形成因果关系。"
           },
           {
             "q": 54,
             "text": "山路高高低低，很不好走，我们（　）了4个多小时才到那儿。",
-            "a": "C"
+            "a": "C",
+            "exp": "“花”表示时间、金钱的消耗，说走了四个多小时才到，“花了4个多小时”搭配自然。"
           },
           {
             "q": 55,
             "text": "白小姐祝我生日（　）的时候，我才发现自己忙得把生日也忘了。",
-            "a": "D"
+            "a": "D",
+            "exp": "别人祝自己生日快乐，而自己忙得连生日也忘了，“生日快乐”是固定祝福语。"
           }
         ]
       },
@@ -2423,27 +2618,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：你（　）的这是猫？B：大熊猫！它在爬树。这也看不懂？",
-            "a": "A"
+            "a": "A",
+            "exp": "B说“大熊猫，它在爬树”，说明是在看图，“你画的这是猫”即问图中画的是什么动物。"
           },
           {
             "q": 57,
             "text": "A：“新鲜”的“鲜”字怎么写？B：很（　），就是一个“鱼”和一个“羊”。",
-            "a": "E"
+            "a": "E",
+            "exp": "“鲜”由“鱼”和“羊”两个字拼成，B说这样拼起来很容易，“简单”说明写法不难。"
           },
           {
             "q": 58,
             "text": "A：你感冒还没好，别忘记带药。B：放心吧，已经放进（　）里了。",
-            "a": "B"
+            "a": "B",
+            "exp": "对方提醒带药，B说已经放进包里，“包”是随身携带、装东西的容器，符合语境。"
           },
           {
             "q": 59,
             "text": "A：你叫什么名字，是哪个班的学生？B：我叫牛向东，是三（　）二班的。",
-            "a": "C"
+            "a": "C",
+            "exp": "“三年级二班”是常见的班级说法，“年级”指学习的年段，与班次搭配最自然。"
           },
           {
             "q": 60,
             "text": "A：几乎每个星期你都要去那个饭馆儿吃饭？B：是，那儿的菜还可以，服务员也很（　）。",
-            "a": "F"
+            "a": "F",
+            "exp": "常去这家饭馆是因为菜不错、服务好，“热情”形容服务员态度好，让顾客感到满意。"
           }
         ]
       },
@@ -2458,7 +2658,8 @@ const EXAM_DATA = [
               "和过去相同",
               "变得更差了"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "短文说车辆更多、街道更干净、天更蓝树更绿，说明环境变好了，所以选A“环境变好了”。"
           },
           {
             "q": 62,
@@ -2469,7 +2670,8 @@ const EXAM_DATA = [
               "喜欢下雪天",
               "在教室里玩儿"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "孩子们下课后在雪地里高兴地跑来跑去，头发上都是雪，说明他们喜欢下雪天，所以选B。"
           },
           {
             "q": 63,
@@ -2480,7 +2682,8 @@ const EXAM_DATA = [
               "要学会查字典",
               "常用汉字不多"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "短文强调人们常用的汉字只有两千多个，认识这些字就能读书看报，主要意思是常用汉字不多，所以选C。"
           },
           {
             "q": 64,
@@ -2491,7 +2694,8 @@ const EXAM_DATA = [
               "学生不喜欢",
               "黑板不好用"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "短文说新老师担心讲不好、学生不喜欢，所以选B“学生不喜欢”，即担心学生不喜欢自己的课。"
           },
           {
             "q": 65,
@@ -2502,7 +2706,8 @@ const EXAM_DATA = [
               "像小河一样",
               "比小河更重要"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "短文用比喻说明一杯水对大鱼没有帮助，大鱼需要的是小河，所以对大鱼来说一杯水没什么作用，选A。"
           },
           {
             "q": 66,
@@ -2513,7 +2718,8 @@ const EXAM_DATA = [
               "都很长",
               "没写在中间"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "老师说“多么”和“极”不能同时出现在一个句子里，让大家看黑板上的句子错在哪里，说明这些句子是错的，选A。"
           },
           {
             "q": 67,
@@ -2524,7 +2730,8 @@ const EXAM_DATA = [
               "鞋",
               "帽子"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "短文整段都在谈鞋，强调选鞋不仅要漂亮还要舒服，所以主要讲的是“鞋”，选B。"
           },
           {
             "q": 68,
@@ -2535,7 +2742,8 @@ const EXAM_DATA = [
               "一个鸡蛋",
               "一个词语"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "短文介绍每年6月28日举行西瓜节，还能看到几十公斤的大西瓜，主要介绍的是一个节日，选A。"
           },
           {
             "q": 69,
@@ -2546,7 +2754,8 @@ const EXAM_DATA = [
               "衬衫",
               "眼镜"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "说话人请人帮忙找眼镜，问眼镜是否在桌子上，所以找的东西是眼镜，选C。"
           },
           {
             "q": 70,
@@ -2557,7 +2766,8 @@ const EXAM_DATA = [
               "喜欢吃米",
               "带给人们快乐"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "短文说鸟出现在哪里，哪里就有快乐，主要告诉我们鸟带给人们快乐，所以选C。"
           }
         ]
       }
@@ -2678,27 +2888,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "上午的数学考试怎么样？",
-            "a": "F"
+            "a": "F",
+            "exp": "对方问上午的数学考试怎么样，选项F说没问题、题目都很简单，表示考得很好，是对问题的回答。"
           },
           {
             "q": 42,
             "text": "先生，请问您喝点儿什么？",
-            "a": "B"
+            "a": "B",
+            "exp": "服务员问喝什么，选项B回答先来一杯咖啡并礼貌道谢，符合点单的场景。"
           },
           {
             "q": 43,
             "text": "这个周末你打算做什么？",
-            "a": "C"
+            "a": "C",
+            "exp": "对方问周末有什么计划，选项C说不下雪就和同学去爬山，是在说明自己的周末安排。"
           },
           {
             "q": 44,
             "text": "还没看呢，我洗完澡再看。",
-            "a": "D"
+            "a": "D",
+            "exp": "答句“还没看呢”说明对方在问有没有看报纸或新闻，选项D问报纸上有什么新闻，正好对应。"
           },
           {
             "q": 45,
             "text": "你衣服穿得太少了，是不是感冒了？",
-            "a": "A"
+            "a": "A",
+            "exp": "对方说你穿太少、是不是感冒了，选项A感叹真冷并要求开空调，说明是因为天气冷，前后呼应。"
           }
         ]
       },
@@ -2714,27 +2929,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "没关系，我吃过药了。",
-            "a": "D"
+            "a": "D",
+            "exp": "对方关心地问是不是不舒服、要不要去休息，答句说吃过药了没关系，是在回应对方的关心。"
           },
           {
             "q": 47,
             "text": "他从去年秋天开始锻炼，现在不到70公斤。",
-            "a": "A"
+            "a": "A",
+            "exp": "答句说通过锻炼现在不到70公斤，说明他以前比较胖，选项A说记得他弟弟以前特别胖，形成前后对比。"
           },
           {
             "q": 48,
             "text": "好，我会给你打电话或者写电子邮件的。",
-            "a": "E"
+            "a": "E",
+            "exp": "答句承诺会打电话或发邮件联系，选项E叮嘱出国后注意身体、照顾好自己，是分别前的嘱咐，话题一致。"
           },
           {
             "q": 49,
             "text": "不用，你把筷子和杯子拿过来就可以了。",
-            "a": "C"
+            "a": "C",
+            "exp": "答句婉拒对方帮忙，只需拿筷子和杯子，选项C主动提出自己洗碗、让对方去看电视，对方拒绝，符合场景。"
           },
           {
             "q": 50,
             "text": "大家来吃蛋糕吧，这块儿大的给你。",
-            "a": "B"
+            "a": "B",
+            "exp": "切蛋糕、分蛋糕通常与生日有关，选项B祝生日快乐并送上礼物，与吃蛋糕的场景一致。"
           }
         ]
       },
@@ -2751,27 +2971,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "这个城市有几百年的（　）了。",
-            "a": "D"
+            "a": "D",
+            "exp": "“历史”指过去的经过、发展过程，说这个城市有几百年历史，“有……历史”是固定搭配。"
           },
           {
             "q": 52,
             "text": "儿子长大了，都快一米八了，（　）和他爸爸一样高了。",
-            "a": "B"
+            "a": "B",
+            "exp": "“几乎”表示接近、差不多，儿子快一米八，差不多和爸爸一样高了，语气恰当。"
           },
           {
             "q": 53,
             "text": "小黄是我的好朋友，她和我的（　）一直很好。",
-            "a": "F"
+            "a": "F",
+            "exp": "与好朋友相处，“我和她的关系一直很好”，“关系”指人与人之间的联系，搭配自然。"
           },
           {
             "q": 54,
             "text": "多吃鱼会使人变得更（　）。",
-            "a": "A"
+            "a": "A",
+            "exp": "人们常说吃鱼补脑，“聪明”指智力好、脑子好使，符合多吃鱼使人更聪明的说法。"
           },
           {
             "q": 55,
             "text": "我们已经找到（　）问题的办法了。",
-            "a": "C"
+            "a": "C",
+            "exp": "“解决问题”是常用搭配，找到解决问题的办法，表示问题已经有着落。"
           }
         ]
       },
@@ -2788,27 +3013,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：你（　）的这是猫？B：大熊猫！它在爬树。这也看不懂？",
-            "a": "A"
+            "a": "A",
+            "exp": "B说“大熊猫，它在爬树”，说明是在看图，“你画的这是猫”即问图中画的是什么动物。"
           },
           {
             "q": 57,
             "text": "A：你低着头想什么呢？B：是工作还是读书，我不知道应该怎么（　）才好。",
-            "a": "C"
+            "a": "C",
+            "exp": "B在工作和读书之间犹豫不定，“选择”表示在两者之间做决定，符合语境。"
           },
           {
             "q": 58,
             "text": "A：你渴不？我想去买点儿水。B：那你快一点儿，表演（　）就要开始了。",
-            "a": "F"
+            "a": "F",
+            "exp": "“马上”表示时间很短，表演马上就要开始了，催促对方快去快回，符合语境。"
           },
           {
             "q": 59,
             "text": "A：相信我，这件事对公司不会有影响的。B：夏经理，你把事情想得太（　）了。",
-            "a": "B"
+            "a": "B",
+            "exp": "A认为不会有影响，B认为他考虑得不够周全，“简单”指把问题想得太容易，语气恰当。"
           },
           {
             "q": 60,
             "text": "A：好久没看见白老师了，他不在这儿住了？B：是，他（　）以后就和妻子搬到学校去住了。",
-            "a": "E"
+            "a": "E",
+            "exp": "“结婚以后”是常见说法，结婚后和妻子一起搬到学校去住，说明搬家与结婚有关。"
           }
         ]
       },
@@ -2823,7 +3053,8 @@ const EXAM_DATA = [
               "和过去相同",
               "变得更差了"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "短文说车辆更多、街道更干净、天更蓝树更绿，说明环境变好了，所以选A“环境变好了”。"
           },
           {
             "q": 62,
@@ -2834,7 +3065,8 @@ const EXAM_DATA = [
               "老人爱喝红茶",
               "不同季节喝不同的茶"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "短文说人们根据季节变化决定喝什么茶，春天喝花茶、冬天喝红茶，主旨是不同季节喝不同的茶，所以选C。"
           },
           {
             "q": 63,
@@ -2845,7 +3077,8 @@ const EXAM_DATA = [
               "要学会查字典",
               "常用汉字不多"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "短文强调人们常用的汉字只有两千多个，认识这些字就能读书看报，主要意思是常用汉字不多，所以选C。"
           },
           {
             "q": 64,
@@ -2856,7 +3089,8 @@ const EXAM_DATA = [
               "花钱少",
               "花的时间多"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "短文说网上买东西方便又便宜，不满意还能换，所以网上买东西花钱少，选B“花钱少”。"
           },
           {
             "q": 65,
@@ -2867,7 +3101,8 @@ const EXAM_DATA = [
               "爸爸帮忙了",
               "认真复习了"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "儿子说爸爸昨天没时间，所以自己完成了作业，说明昨天的作业是他自己做的，所以选A。"
           },
           {
             "q": 66,
@@ -2878,7 +3113,8 @@ const EXAM_DATA = [
               "睡前刷牙",
               "睡前喝牛奶"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "短文讲睡前喝一杯热牛奶能让人睡得更好，“这个习惯”指的就是睡前喝牛奶，所以选C。"
           },
           {
             "q": 67,
@@ -2889,7 +3125,8 @@ const EXAM_DATA = [
               "参加的人不多",
               "在1月1日举行"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "短文用“举行了”描述新年晚会，说明晚会已经开过了，即已经结束，所以选A。"
           },
           {
             "q": 68,
@@ -2900,7 +3137,8 @@ const EXAM_DATA = [
               "我一个人去旅游",
               "跟我一起去旅游"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "爸妈一直不让“我”一个人出去玩，16岁生日那天终于同意，买行李箱和地图说明是一个人准备去旅游，所以选B。"
           },
           {
             "q": 69,
@@ -2911,7 +3149,8 @@ const EXAM_DATA = [
               "衬衫",
               "眼镜"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "说话人请人帮忙找眼镜，问眼镜是否在桌子上，所以找的东西是眼镜，选C。"
           },
           {
             "q": 70,
@@ -2922,7 +3161,8 @@ const EXAM_DATA = [
               "历史故事",
               "兴趣爱好"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "短文说书里讲了很多国家的历史故事，所以这本书主要介绍历史故事，选B“历史故事”。"
           }
         ]
       }
@@ -3040,27 +3280,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "刚才吃了块儿蛋糕，很好吃，就是太甜了。",
-            "a": "A"
+            "a": "A",
+            "exp": "对方说自己刚吃了蛋糕，很好吃但太甜了，听话者便提醒吃甜食后睡前要记得刷牙，以保护牙齿，故选A。"
           },
           {
             "q": 42,
             "text": "好，你们先去玩儿，我打个电话就去找你们。",
-            "a": "F"
+            "a": "F",
+            "exp": "有人邀叔叔一起去踢足球，叔叔答应并让对方先去，说自己打完电话就去，表示他同意一起去，故选F。"
           },
           {
             "q": 43,
             "text": "不是，是我跟一个同学借的。",
-            "a": "C"
+            "a": "C",
+            "exp": "对方问照相机是不是新买的，回答者否认，说是跟同学借来的，故选C。"
           },
           {
             "q": 44,
             "text": "没关系，我就去二楼。",
-            "a": "D"
+            "a": "D",
+            "exp": "对方劝他东西多就坐电梯，但他说不必，自己只去二楼，说明他要走楼梯，故选D。"
           },
           {
             "q": 45,
             "text": "万小姐的普通话水平怎么样？参加这次比赛了吗？",
-            "a": "B"
+            "a": "B",
+            "exp": "对方问万小姐的普通话水平和参赛情况，回答说她得了第一名，高兴极了，说明她水平很好，故选B。"
           }
         ]
       },
@@ -3076,27 +3321,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "冰箱里没有水果了？",
-            "a": "B"
+            "a": "B",
+            "exp": "问冰箱里是不是没有水果了，对方说正打算去超市买点葡萄，说明水果确实没了，故选B。"
           },
           {
             "q": 47,
             "text": "北方的秋天一般都是这样的。",
-            "a": "E"
+            "a": "E",
+            "exp": "对方说北方的秋天就是这样，回答者安慰说这个季节常刮大风，慢慢就习惯了，故选E。"
           },
           {
             "q": 48,
             "text": "《上下五千年》？我三四年级的时候就读过了。",
-            "a": "C"
+            "a": "C",
+            "exp": "《上下五千年》是一本历史书，对方问这本历史书你看了吗，回答者说三四年级就读过了，故选C。"
           },
           {
             "q": 49,
             "text": "那儿环境不错，我中午刚去过。",
-            "a": "A"
+            "a": "A",
+            "exp": "对方说想晚上请客人去银行旁边的茶馆，回答者说那儿环境不错、中午刚去过，表示赞同去那儿，故选A。"
           },
           {
             "q": 50,
             "text": "我也不知道，你去查一下字典吧。",
-            "a": "D"
+            "a": "D",
+            "exp": "对方问姐姐这个词是什么意思，回答者说自己也不知道，建议他去查字典，故选D。"
           }
         ]
       },
@@ -3113,27 +3363,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "其实，做什么比怎么做更（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "句意是“做什么比怎么做更重要”，强调事情本身比方式重要，空格应填“重要”，故选B。"
           },
           {
             "q": 52,
             "text": "我们办公室除了老马，（　）同事都结婚了。",
-            "a": "C"
+            "a": "C",
+            "exp": "句意是“除了老马，其他同事都结婚了”，表示其余的同事，空格应填“其他”，故选C。"
           },
           {
             "q": 53,
             "text": "有些年轻人不爱做饭，所以他们的（　）总是很干净。",
-            "a": "F"
+            "a": "F",
+            "exp": "年轻人不做饭，厨房用得少，所以总是很干净，空格应填“厨房”，故选F。"
           },
           {
             "q": 54,
             "text": "晚上6点50在电影院门口见，别（　）啊。",
-            "a": "A"
+            "a": "A",
+            "exp": "约好时间地点见面，提醒对方不要迟到，空格应填“迟到”，故选A。"
           },
           {
             "q": 55,
             "text": "从我们学校坐公共汽车去火车站，（　）需要10分钟。",
-            "a": "D"
+            "a": "D",
+            "exp": "句意是“坐公车去火车站只需要10分钟”，表示时间很短，空格应填“只”，故选D。"
           }
         ]
       },
@@ -3150,27 +3405,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：这个（　）你多少钱买的？不便宜吧？B：不贵，100多块钱。",
-            "a": "E"
+            "a": "E",
+            "exp": "问某个东西多少钱买的、贵不贵，回答说不贵、一百多块钱，空格应填“帽子”，故选E。"
           },
           {
             "q": 57,
             "text": "A：你明天看到刘阿姨，把这张票给她。B：她去外地了，下个星期（　）回来。",
-            "a": "C"
+            "a": "C",
+            "exp": "刘阿姨去了外地，要下个星期才能回来，表示“到那时才……”，空格应填“才”，故选C。"
           },
           {
             "q": 58,
             "text": "A：怎么办呢？我以前没（　）过这样的问题。B：别着急，总会有解决办法的。",
-            "a": "F"
+            "a": "F",
+            "exp": "以前没碰到过这样的问题，所以不知道怎么办，空格应填“遇到”，故选F。"
           },
           {
             "q": 59,
             "text": "A：你（　）住在大城市还是小城市？B：对我来说，哪儿都一样。",
-            "a": "B"
+            "a": "B",
+            "exp": "问对方更愿意住大城市还是小城市，空格应填“愿意”，故选B。"
           },
           {
             "q": 60,
             "text": "A：这个题太（　）了，你做出来了吗？B：做出来了，我再检查一下。",
-            "a": "A"
+            "a": "A",
+            "exp": "这道题太难了，所以问对方做出来没有，空格应填“难”，故选A。"
           }
         ]
       },
@@ -3185,7 +3445,8 @@ const EXAM_DATA = [
               "长高了",
               "头发变短了"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "说话人说自己除了“变高”以外还有别的变化，对方已经发现他长高了，因此变化是长高了，故选B（opts[1]）。"
           },
           {
             "q": 62,
@@ -3196,7 +3457,8 @@ const EXAM_DATA = [
               "要关心别人",
               "要相信自己"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "妈妈送手表并向“我”解释关于时间的话，目的是让“我”了解时间的意义，故选A（opts[0]）。"
           },
           {
             "q": 63,
@@ -3207,7 +3469,8 @@ const EXAM_DATA = [
               "一共两层",
               "在公园附近"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "短文说房子“有些旧”，住了20多年没搬过，说明房子不是新的，故选A（opts[0]）。"
           },
           {
             "q": 64,
@@ -3218,7 +3481,8 @@ const EXAM_DATA = [
               "医院",
               "熊猫馆"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "说话人说家离宾馆很近，并打算骑车去上班，可见工作地点就在宾馆附近，他最可能在宾馆上班，故选A（opts[0]）。"
           },
           {
             "q": 65,
@@ -3229,7 +3493,8 @@ const EXAM_DATA = [
               "去机场接人",
               "要照顾病人"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "说话人请小黄明天去机场接李先生，并提醒他早点到，所以小黄明天最可能是去机场接人，故选B（opts[1]）。"
           },
           {
             "q": 66,
@@ -3240,7 +3505,8 @@ const EXAM_DATA = [
               "喜欢音乐",
               "有相同的兴趣"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "短文说他和哥哥有一点相同：都爱好画画，说明他们有相同的兴趣，故选C（opts[2]）。"
           },
           {
             "q": 67,
@@ -3251,7 +3517,8 @@ const EXAM_DATA = [
               "吃得太饱",
               "不经常运动"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "运动鞋很少穿是因为“我”很少出去锻炼，说明“我”不经常运动，故选C（opts[2]）。"
           },
           {
             "q": 68,
@@ -3262,7 +3529,8 @@ const EXAM_DATA = [
               "喜欢安静",
               "很了解北京"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "妻子开了十几年出租车，几乎知道北京每条街道的名字，说明她非常了解北京，故选C（opts[2]）。"
           },
           {
             "q": 69,
@@ -3273,7 +3541,8 @@ const EXAM_DATA = [
               "有老师要来",
               "来了新的学生"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "因为有三位老师下午要来班里听课，才需要拿桌椅给老师坐，所以他们拿桌椅是因为有老师要来，故选B（opts[1]）。"
           },
           {
             "q": 70,
@@ -3284,7 +3553,8 @@ const EXAM_DATA = [
               "认识我妹妹",
               "在商店工作"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "张云的女朋友是白医生，她是我妹妹的同学，说明她认识我妹妹，故选B（opts[1]）。"
           }
         ]
       }
@@ -3409,27 +3679,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "别客气，还要米饭吗？厨房里还有。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người nói vừa cảm ơn vì món cá ngon (鱼), nên đáp lại bằng \"别客气\" (đừng khách sáo) và mời thêm cơm (米饭), vì còn cơm trong bếp (厨房)."
           },
           {
             "q": 42,
             "text": "我不这么想，我认为它的影响很小。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu D nói cuộc thi (比赛) mang lại nhiều cơ hội (机会), nhưng câu trả lời bày tỏ sự phản đối: \"我不这么想\" (tôi không nghĩ vậy), vì cho rằng ảnh hưởng (影响) rất nhỏ."
           },
           {
             "q": 43,
             "text": "这个题你也会？你真聪明。",
-            "a": "F"
+            "a": "F",
+            "exp": "Câu F \"我上课的时候做过这样的练习\" (tôi từng làm bài tập như thế này khi lên lớp) giải thích vì sao người kia cũng biết làm bài này (这个题)."
           },
           {
             "q": 44,
             "text": "不好，我觉得还是白色的好。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu C hỏi về chiếc áo sơ mi xanh (蓝衬衫) mặc hôm nay, và câu trả lời cho rằng không đẹp bằng màu trắng (白色), nên \"还是白色的好\"."
           },
           {
             "q": 45,
             "text": "等等，您别站在右边，您站中间。",
-            "a": "B"
+            "a": "B",
+            "exp": "Khi chụp ảnh (照相), người nói yêu cầu đừng đứng bên phải (右边) mà hãy đứng ở giữa (中间) và cười (笑一笑), nên chọn câu B."
           }
         ]
       },
@@ -3445,27 +3720,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "服务员，请给我再拿一个盘子和一杯果汁。",
-            "a": "E"
+            "a": "E",
+            "exp": "Khách gọi nhân viên phục vụ (服务员) mang thêm một cái đĩa (盘子) và cốc nước ép (果汁), nên câu E \"好的，马上就来\" (vâng, đến ngay) là lời đáp phù hợp."
           },
           {
             "q": 47,
             "text": "奇怪，周末在动物园照的很多照片都不太清楚。",
-            "a": "C"
+            "a": "C",
+            "exp": "Những bức ảnh (照片) chụp ở sở thú (动物园) không rõ, nên được an ủi: vì lần đầu dùng máy ảnh (相机) nên lần sau sẽ đẹp hơn."
           },
           {
             "q": 48,
             "text": "主要是因为那儿的环境更好。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu trả lời giải thích lý do bỗng quyết định rời đi (离开): vì môi trường (环境) ở đó tốt hơn, nên khớp với câu hỏi D."
           },
           {
             "q": 49,
             "text": "我现在去给你做点儿面条儿。",
-            "a": "B"
+            "a": "B",
+            "exp": "Vì bạn vừa dọn dẹp (打扫) xong chắc đang đói (饿坏), nên người nói đi làm chút mì (面条儿) cho bạn, khớp với câu B."
           },
           {
             "q": 50,
             "text": "谢谢您的关心，现在跑步没问题了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người nói cảm ơn sự quan tâm (关心) và cho biết chân (脚) đã khỏe nên chạy bộ (跑步) không vấn đề, đáp lại câu hỏi \"你的脚怎么样了\"."
           }
         ]
       },
@@ -3482,27 +3762,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "把（　）打开吧，房间里太热了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C (空调): 空调 nghĩa là điều hòa, trong phòng quá nóng (太热) nên bật (打开) điều hòa lên."
           },
           {
             "q": 52,
             "text": "黄小姐是北方人吧？（　）我们这儿的天气吗？",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D (习惯): 习惯 nghĩa là quen, hỏi cô Hoàng đã quen với thời tiết (天气) ở đây chưa."
           },
           {
             "q": 53,
             "text": "有些时候，发现问题比解决问题更（　）。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A (重要): 重要 nghĩa là quan trọng, ý nói đôi khi phát hiện vấn đề (发现问题) còn quan trọng hơn giải quyết vấn đề (解决问题)."
           },
           {
             "q": 54,
             "text": "你每天上班是坐地铁（　）坐公共汽车？",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B (还是): 还是 dùng trong câu hỏi lựa chọn, hỏi đi làm bằng tàu điện ngầm (地铁) hay xe buýt (公共汽车)."
           },
           {
             "q": 55,
             "text": "阿姨，教室外面那（　）红色的自行车是您的吗？",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F (辆): 辆 là lượng từ (đơn vị đếm) dùng cho xe, thích hợp để nói về chiếc xe đạp (自行车) màu đỏ."
           }
         ]
       },
@@ -3519,27 +3804,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：那个（　）太小了，你换个大一点儿的吧。B：不用了，我一共就去两天，带的东西不多。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C (行李箱): 行李箱 nghĩa là va-li, cái va-li ấy quá nhỏ (太小) nhưng người B đi chỉ có hai ngày, mang đồ không nhiều (带的东西不多) nên vẫn dùng được."
           },
           {
             "q": 57,
             "text": "A：那位司机两点来拿，你必须在明天中午前做好。B：好的，还有（　）要求吗？",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A (其他): 其他 nghĩa là khác, hỏi còn yêu cầu (要求) nào khác nữa không."
           },
           {
             "q": 58,
             "text": "A：这种鞋一个月能卖多少啊？B：好的时候一个月能卖两百多（　）。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F (双): 双 là lượng từ (đôi) dùng cho giày (鞋), nói một tháng bán được hơn hai trăm đôi."
           },
           {
             "q": 59,
             "text": "A：7年过去了，这条（　）几乎没什么变化。B：是，它还是那么干净，那么安静。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B (街道): 街道 nghĩa là đường phố, con phố ấy sau 7 năm vẫn sạch sẽ (干净) và yên tĩnh (安静), gần như không thay đổi."
           },
           {
             "q": 60,
             "text": "A：谢谢你（　），等我病好了，我请你吃饭。B：不客气，等你好了再说。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E (帮忙): 帮忙 nghĩa là giúp đỡ, cảm ơn vì đã giúp đỡ, hứa mời cơm khi khỏi bệnh (病好了)."
           }
         ]
       },
@@ -3554,7 +3844,8 @@ const EXAM_DATA = [
               "花的颜色",
               "那个花园"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn giới thiệu về khu vườn (花园) gần nhà lão Cao: nhiều cây (树), chim (小鸟), hoa cỏ (鲜花、绿草), nên đáp án C. \"老高家\" và \"花的颜色\" chỉ là chi tiết phụ."
           },
           {
             "q": 62,
@@ -3565,7 +3856,8 @@ const EXAM_DATA = [
               "容易感冒",
               "应该多喝水"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Trời vẫn rất lạnh (冷) dù đã sang xuân, được dặn phòng cảm lạnh (感冒), mang thêm áo và thuốc, nên đáp án B. Không phải mùa thu (秋天) và cũng không nhắc đến chuyện uống nước."
           },
           {
             "q": 63,
@@ -3576,7 +3868,8 @@ const EXAM_DATA = [
               "忘带铅笔了",
               "比以前更胖了"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói lại tăng cân (又胖了), hiện nặng 65kg nên muốn mua váy mới, vì vậy \"比以前更胖了\" (béo hơn trước) là đúng, đáp án C."
           },
           {
             "q": 64,
@@ -3587,7 +3880,8 @@ const EXAM_DATA = [
               "生日相同",
               "长得很像"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Hai người bạn đều họ Lưu, sinh nhật (生日) cùng một ngày, kể cả chồng họ cũng vậy, nên \"生日相同\" (sinh nhật giống nhau) là đúng, đáp án B."
           },
           {
             "q": 65,
@@ -3598,7 +3892,8 @@ const EXAM_DATA = [
               "快完成的时候",
               "遇到问题的时候"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Câu tục ngữ \"万事开头难\" (vạn sự khởi đầu nan) nghĩa là mọi việc khó nhất lúc bắt đầu (开始的时候), làm tốt phần đầu thì sau đó dễ hơn, nên đáp án A."
           },
           {
             "q": 66,
@@ -3609,7 +3904,8 @@ const EXAM_DATA = [
               "要去唱歌",
               "眼镜坏了"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Trời tối (天黑) không trăng nên Tiểu Vân không dám ra ngoài một mình, nhờ người nói đi cùng, tức là cô ấy muốn ra ngoài (要出去), đáp án A."
           },
           {
             "q": 67,
@@ -3620,7 +3916,8 @@ const EXAM_DATA = [
               "爱问问题",
               "头发很长"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Con gái 3 tuổi hay hỏi những câu hỏi kỳ lạ (很奇怪的问题) khiến bố mẹ khó trả lời, nên cô bé \"爱问问题\" (thích hỏi), đáp án B."
           },
           {
             "q": 68,
@@ -3631,7 +3928,8 @@ const EXAM_DATA = [
               "祝客人健康",
               "和客人说再见"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Mời khách uống rượu gạo (米酒) ba chén trước khi vào nhà là để tỏ lòng hiếu khách, chào đón (表示欢迎), nên đáp án A."
           },
           {
             "q": 69,
@@ -3642,7 +3940,8 @@ const EXAM_DATA = [
               "都是晴天",
               "还没下雪"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Mùa đông năm nay đã qua nửa, miền Nam (南方) đã có tuyết mấy lần nhưng Bắc Kinh (北京) vẫn chưa có tuyết (还没下雪), nên đáp án C."
           },
           {
             "q": 70,
@@ -3653,7 +3952,8 @@ const EXAM_DATA = [
               "没什么作用",
               "有不同的读音"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "多音字 (đa âm tự) là chữ có hai hoặc nhiều cách đọc (读音) khác nhau tùy vào vị trí dùng, nên đáp án C. Đoạn văn không nói số lượng hay tác dụng của chúng."
           }
         ]
       }
@@ -3778,27 +4078,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "这个城市每条街道都很干净。",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu A \"那儿的环境很好，天总是蓝的\" (môi trường tốt, trời luôn trong xanh) phù hợp vì mỗi con phố (街道) đều sạch sẽ (干净)."
           },
           {
             "q": 42,
             "text": "回到家，才发现行李箱里有一件白衬衫不是我的。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu C \"很简单，一定是你拿错了\" (chắc bạn cầm nhầm rồi) giải thích vì sao trong va-li (行李箱) lại có áo sơ mi trắng (白衬衫) không phải của mình."
           },
           {
             "q": 43,
             "text": "对不起，我以为你们一会儿还要回去。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu D \"奇怪，会议室的灯怎么没关\" (sao đèn phòng họp lại không tắt) được giải thích bằng câu trả lời: vì tưởng mọi người lát nữa còn quay lại (回去)."
           },
           {
             "q": 44,
             "text": "我16号去，29号回来。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu hỏi B \"你这次去中国打算玩儿多久\" (bạn định chơi ở Trung Quốc bao lâu) được trả lời bằng các mốc ngày đi 16 và về 29."
           },
           {
             "q": 45,
             "text": "我知道，奶奶以前教过我。",
-            "a": "F"
+            "a": "F",
+            "exp": "Câu F \"做蛋糕的时候，除了放鸡蛋外，还可以再放些牛奶\" (làm bánh có thể thêm sữa ngoài trứng) khớp với câu trả lời: bà đã dạy tôi rồi (奶奶以前教过我)."
           }
         ]
       },
@@ -3814,27 +4119,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "你们去旅游，那小狗谁来照顾？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu D \"放心吧，我们跟邻居说了，他们很愿意帮忙\" (yên tâm, hàng xóm đã nhận giúp) trả lời cho việc ai chăm sóc con chó nhỏ (小狗) khi đi du lịch."
           },
           {
             "q": 47,
             "text": "如果没什么变化，他应该已经上飞机了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Nói rằng anh ta chắc đã lên máy bay (上飞机) nếu không có gì thay đổi, phù hợp với câu A \"我希望早点儿离开这个国家\" (muốn sớm rời khỏi đất nước này)."
           },
           {
             "q": 48,
             "text": "晚上不要吃得太多，太饱，那样睡觉会不舒服。",
-            "a": "C"
+            "a": "C",
+            "exp": "Ăn quá no (太饱) vào buổi tối khiến ngủ không ngon, được đáp bằng câu C \"我明白，这是个坏习惯\" (tôi hiểu, đó là thói quen xấu)."
           },
           {
             "q": 49,
             "text": "历史考试没考好，是题太难吗？",
-            "a": "E"
+            "a": "E",
+            "exp": "Câu E \"主要是他最近身体不好，影响了学习\" (chủ yếu do sức khỏe gần đây không tốt ảnh hưởng việc học) giải thích vì sao bài thi lịch sử (历史考试) không tốt."
           },
           {
             "q": 50,
             "text": "我刚才洗澡去了，有事吗？",
-            "a": "B"
+            "a": "B",
+            "exp": "Người nói vừa đi tắm (洗澡) nên không nghe thấy, câu B \"没什么，就是告诉你外面天阴了，可能要下雪\" (chỉ báo trời âm u, có thể có tuyết) là nội dung cần truyền đạt."
           }
         ]
       },
@@ -3851,27 +4161,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "北方人爱吃（　），南方人喜欢吃米饭。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C (面条儿): 面条儿 nghĩa là mì, người phương Bắc (北方人) thích ăn mì còn người phương Nam (南方人) thích ăn cơm (米饭)."
           },
           {
             "q": 52,
             "text": "坐了7个小时的火车，我们（　）到北京了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A (终于): 终于 nghĩa là cuối cùng, sau 7 tiếng ngồi tàu hỏa (火车) cuối cùng cũng đến Bắc Kinh (北京)."
           },
           {
             "q": 53,
             "text": "他们准备8月（　）。",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D (结婚): 结婚 nghĩa là kết hôn, họ dự định kết hôn vào tháng 8."
           },
           {
             "q": 54,
             "text": "看了好几个节目，我觉得三年级二班的（　）最高。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B (水平): 水平 nghĩa là trình độ, xem nhiều tiết mục rồi nhận thấy trình độ của lớp 3/2 là cao nhất."
           },
           {
             "q": 55,
             "text": "你应该先（　）事情的经过，然后再想怎么解决问题。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F (了解): 了解 nghĩa là hiểu rõ/tìm hiểu, nên hiểu rõ diễn biến sự việc (事情的经过) trước rồi mới nghĩ cách giải quyết (解决问题)."
           }
         ]
       },
@@ -3888,27 +4203,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：我到你们公司楼下了，你在几（　）？B：你等一下，我下来接你。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C (层): 层 là lượng từ chỉ tầng/lầu, hỏi bạn đang ở tầng mấy (几层) của tòa nhà công ty."
           },
           {
             "q": 57,
             "text": "A：船票我买到了，记得来送我。B：等表演一（　）我就去找你。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A (结束): 结束 nghĩa là kết thúc, khi buổi biểu diễn (表演) vừa kết thúc sẽ đi tìm bạn."
           },
           {
             "q": 58,
             "text": "A：我周末想去动物园，你知道怎么去吗？B：坐405路就能到。骑自行车去可能更（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B (方便): 方便 nghĩa là thuận tiện, đạp xe (骑自行车) đi vườn thú (动物园) có thể thuận tiện hơn."
           },
           {
             "q": 59,
             "text": "A：火车站附近有宾馆吗？B：（　）有，我第一次来的时候就住前面那个宾馆。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E (当然): 当然 nghĩa là tất nhiên, khẳng định chắc chắn có khách sạn (宾馆) gần ga tàu (火车站), vì lần đầu đến đã ở đó."
           },
           {
             "q": 60,
             "text": "A：小马，你好久没来打篮球了。B：最近（　）忙着找工作，没时间玩儿。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F (一直): 一直 nghĩa là liên tục/mãi, gần đây cứ bận tìm việc (找工作) nên không có thời gian chơi."
           }
         ]
       },
@@ -3923,7 +4243,8 @@ const EXAM_DATA = [
               "换了辆新车",
               "把旧车卖了"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Vợ rất vui (高兴极了) vì được tặng chiếc ô tô đỏ mới, chiếc xe cũ (旧车) đã dùng sáu bảy năm nay, nên \"换了辆新车\" (đổi xe mới) là đúng, đáp án B."
           },
           {
             "q": 62,
@@ -3934,7 +4255,8 @@ const EXAM_DATA = [
               "很安静",
               "客人少"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Nhà hàng (饭馆儿) nhỏ nhưng đồ ăn ngon và không đắt (不贵), khách mới thành khách quen, khách quen lại dẫn thêm khách mới, nên \"菜便宜\" (món ăn rẻ) đúng, đáp án A."
           },
           {
             "q": 63,
@@ -3945,7 +4267,8 @@ const EXAM_DATA = [
               "不胖了",
               "天天跑步"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Em gái quyết định mỗi sáng chạy bộ (跑步) để gầy đi, giờ vẫn ngày nào cũng chạy, dù quãng đường ngắn dần, nên \"天天跑步\" (ngày nào cũng chạy) đúng, đáp án C."
           },
           {
             "q": 64,
@@ -3956,7 +4279,8 @@ const EXAM_DATA = [
               "让她很难过",
               "没什么意思"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Cô ấy khóc (哭了) khi xem phim vì câu chuyện trong phim gợi nhớ chuyện xưa và những người bạn cũ, nên bộ phim làm cô buồn (让她很难过), đáp án B."
           },
           {
             "q": 65,
@@ -3967,7 +4291,8 @@ const EXAM_DATA = [
               "介绍工作",
               "介绍男朋友"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói muốn giới thiệu bạn trai (男朋友) cho Tiểu Vân, đó là em trai chồng cô, làm ở ngân hàng (银行), nên \"介绍男朋友\" đúng, đáp án C."
           },
           {
             "q": 66,
@@ -3978,7 +4303,8 @@ const EXAM_DATA = [
               "爱看新闻",
               "需要检查眼睛"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Mắt (眼睛) của bố đột nhiên nhìn không rõ, gia đình định đưa bố đi bệnh viện (医院) kiểm tra, nên \"需要检查眼睛\" (cần kiểm tra mắt) đúng, đáp án C."
           },
           {
             "q": 67,
@@ -3989,7 +4315,8 @@ const EXAM_DATA = [
               "夏季",
               "冬季"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đoạn văn nói rõ \"现在还是夏天\" (giờ vẫn là mùa hạ/夏季) dù trời trở lạnh như thu, nên đáp án B (夏季)."
           },
           {
             "q": 68,
@@ -4000,7 +4327,8 @@ const EXAM_DATA = [
               "不愿意做饭",
               "做的饭很难吃"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Chồng nấu ăn rất ngon nhưng không thích nấu (不喜欢做饭), ở nhà chọn rửa bát (洗碗) và dọn bếp, nên \"不愿意做饭\" (không muốn nấu) đúng, đáp án B."
           },
           {
             "q": 69,
@@ -4011,7 +4339,8 @@ const EXAM_DATA = [
               "踢足球",
               "要注意多休息"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Sau khi leo núi (爬山) chân đau nhức, người nói nhận ra cần chú ý rèn luyện thân thể (锻炼身体), tức là sau này \"多运动\" (vận động nhiều hơn), đáp án A."
           },
           {
             "q": 70,
@@ -4022,7 +4351,8 @@ const EXAM_DATA = [
               "听音乐会",
               "在公园门口见面"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn hẹn \"10点半在世界公园门口见\" (gặp nhau trước cổng công viên thế giới), nên \"在公园门口见面\" (gặp ở cổng công viên) đúng, đáp án C."
           }
         ]
       }
@@ -4144,27 +4474,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "不用，我自己已经读得懂了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu trả lời \"不用，我自己已经读得懂了\" (không cần, tôi tự đọc hiểu được) đáp lại lời đề nghị của câu A: giải thích đề (这个题) cho tôi không?"
           },
           {
             "q": 42,
             "text": "你爱看这种故事书？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu D \"是，因为里面的句子都非常简单，可以帮助我学习汉语\" (vâng, vì câu trong đó rất đơn giản, giúp học tiếng Hán) giải thích vì sao thích đọc sách truyện (故事书) này."
           },
           {
             "q": 43,
             "text": "天气这么热，我们去游泳吧？",
-            "a": "F"
+            "a": "F",
+            "exp": "Câu F \"好，等一下，我把电脑关了\" (được, đợi tôi tắt máy tính đã) là lời đồng ý đi bơi (游泳) khi trời nóng (天气热)."
           },
           {
             "q": 44,
             "text": "是，我买了几斤苹果，还有葡萄，很甜，很新鲜。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu trả lời xác nhận đã mua táo (苹果) và nho (葡萄) ở siêu thị, khớp với câu hỏi B \"你今天去超市了？\" (hôm nay bạn đi siêu thị à?)."
           },
           {
             "q": 45,
             "text": "谢谢您对我的关心和照顾。",
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói cảm ơn sự quan tâm, chăm sóc (关心和照顾), nên câu C \"不客气，以后遇到什么事情就打我手机\" (không có gì, có việc cứ gọi cho tôi) là lời đáp phù hợp."
           }
         ]
       },
@@ -4180,27 +4515,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "我已经吃药了，好多了。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu B \"头还疼吗？让我看看还发烧不\" (đầu còn đau không, để tôi xem còn sốt không) phù hợp vì câu trả lời nói đã uống thuốc (吃药) và đỡ hơn."
           },
           {
             "q": 47,
             "text": "别着急，你看看是不是放行李箱里了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu C \"我记得把机票拿出来了，怎么找不到了呢？\" (tôi nhớ đã lấy vé máy bay ra, sao không thấy) được trả lời bằng \"别着急，你看看是不是放行李箱里了\" (đừng vội, xem có để trong va-li không)."
           },
           {
             "q": 48,
             "text": "上北下南，左西右东，我们应该向东走。",
-            "a": "E"
+            "a": "E",
+            "exp": "Câu trả lời xác định phương hướng (上北下南，左西右东) và cho rằng nên đi về phía đông, nên câu E \"还是再看看地图吧\" (xem lại bản đồ) là phản hồi hợp lý."
           },
           {
             "q": 49,
             "text": "今天是2012年1月1日，又是新的一年了。",
-            "a": "D"
+            "a": "D",
+            "exp": "Hôm nay là ngày đầu năm mới (新的一年), nên câu D \"祝大家节日快乐！笑口常开！\" (chúc mọi người vui vẻ, luôn tươi cười) là lời chúc ngày lễ phù hợp."
           },
           {
             "q": 50,
             "text": "我离开北京的时候你还不到一米，现在都长这么高了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người nói gọi là \"叔叔\" (chú) và kể lúc rời Bắc Kinh cậu bé chưa đến một mét, giờ đã cao lớn, nên câu A \"叔叔，我已经大学二年级了\" (cháu đã năm hai đại học) là đáp lại phù hợp."
           }
         ]
       },
@@ -4217,27 +4557,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "钱小姐花了一上午的时间，（　）把房间打扫干净了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A (终于): 终于 nghĩa là cuối cùng, cô Tiền dành cả buổi sáng cuối cùng cũng dọn sạch phòng (房间打扫干净)."
           },
           {
             "q": 52,
             "text": "只有努力了，才会有好（　）。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F (成绩): 成绩 nghĩa là thành tích, chỉ khi nỗ lực (努力) mới có thành tích tốt."
           },
           {
             "q": 53,
             "text": "周末如果天气好，我（　）和朋友们去爬山。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B (打算): 打算 nghĩa là dự định, cuối tuần nếu thời tiết đẹp tôi dự định đi leo núi (爬山) với bạn bè."
           },
           {
             "q": 54,
             "text": "您放心，他们表示3月2号前一定可以（　）。",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D (完成): 完成 nghĩa là hoàn thành, họ cam kết trước ngày 2/3 chắc chắn có thể hoàn thành."
           },
           {
             "q": 55,
             "text": "没想到他们这么快就结婚了，真是太（　）了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C (突然): 突然 nghĩa là đột nhiên, không ngờ họ kết hôn (结婚) nhanh vậy nên thấy quá đột ngột."
           }
         ]
       },
@@ -4254,27 +4599,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：这是你妹妹的照片？你们长得一点儿也不（　）。B：大家都这么说。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C (像): 像 nghĩa là giống, hai chị em trông chẳng giống nhau chút nào (一点儿也不像)."
           },
           {
             "q": 57,
             "text": "A：口（　）了吧？喝一杯果汁吧。B：谢谢。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F (渴): 渴 nghĩa là khát, \"口渴\" là khát nước, nên mời uống một cốc nước ép (果汁)."
           },
           {
             "q": 58,
             "text": "A：请问，万经理的（　）在哪儿？B：前面左边第一个就是。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E (办公室): 办公室 nghĩa là văn phòng, hỏi văn phòng của giám đốc Vạn (万经理) ở đâu."
           },
           {
             "q": 59,
             "text": "A：你找到住的地方了吗？B：找到了，在火车站附近的一家宾馆，很（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B (方便): 方便 nghĩa là thuận tiện, khách sạn (宾馆) gần ga tàu (火车站) nên rất thuận tiện."
           },
           {
             "q": 60,
             "text": "A：奇怪，你们两个（　）认识？B：是，她丈夫跟我是同事。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A (以前): 以前 nghĩa là trước đây, hỏi hai người quen nhau từ trước hay không, và được xác nhận là quen nhau trước."
           }
         ]
       },
@@ -4289,7 +4639,8 @@ const EXAM_DATA = [
               "很少出门",
               "有点儿害怕"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Mùa đông rất lạnh (冷) nhưng khi tuyết rơi (下雪) bọn trẻ vẫn vui vẻ chạy ra ngoài chơi, nên \"很快乐\" (rất vui) là đúng, đáp án A."
           },
           {
             "q": 62,
@@ -4300,7 +4651,8 @@ const EXAM_DATA = [
               "喜欢表演",
               "爱玩儿电子游戏"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Sở thích (爱好) lớn nhất của em trai là đá bóng (踢足球), nửa năm đá hỏng ba đôi giày, nên cậu \"喜欢运动\" (thích vận động), đáp án A."
           },
           {
             "q": 63,
@@ -4311,7 +4663,8 @@ const EXAM_DATA = [
               "腿脚不太好",
               "每天看报纸"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Sau bữa sáng (早饭后) ông thường vừa uống trà vừa xem báo (报纸) tìm tin quan trọng, thành thói quen nhiều năm, nên \"每天看报纸\" (ngày nào cũng đọc báo) đúng, đáp án C."
           },
           {
             "q": 64,
@@ -4322,7 +4675,8 @@ const EXAM_DATA = [
               "又矮又胖",
               "在一个班学习"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Từ tiểu học đến trung học (高中) họ luôn học cùng lớp (同班同学), nên lúc trung học họ \"在一个班学习\" (học chung một lớp), đáp án C."
           },
           {
             "q": 65,
@@ -4333,7 +4687,8 @@ const EXAM_DATA = [
               "姓在前面",
               "必须是三个字"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Tên người Trung Quốc đặt họ (姓) trước, tên (名) sau, nên \"姓在前面\" (họ đứng trước) là đúng, đáp án B. Không phải bắt buộc ba chữ hay khó viết."
           },
           {
             "q": 66,
@@ -4344,7 +4699,8 @@ const EXAM_DATA = [
               "喜欢听音乐",
               "做事很认真"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Trước đây ít xem phim (看电影) nhưng dưới ảnh hưởng (影响) của chồng, giờ cô đã yêu thích xem phim, nên \"爱看电影\" (thích xem phim) đúng, đáp án A."
           },
           {
             "q": 67,
@@ -4355,18 +4711,20 @@ const EXAM_DATA = [
               "没问题",
               "需要人照顾"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Bác sĩ nói sức khỏe (身体健康) tốt, không phát hiện vấn đề gì (没发现什么问题), nên cơ thể anh ấy \"没问题\" (không có vấn đề), đáp án B."
           },
           {
             "q": 68,
-            "passage": "今天晚上有她们的节目，8点开始，8点40结束。你如果有兴趣，欢迎你和我们一起去看看。",
+            "passage": "今天晚上有她们的节目，8点开始，8点40结束。你如果有兴趣，欢迎你和我们一起去看。",
             "question": "根据这段话，可以知道：",
             "opts": [
               "他们迟到了",
               "今天没太阳",
               "晚上有节目"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Tối nay có tiết mục (节目) của họ, bắt đầu 8 giờ và kết thúc 8 giờ 40, nên \"晚上有节目\" (tối nay có tiết mục) đúng, đáp án C."
           },
           {
             "q": 69,
@@ -4377,7 +4735,8 @@ const EXAM_DATA = [
               "参加考试",
               "和别人一起写作业"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Người nói đã ôn tập (复习) hơn hai tuần và làm nhiều bài tập (练习) để chuẩn bị cho kỳ thi (考试) ngày mai, nên \"参加考试\" (dự thi) đúng, đáp án B."
           },
           {
             "q": 70,
@@ -4388,7 +4747,8 @@ const EXAM_DATA = [
               "一共两层",
               "离学校很近"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Nhà hàng (饭馆儿) được anh trai mở gần trường học (学校附近), nên \"离学校很近\" (cách trường rất gần) đúng, đáp án C."
           }
         ]
       }
@@ -4507,27 +4867,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "上午王阿姨来过，可能是她吧。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu “Buổi sáng cô Vương đã đến, có lẽ là cô ấy” gợi ý cô Vương chính là người mang bánh đến, hợp với câu B “Chiếc bánh này ai mua vậy? Ngon thật” (这个蛋糕是谁买的？真好吃)."
           },
           {
             "q": 42,
             "text": "是，我在那儿买了件衬衫，给我爷爷买了条裤子。",
-            "a": "C"
+            "a": "C",
+            "exp": "Câu trả lời xác nhận đã đến cửa hàng mới mở (那家新开的商店) và mua áo sơ mi (衬衫), quần (裤子), hợp với câu hỏi C."
           },
           {
             "q": 43,
             "text": "她在电子邮件中说，她欢迎大家都去。",
-            "a": "F"
+            "a": "F",
+            "exp": "Email mời mọi người đến, hợp với câu F nêu lý do “đây là cơ hội tốt để hiểu về văn hóa Trung Quốc” (了解中国文化). Liên kết hơi lỏng, đây là cặp ghép chính thức."
           },
           {
             "q": 44,
             "text": "不好，78分，比上次还差。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu trả lời nói về điểm số 78分 (kém hơn lần trước), hợp với câu hỏi D về thành tích môn toán (数学成绩)."
           },
           {
             "q": 45,
             "text": "以后记得关厨房里的灯。",
-            "a": "A"
+            "a": "A",
+            "exp": "Lời nhắc “lần sau nhớ tắt đèn trong bếp” (关厨房里的灯) gợi ý người kia từng quên, nên đáp lại A “Xin lỗi, tôi lại quên rồi” (对不起，我又忘了)."
           }
         ]
       },
@@ -4543,27 +4908,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "你看见我的护照了吗？",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu hỏi về hộ chiếu (护照) tìm không thấy, đáp án A khuyên đừng vội, thử tìm trong va li (行李箱)."
           },
           {
             "q": 47,
             "text": "这个题其实很简单，为什么是5角钱？我一说你就明白了。",
-            "a": "B"
+            "a": "B",
+            "exp": "Người nói bảo “nói xong cậu sẽ hiểu ngay” (我一说你就明白了), nên người kia giục B “vậy nhanh kể cho tôi nghe đi” (那你快点儿给我讲吧)."
           },
           {
             "q": 48,
             "text": "你换新手机了？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu hỏi về điện thoại mới (新手机), đáp án D xác nhận đó là quà sinh nhật (生日礼物) chồng tặng."
           },
           {
             "q": 49,
             "text": "应该有200多个吧，一个班30多个，一共7个班。",
-            "a": "E"
+            "a": "E",
+            "exp": "Câu trả lời tính số học sinh từ 7 lớp (7个班) ra hơn 200 người, hợp với câu hỏi E về số học sinh của khối (年级)."
           },
           {
             "q": 50,
             "text": "不是，在这边，您向左走，左边第一个门。",
-            "a": "C"
+            "a": "C",
+            "exp": "Người kia hỏi nhà vệ sinh (洗手间) có phải ở phía trước không, câu trả lời C chỉ “bên trái, cửa đầu tiên bên trái” (左边第一个门)."
           }
         ]
       },
@@ -4580,27 +4950,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "哥，你有红颜色的（　）吗？",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D “铅笔” (bút chì): hỏi anh có bút chì màu đỏ (红颜色的) không."
           },
           {
             "q": 52,
             "text": "这双筷子怎么一个长，一个（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “短” (ngắn), trái nghĩa với 长 (dài): đôi đũa này một chiếc dài, một chiếc ngắn."
           },
           {
             "q": 53,
             "text": "我去过那个（　），但没去过那个城市。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “国家” (đất nước): tôi đã đến nước đó nhưng chưa đến thành phố đó (城市)."
           },
           {
             "q": 54,
             "text": "下星期我要考试，所以这个周末我要在家（　）。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “复习” (ôn tập): tuần sau có bài thi nên cuối tuần ở nhà ôn tập."
           },
           {
             "q": 55,
             "text": "没问题，那辆车（　）能坐8个人。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “应该” (hẳn là, có thể): chiếc xe đó chắc chở được 8 người."
           }
         ]
       },
@@ -4617,27 +4992,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：天阴了，别玩儿了，我们早点儿回去吧。B：别（　），今天不会有雨的。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “担心” (lo lắng): “Đừng lo, hôm nay sẽ không mưa đâu” (今天不会有雨的)."
           },
           {
             "q": 57,
             "text": "A：小马说你发烧了，好点儿没？B：好多了，已经吃药了，您（　）吧。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E “放心” (yên tâm): đã đỡ nhiều rồi, uống thuốc xong, ngài cứ yên tâm."
           },
           {
             "q": 58,
             "text": "A：报纸上有什么新闻？B：我正在看，没发现什么（　）的新闻。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “重要” (quan trọng): đang xem báo nhưng chưa thấy tin tức quan trọng (重要的新闻) nào."
           },
           {
             "q": 59,
             "text": "A：孩子怎么（　）哭了？是不是饿了？B：应该不是，她刚喝完牛奶。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “又” (lại): sao đứa bé lại khóc? Từ “又” diễn tả việc lặp lại."
           },
           {
             "q": 60,
             "text": "A：黑板上的这几个（　）题要在下课前完成。B：好的，我知道了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “练习” (luyện tập): mấy bài luyện tập (练习题) trên bảng phải hoàn thành trước khi hết giờ."
           }
         ]
       },
@@ -4652,7 +5032,8 @@ const EXAM_DATA = [
               "很安静",
               "不知道该怎么办"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn nói lựa chọn quá nhiều khiến bạn quên mình muốn gì và khó đưa ra quyết định tốt, tức là C “không biết phải làm sao” (不知道该怎么办)."
           },
           {
             "q": 62,
@@ -4663,7 +5044,8 @@ const EXAM_DATA = [
               "都很认真",
               "经常一起去唱歌"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Ông Nguyên ở cùng tòa nhà, cùng tầng 7 với họ nên họ là hàng xóm (邻居) — đáp án A."
           },
           {
             "q": 63,
@@ -4674,7 +5056,8 @@ const EXAM_DATA = [
               "去看看鼻子",
               "能买到机票"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Người nói muốn ngày mai cùng đi bệnh viện kiểm tra chân (去医院好好检查一下) — đáp án A."
           },
           {
             "q": 64,
@@ -4685,7 +5068,8 @@ const EXAM_DATA = [
               "作用不大",
               "公司突然有事"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Người nói phải đi gặp con gái chú Trương theo yêu cầu của mẹ và nhờ gọi điện lúc 7h30 để sớm rời đi, cho thấy cuộc gặp này vai trò không lớn với anh ấy — đáp án B “作用不大”."
           },
           {
             "q": 65,
@@ -4696,7 +5080,8 @@ const EXAM_DATA = [
               "苹果卖完了",
               "他们口渴了"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Chiều nay có khách đến nên phải đi mua trái cây và chuẩn bị trà, cà phê — nghĩa là khách chưa đến (客人还没到), đáp án A."
           },
           {
             "q": 66,
@@ -4707,7 +5092,8 @@ const EXAM_DATA = [
               "会下雪",
               "天气不错"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Mùa thu Bắc Kinh không lạnh không nóng (不冷也不热) nên thời tiết rất đẹp (天气不错) — đáp án C."
           },
           {
             "q": 67,
@@ -4718,7 +5104,8 @@ const EXAM_DATA = [
               "天天锻炼身体",
               "普通话水平低"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Bà mỗi ngày đều đi leo núi (爬山) và luôn nói muốn khỏe phải vận động nhiều — bà ngày nào cũng rèn luyện thân thể, đáp án B."
           },
           {
             "q": 68,
@@ -4729,7 +5116,8 @@ const EXAM_DATA = [
               "历史很久",
               "是去年冬天买的"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đoạn văn nói chiếc bát trông bình thường nhưng đã có hơn 1000 năm lịch sử, năm ngoái có người trả 200 vạn để mua. Đáp án chính thức của đề là A “不容易洗” (khó rửa); đây là cặp ghép chính thức."
           },
           {
             "q": 69,
@@ -4740,7 +5128,8 @@ const EXAM_DATA = [
               "东北大米不新鲜",
               "东北大米最好吃"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Lão Bao bảo gạo vùng nào cũng không ngon bằng gạo Đông Bắc — nghĩa là gạo Đông Bắc ngon nhất (东北大米最好吃), đáp án C."
           },
           {
             "q": 70,
@@ -4751,7 +5140,8 @@ const EXAM_DATA = [
               "为我们想办法",
               "同意我们的决定"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Khi gặp vấn đề, người ta tìm người giúp và mong được bày cho cách hay — đáp án B “nghĩ cách giúp chúng ta” (为我们想办法)."
           }
         ]
       }
@@ -4873,27 +5263,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "你别问她，她不关心这个。",
-            "a": "A"
+            "a": "A",
+            "exp": "Câu “Đừng hỏi cô ấy, cô ấy không quan tâm chuyện này” (她不关心这个) hợp với câu A hỏi về World Cup 2014 — chuyện cô ấy không quan tâm."
           },
           {
             "q": 42,
             "text": "你上星期说要送我礼物，是什么礼物？",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu hỏi món quà (礼物) là gì, đáp án B trả lời là một quyển từ điển tiếng Hán (汉语字典) nhưng quên mang."
           },
           {
             "q": 43,
             "text": "你们是第一次见面？",
-            "a": "C"
+            "a": "C",
+            "exp": "Hỏi “các bạn gặp nhau lần đầu à?”, đáp án C giới thiệu người kia (我介绍一下), hợp với hoàn cảnh gặp mặt lần đầu."
           },
           {
             "q": 44,
             "text": "你的电脑怎么这么慢？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu hỏi vì sao máy tính chậm (电脑慢), đáp án D phủ nhận vì lúc nãy lên mạng (上网) còn nhanh."
           },
           {
             "q": 45,
             "text": "小黄来学校的时间虽然不长，但是校长对他很满意。",
-            "a": "F"
+            "a": "F",
+            "exp": "Vì Tiểu Hoàng làm việc nghiêm túc, chăm chỉ, luôn hoàn thành tốt công việc (完成工作) nên hiệu trưởng hài lòng — đáp án F."
           }
         ]
       },
@@ -4909,27 +5304,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "这几天天气变化真大。",
-            "a": "B"
+            "a": "B",
+            "exp": "Câu nhận xét thời tiết thay đổi lớn, đáp án B giải thích mùa này lúc lạnh lúc nóng (一会儿冷一会儿热)."
           },
           {
             "q": 47,
             "text": "你看见我的照相机了吗？怎么找不到了？",
-            "a": "C"
+            "a": "C",
+            "exp": "Tìm máy ảnh (照相机) không thấy, đáp án C gợi ý có thể còn để trong va li (行李箱) chưa lấy ra."
           },
           {
             "q": 48,
             "text": "你住的地方离这儿远吗？要不要我送你？",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu hỏi có cần đưa về không, đáp án D từ chối (不用了) vì sẽ đi taxi (出租车) về."
           },
           {
             "q": 49,
             "text": "如果你有兴趣，我可以让他教你。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người kia đề nghị để “anh ấy” dạy bạn, đáp án A giới thiệu đồng nghiệp học vẽ (画画儿) — chính là “anh ấy” đó."
           },
           {
             "q": 50,
             "text": "您太客气了，我再想想其他办法。",
-            "a": "E"
+            "a": "E",
+            "exp": "Người kia xin lỗi vì không giúp được gì (没能帮你什么忙), đáp án E trấn an “bạn quá khách sáo” (您太客气了)."
           }
         ]
       },
@@ -4946,27 +5346,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "她觉得这些选择题都（　）难。",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D “特别” (rất, đặc biệt): cô ấy thấy các câu trắc nghiệm này đều rất khó."
           },
           {
             "q": 52,
             "text": "帮助（　）可以使我们更快乐。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “别人” (người khác): giúp đỡ người khác khiến chúng ta vui hơn."
           },
           {
             "q": 53,
             "text": "（　）这件事情以后，他明白了很多东西。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “经过” (trải qua): sau khi trải qua chuyện này, anh ấy hiểu ra nhiều điều."
           },
           {
             "q": 54,
             "text": "这是张（　）地图，中国在什么地方？",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “世界” (thế giới): đây là bản đồ thế giới, Trung Quốc ở đâu?"
           },
           {
             "q": 55,
             "text": "那（　）小姐来得太早了，银行还没开门呢。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “位” (lượng từ lịch sự cho người): vị tiểu thư kia đến quá sớm."
           }
         ]
       },
@@ -4983,27 +5388,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：春天了，街道两边的树都绿了。B：是，现在刮风也不（　）冬天那么冷了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “像” (giống như): bây giờ gió cũng không lạnh như mùa đông (不像冬天那么冷)."
           },
           {
             "q": 57,
             "text": "A：你对这个国家很了解吗？B：（　）不是很了解，我在那儿学习了半年就回国了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “其实” (thực ra): thực ra tôi cũng không hiểu lắm, học nửa năm đã về nước."
           },
           {
             "q": 58,
             "text": "A：终于把厨房打扫（　）了，累坏了吧？B：不累，但我要去洗个澡。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E “干净” (sạch sẽ): cuối cùng đã dọn sạch nhà bếp (打扫干净) rồi."
           },
           {
             "q": 59,
             "text": "A：您儿子真可爱，他多大了？B：8岁，今年秋天就上小学二（　）了。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “年级” (khối lớp): mùa thu năm nay cháu lên lớp hai tiểu học (小学二年级)."
           },
           {
             "q": 60,
             "text": "A：我（　）你会买那条蓝色的裙子。B：我是喜欢蓝颜色的，但是那条有点儿短。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “以为” (tưởng rằng): tôi tưởng bạn sẽ mua chiếc váy màu xanh (蓝裙子) đó."
           }
         ]
       },
@@ -5018,7 +5428,8 @@ const EXAM_DATA = [
               "眼睛",
               "耳朵"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Hàng xóm nói mắt và mũi (眼睛、鼻子) giống bố — trong ba đáp án, B “眼睛” (mắt) là đúng."
           },
           {
             "q": 62,
@@ -5029,7 +5440,8 @@ const EXAM_DATA = [
               "喜欢唱歌",
               "聪明极了"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Anh ấy luôn mang sách truyện (故事书) trong cặp, có thời gian là đọc — rất thích đọc sách (爱看书), đáp án A."
           },
           {
             "q": 63,
@@ -5040,7 +5452,8 @@ const EXAM_DATA = [
               "被叔叔接走了",
               "觉得手机很便宜"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Bà lúc đầu không muốn mua điện thoại nhưng giờ thấy tác dụng lớn, không rời được nó — bà thích dùng điện thoại (喜欢用手机), đáp án A."
           },
           {
             "q": 64,
@@ -5051,7 +5464,8 @@ const EXAM_DATA = [
               "应先做好小事",
               "提高普通话水平"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Người trẻ không nên “mắt cao tay thấp”, nên làm tốt từng việc nhỏ rồi từ từ tiến lên — cần làm tốt việc nhỏ trước, đáp án B."
           },
           {
             "q": 65,
@@ -5062,7 +5476,8 @@ const EXAM_DATA = [
               "早上洗头发",
               "在家吃早饭"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Sau khi tập thể dục về, anh ấy ăn sáng (吃早饭) xong mới đi làm — thói quen ăn sáng ở nhà, đáp án C."
           },
           {
             "q": 66,
@@ -5073,7 +5488,8 @@ const EXAM_DATA = [
               "多练习",
               "多写句子"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Muốn viết chữ đẹp thì nhất định phải luyện tập nhiều (多练习) — đáp án B."
           },
           {
             "q": 67,
@@ -5084,7 +5500,8 @@ const EXAM_DATA = [
               "办护照",
               "买辆自行车"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Anh ấy quyết định mùa hè này đưa bạn gái đi Sơn Tây chơi (去山西玩儿) — đi du lịch (去旅游), đáp án A."
           },
           {
             "q": 68,
@@ -5095,7 +5512,8 @@ const EXAM_DATA = [
               "更努力些",
               "小心点儿"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Chỉ kém nhất một chút, anh ấy nghĩ nếu cố gắng hơn nữa (再努力一些) thì tốt — cần cố gắng hơn, đáp án B."
           },
           {
             "q": 69,
@@ -5106,7 +5524,8 @@ const EXAM_DATA = [
               "茶馆儿",
               "草地上"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Đang nói về giá nho (葡萄) tính theo ki-lô-gam 9,50 đồng — họ đang ở cửa hàng (商店), đáp án A."
           },
           {
             "q": 70,
@@ -5117,7 +5536,8 @@ const EXAM_DATA = [
               "很贵",
               "都不相同"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Những ngôi nhà ở đó đều thấp và cũ (又矮又旧) — nghĩa là không cao, đáp án A."
           }
         ]
       }
@@ -5239,27 +5659,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "现在可以上网了吗？",
-            "a": "B"
+            "a": "B",
+            "exp": "Hỏi giờ đã lên mạng (上网) được chưa, đáp án B trả lời chưa được vì máy tính vẫn có vấn đề (电脑还是有问题)."
           },
           {
             "q": 42,
             "text": "有时候，我会看看新闻或者体育比赛。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu hỏi D hỏi thích xem chương trình TV (电视节目) gì, đáp trả nói thỉnh thoảng xem tin tức hoặc thể thao (新闻或者体育比赛)."
           },
           {
             "q": 43,
             "text": "你这张照片照得真漂亮，什么时候照的？",
-            "a": "C"
+            "a": "C",
+            "exp": "Hỏi tấm ảnh chụp khi nào, đáp án C trả lời vào ngày trường tổ chức hội thao (运动会) hè năm ngoái."
           },
           {
             "q": 44,
             "text": "中国有句话叫“有借有还，再借不难”。",
-            "a": "F"
+            "a": "F",
+            "exp": "Câu tục ngữ “có vay có trả” (有借有还，再借不难) hợp với câu F “không cần vội, cậu cứ cầm dùng trước” (你先拿着用)."
           },
           {
             "q": 45,
             "text": "腿疼，是吗？那我们在这儿坐坐吧。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người kia đề nghị ngồi nghỉ vì đau chân (腿疼), đáp án A từ chối vì sắp đến khách sạn (宾馆) rồi."
           }
         ]
       },
@@ -5275,27 +5700,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "怎么样？你中午见到马经理了吗？",
-            "a": "E"
+            "a": "E",
+            "exp": "Hỏi trưa nay có gặp giám đốc Mã (马经理) không, đáp án E nói chưa gặp nhưng đã gọi điện và được đồng ý yêu cầu."
           },
           {
             "q": 47,
             "text": "这个城市变化真大啊！",
-            "a": "D"
+            "a": "D",
+            "exp": "Khen thành phố thay đổi lớn, đáp án D so sánh trước đây toàn nhà thấp (低矮的房子), giờ nhiều nhà cao tầng (高楼)."
           },
           {
             "q": 48,
             "text": "他是我们学校的老师。",
-            "a": "C"
+            "a": "C",
+            "exp": "Người kia giới thiệu ông ấy là giáo viên, đáp án C bổ sung ông ấy dạy lịch sử cho lớp ba (三年级)."
           },
           {
             "q": 49,
             "text": "火车站离那儿有多远？",
-            "a": "B"
+            "a": "B",
+            "exp": "Hỏi ga tàu (火车站) cách đó bao xa, đáp án B ước lượng đi taxi hơn 40 phút."
           },
           {
             "q": 50,
             "text": "蓝小姐，不习惯我们这儿的天气吧？",
-            "a": "A"
+            "a": "A",
+            "exp": "Hỏi cô Lam có quen thời tiết (天气) nơi đây không, đáp án A trả lời cũng được, mùa đông phương Bắc đúng là lạnh."
           }
         ]
       },
@@ -5312,27 +5742,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "你去问问（　）哪儿有卖报纸的？",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “附近” (gần đây, xung quanh): cậu đi hỏi xem gần đây chỗ nào bán báo (报纸)?"
           },
           {
             "q": 52,
             "text": "在儿子（　）里，他应该是长得最高的。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “班” (lớp học): trong lớp của thằng bé, chắc nó cao nhất."
           },
           {
             "q": 53,
             "text": "想好了？那请你来（　）这个问题。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “回答” (trả lời): nghĩ kỹ rồi thì mời cậu trả lời câu hỏi này."
           },
           {
             "q": 54,
             "text": "小时候，爷爷（　）带我去公园玩儿。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “经常” (thường xuyên): hồi nhỏ ông thường đưa tôi đi chơi công viên (公园)."
           },
           {
             "q": 55,
             "text": "送走鸡年，迎来狗年，我们（　）您在新的一年里身体健康，天天快乐！",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D “祝” (chúc): chúng tôi chúc ngài năm mới sức khỏe dồi dào, vui vẻ mỗi ngày — lời chúc mừng năm mới."
           }
         ]
       },
@@ -5349,27 +5784,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：你对自己的成绩还满意吗？B：还可以，我（　）自己以后会跑得更快。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “相信” (tin): tôi tin sau này mình sẽ chạy nhanh hơn."
           },
           {
             "q": 57,
             "text": "A：你打算6号回去？B：不（　），我7号下午有考试，7号上午回去也可以。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “一定”: “不一定要” nghĩa là không nhất thiết ngày 6, vì ngày 7 mới thi nên có thể về sáng ngày 7."
           },
           {
             "q": 58,
             "text": "A：过两天是老爸的生日，你给他买（　）没？B：我准备给他买个新手机。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “礼物” (quà): cậu mua quà cho bố chưa? — người kia định mua điện thoại mới làm quà."
           },
           {
             "q": 59,
             "text": "A：终于把数学作业做完了。B：要不要再（　）一下？",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E “检查” (kiểm tra): có cần kiểm tra lại một lần nữa không?"
           },
           {
             "q": 60,
             "text": "A：哥，你怎么去了那么（　）？B：今天商店里人特别多。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “久” (lâu): sao anh đi lâu thế? (你怎么去了那么久？) Vì hôm nay cửa hàng đông người (商店里人特别多) nên mất nhiều thời gian."
           }
         ]
       },
@@ -5384,7 +5824,8 @@ const EXAM_DATA = [
               "热极了",
               "环境不错"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Đoạn văn miêu tả môi trường yên tĩnh (安静), đường phố sạch sẽ, cạnh công viên — môi trường tốt (环境不错), đáp án C."
           },
           {
             "q": 62,
@@ -5395,7 +5836,8 @@ const EXAM_DATA = [
               "都比较长",
               "一共三个字"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Người Trung Quốc đặt họ (姓) ở trước tên và họ thường chỉ một chữ — đáp án A."
           },
           {
             "q": 63,
@@ -5406,7 +5848,8 @@ const EXAM_DATA = [
               "米饭很便宜",
               "做蛋糕很容易"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói bảo làm bánh (做蛋糕) thực ra rất đơn giản (很简单) và có thể dạy bạn — làm bánh rất dễ, đáp án C."
           },
           {
             "q": 64,
@@ -5417,7 +5860,8 @@ const EXAM_DATA = [
               "现在是春季",
               "花园的花开了"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Cỏ đã xanh, chim nhiều hơn, “lại một mùa xuân đến” (又一个春天到了) — hiện là mùa xuân (春季), đáp án B."
           },
           {
             "q": 65,
@@ -5428,7 +5872,8 @@ const EXAM_DATA = [
               "总是迟到",
               "参加工作了"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Tiểu Tạ đến công ty từ tháng 9 năm 2011, làm việc chăm chỉ — cậu ấy đã đi làm (参加工作), đáp án C."
           },
           {
             "q": 66,
@@ -5439,7 +5884,8 @@ const EXAM_DATA = [
               "司机",
               "医生"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Ra bài tập yêu cầu dùng các từ trên bảng viết một đoạn văn và nộp trước khi hết giờ — người nói là giáo viên (老师), đáp án A."
           },
           {
             "q": 67,
@@ -5450,7 +5896,8 @@ const EXAM_DATA = [
               "没法选择",
               "要去看医生"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Thuốc gần như không có tác dụng, răng vẫn đau, định đưa cô ấy đi bệnh viện kiểm tra lại — cần đi khám bác sĩ (要去看医生), đáp án C."
           },
           {
             "q": 68,
@@ -5461,7 +5908,8 @@ const EXAM_DATA = [
               "经常运动",
               "很少生气"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Mỗi ngày đều dành thời gian chạy bộ hoặc chơi bóng rổ, cuối tuần leo núi (爬山) — thường xuyên vận động (经常运动), đáp án B."
           },
           {
             "q": 69,
@@ -5472,7 +5920,8 @@ const EXAM_DATA = [
               "学习表演",
               "去接孩子"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Con gái quyết định kết hôn (结婚) với bạn trai và bố mẹ rất yên tâm — đáp án A."
           },
           {
             "q": 70,
@@ -5483,7 +5932,8 @@ const EXAM_DATA = [
               "没有羊肉",
               "菜不新鲜"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Gọi thêm hai món và gọi một con cá vì món cá của quán này ngon (这家饭馆儿的鱼不错) — quán này cá rất ngon, đáp án A."
           }
         ]
       }
@@ -5608,27 +6058,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "97分？你这次考试成绩不错啊。",
-            "a": "B"
+            "a": "B",
+            "exp": "Khen điểm cao 97分, đáp án B ngạc nhiên vì trình độ tiếng Hán (汉语水平) tiến bộ nhiều chỉ trong nửa năm."
           },
           {
             "q": 42,
             "text": "奶奶，您等一下，我去给您拿眼镜。",
-            "a": "D"
+            "a": "D",
+            "exp": "Bà bảo chữ trên bản đồ (地图) nhỏ quá nhìn không rõ, cháu đi lấy kính (眼镜) cho bà — đáp án D."
           },
           {
             "q": 43,
             "text": "请问，张校长的办公室是哪一间？",
-            "a": "C"
+            "a": "C",
+            "exp": "Hỏi phòng làm việc của hiệu trưởng Trương (办公室) ở đâu, đáp án C chỉ phòng tận phía đông (最东边) và nói ông ấy đi họp."
           },
           {
             "q": 44,
             "text": "房间里怎么这么热？",
-            "a": "F"
+            "a": "F",
+            "exp": "Than trong phòng nóng quá, đáp án F bảo quên bật điều hòa (空调) rồi."
           },
           {
             "q": 45,
             "text": "我刚来这里时，他帮了我不少忙。",
-            "a": "A"
+            "a": "A",
+            "exp": "Người kia nói anh ấy từng giúp mình nhiều việc (帮了不少忙), đáp án A khen Tiểu Quan tốt bụng, nhiệt tình với mọi người."
           }
         ]
       },
@@ -5644,27 +6099,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "小孩子长得真快！",
-            "a": "E"
+            "a": "E",
+            "exp": "Khen trẻ con lớn nhanh (长得真快), đáp án E minh họa quần áo năm ngoái của thằng bé năm nay không mặc vừa nữa."
           },
           {
             "q": 47,
             "text": "除了爱唱歌外，她们还很喜欢跳舞。",
-            "a": "D"
+            "a": "D",
+            "exp": "Câu nói về sở thích (爱好) hát và nhảy, đáp án D nói hai người cùng sở thích — hợp ý."
           },
           {
             "q": 48,
             "text": "我来介绍一下，这是我妻子小蓝。",
-            "a": "C"
+            "a": "C",
+            "exp": "Người nói giới thiệu vợ mình, đáp án C cũng giới thiệu bạn học của mình (同学) — cùng hành động giới thiệu."
           },
           {
             "q": 49,
             "text": "饿了吧？今天不吃米饭，吃面条儿。",
-            "a": "A"
+            "a": "A",
+            "exp": "Hôm nay ăn mì (面条儿) thay cơm, đáp án A nhờ bày đũa và bát (筷子和碗) lên bàn."
           },
           {
             "q": 50,
             "text": "你出门记得带把伞。",
-            "a": "B"
+            "a": "B",
+            "exp": "Nhắc mang ô (带把伞) khi ra ngoài, đáp án B nói trời âm u (阴天), lo sẽ mưa (下雨)."
           }
         ]
       },
@@ -5681,27 +6141,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "牛奶太甜了，（　）放多了吧？",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “糖” (đường): sữa ngọt quá, chắc đường cho nhiều quá rồi."
           },
           {
             "q": 52,
             "text": "太阳和月亮会在同一个时候（　）吗？",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “出现” (xuất hiện): mặt trời (太阳) và mặt trăng (月亮) có xuất hiện cùng lúc không?"
           },
           {
             "q": 53,
             "text": "表演几点（　）？我去接你。",
-            "a": "D"
+            "a": "D",
+            "exp": "Đáp án D “结束” (kết thúc): buổi biểu diễn (表演) mấy giờ kết thúc? Tôi đi đón bạn."
           },
           {
             "q": 54,
             "text": "祝您（　）快乐，这是我们送您的礼物，希望您喜欢。",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “节日” (ngày lễ): chúc ngài lễ vui vẻ, đây là quà (礼物) chúng tôi tặng."
           },
           {
             "q": 55,
             "text": "山上很（　），早上起床的时候还能听见鸟的叫声。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “安静” (yên tĩnh): trên núi rất yên tĩnh, sáng dậy còn nghe tiếng chim hót (鸟的叫声)."
           }
         ]
       },
@@ -5718,27 +6183,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：你怎么这么晚才到？B：对不起，我的自行车半路突然（　）了。",
-            "a": "C"
+            "a": "C",
+            "exp": "Đáp án C “坏” (hỏng): xe đạp (自行车) giữa đường đột nhiên hỏng."
           },
           {
             "q": 57,
             "text": "A：下周我要去旅游，能借你的照相机用一下吗？B：（　）可以，你打算去哪儿？",
-            "a": "F"
+            "a": "F",
+            "exp": "Đáp án F “当然” (tất nhiên): tất nhiên là được, cậu định đi đâu?"
           },
           {
             "q": 58,
             "text": "A：你上午没出去？B：没出去，我把厨房和（　）都打扫了一下。",
-            "a": "E"
+            "a": "E",
+            "exp": "Đáp án E “洗手间” (nhà vệ sinh): tôi đã dọn dẹp nhà bếp (厨房) và nhà vệ sinh."
           },
           {
             "q": 59,
             "text": "A：你是今年刚（　）工作的？B：不是，我是去年秋天开始工作的，到现在都一年多了。",
-            "a": "A"
+            "a": "A",
+            "exp": "Đáp án A “参加”: “参加工作” nghĩa là bắt đầu đi làm — cậu mới đi làm năm nay à?"
           },
           {
             "q": 60,
             "text": "A：你好，这儿附近有银行吗？B：你从这儿向西走1000（　），应该有一家。",
-            "a": "B"
+            "a": "B",
+            "exp": "Đáp án B “米” (mét): đi về hướng tây 1000 mét (1000米), chắc có một ngân hàng."
           }
         ]
       },
@@ -5753,7 +6223,8 @@ const EXAM_DATA = [
               "搬到一边",
               "还给别人"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Đề xuất chuyển cái bàn (桌子) sang phía kia vì để giữa vướng lối đi — chuyển sang một bên, đáp án B."
           },
           {
             "q": 62,
@@ -5764,7 +6235,8 @@ const EXAM_DATA = [
               "工作不累",
               "经理要求低"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "Nhân viên phục vụ (服务员) hơi ít, khách ngày càng đông, nhất là buổi trưa không kịp phục vụ — nhân viên phục vụ ít, đáp án A."
           },
           {
             "q": 63,
@@ -5775,7 +6247,8 @@ const EXAM_DATA = [
               "要敢想敢做",
               "别害怕变化"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "“Không sợ chậm, chỉ sợ đứng yên” — chậm nhưng cứ bước đi vẫn tới đích — phải luôn cố gắng không ngừng, đáp án A."
           },
           {
             "q": 64,
@@ -5786,7 +6259,8 @@ const EXAM_DATA = [
               "老人说的",
               "自己看到的"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "So với nghe bằng tai, người ta tin mắt mình hơn (相信自己的眼睛) — tin những gì mình nhìn thấy, đáp án C."
           },
           {
             "q": 65,
@@ -5797,7 +6271,8 @@ const EXAM_DATA = [
               "总是骑车上班",
               "很了解这个城市"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Anh trai là tài xế taxi (出租车司机), xe gần như đi khắp mọi nơi trong thành phố — anh ấy rất hiểu thành phố này (非常了解), đáp án C."
           },
           {
             "q": 66,
@@ -5808,7 +6283,8 @@ const EXAM_DATA = [
               "老房子",
               "水果店"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Trước đây bên phải thư viện (图书馆) toàn nhà thấp và cũ (又矮又旧的房子) — là nhà cũ, đáp án B."
           },
           {
             "q": 67,
@@ -5819,7 +6295,8 @@ const EXAM_DATA = [
               "一般很长",
               "姓在最前面"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Người Trung Quốc quen đặt họ (姓) ở trước, tên ở sau — họ nằm ở vị trí đầu, đáp án C."
           },
           {
             "q": 68,
@@ -5830,7 +6307,8 @@ const EXAM_DATA = [
               "关系更好了",
               "结婚很久了"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Sau sự việc đó, quan hệ hai người tốt hơn trước (关系变得更好了), hay cùng ăn tối xem phim — quan hệ tốt hơn, đáp án B."
           },
           {
             "q": 69,
@@ -5841,7 +6319,8 @@ const EXAM_DATA = [
               "健康比漂亮重要",
               "不要为小事生气"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "Nhịn ăn để giảm cân hại sức khỏe; sức khỏe (健康) mới là quan trọng nhất — sức khỏe quan trọng hơn vẻ đẹp, đáp án B."
           },
           {
             "q": 70,
@@ -5852,7 +6331,8 @@ const EXAM_DATA = [
               "认识更多朋友",
               "想好了就去做"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "Cơ hội không chờ người, nghĩ kỹ rồi phải làm ngay — nghĩ kỹ rồi hãy làm (想好了就去做), đáp án C."
           }
         ]
       }
@@ -5975,27 +6455,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "报纸下面你找了没有？",
-            "a": "D"
+            "a": "D",
+            "exp": "“报纸下面”是在问有没有找到铅笔，D项“你看见我的铅笔了吗”正好提到铅笔，说的是找铅笔这件事，语义相配。"
           },
           {
             "q": 42,
             "text": "早点儿休息吧，都10点半了。",
-            "a": "B"
+            "a": "B",
+            "exp": "对方劝早点儿休息（早点儿休息吧），B项“好，我看完这个节目就去睡”表示答应去看完电视节目就睡觉，正相对应。"
           },
           {
             "q": 43,
             "text": "他的学习成绩有了很大提高。",
-            "a": "C"
+            "a": "C",
+            "exp": "这句话说成绩提高了，C项“这次汉语考试，张东考得比上次好很多”正好说明考试比上次好，也就是成绩提高，语义相配。"
           },
           {
             "q": 44,
             "text": "我记得他小时候个子很矮，没想到现在这么高了。",
-            "a": "A"
+            "a": "A",
+            "exp": "话里说小时候个子矮、现在很高，A项“老王的儿子今年才15岁，就长到一米八五了”说明人长得很高，正好对应。"
           },
           {
             "q": 45,
             "text": "没关系，我还在等着拿行李呢。",
-            "a": "F"
+            "a": "F",
+            "exp": "“没关系”是对对方可能晚到表示不在意，F项“路上车比较多，我可能晚点儿才能到机场”说的是路上堵车会晚到，正相对应。"
           }
         ]
       },
@@ -6011,27 +6496,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "它的嘴长得真奇怪。",
-            "a": "B"
+            "a": "B",
+            "exp": "“它的嘴长得真奇怪”是在谈论一只鸟，B项“这种鸟我还是第一次见”提到鸟，说的都是鸟，语义相配。"
           },
           {
             "q": 47,
             "text": "我丈夫的腿已经好多了。",
-            "a": "D"
+            "a": "D",
+            "exp": "说丈夫的腿好了，D项“他在医院住了三个月，医生说星期日就可以出院了”说明在医院养病快出院了，语义相配。"
           },
           {
             "q": 48,
             "text": "遇到问题要自己想办法解决。",
-            "a": "C"
+            "a": "C",
+            "exp": "“遇到问题要自己想办法解决”与C项“不要总想着让别人来帮你”意思相近，都是劝人自己解决，语义相配。"
           },
           {
             "q": 49,
             "text": "还不错，你再试试蓝色的，看看哪个更好。",
-            "a": "E"
+            "a": "E",
+            "exp": "“还不错”是在评价衣服，E项“我穿这件白衬衫怎么样”正好是在问别人自己穿白衬衫怎么样，语义相配。"
           },
           {
             "q": 50,
             "text": "他几乎把那件事忘了。",
-            "a": "A"
+            "a": "A",
+            "exp": "“他几乎把那件事忘了”与A项“过去那么久了，你不说我都想不起来了”都表示事情过去很久、差不多忘了，语义相配。"
           }
         ]
       },
@@ -6048,27 +6538,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "放心，妈妈一定会（　）你这么做的。",
-            "a": "D"
+            "a": "D",
+            "exp": "“同意”（đồng ý）表示赞成，句意为“妈妈一定会同意你这么做”，表示允许、赞成孩子这样做。"
           },
           {
             "q": 52,
             "text": "你昨天走的时候是不是忘记（　）空调？",
-            "a": "B"
+            "a": "B",
+            "exp": "“关”（đóng, tắt）指关闭，句意为“走的时候是不是忘记关空调”，因为走后不能关，用“关”最合适。"
           },
           {
             "q": 53,
             "text": "你那儿有（　）地图吗？借我用用。",
-            "a": "F"
+            "a": "F",
+            "exp": "“世界”（thế giới）在此组成“世界地图”，句意为“你那儿有世界地图吗”，借来用一用。"
           },
           {
             "q": 54,
             "text": "过去的就让它过去吧，做人应该（　）前看。",
-            "a": "A"
+            "a": "A",
+            "exp": "“向”（hướng về phía）用于“向前看”，句意为“做人应该向前看”，劝人不要总想着过去。"
           },
           {
             "q": 55,
             "text": "怎么（　）刮起风来了？我们还去爬山吗？",
-            "a": "C"
+            "a": "C",
+            "exp": "“突然”（đột nhiên）表示忽然、出乎意料，句意为“怎么突然刮起风来了”，表示风来得意外。"
           }
         ]
       },
@@ -6085,27 +6580,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：这件事电话里说不（　），我们见面再说吧。B：好，下了班我去接你。",
-            "a": "F"
+            "a": "F",
+            "exp": "“清楚”（rõ ràng）组成“说不清楚”，句意为“电话里说不清楚”，所以约好见面再说。"
           },
           {
             "q": 57,
             "text": "A：爸，你看（　）那个怎么样？B：太小了，冰箱要买大一点儿的，左边那个不错。",
-            "a": "E"
+            "a": "E",
+            "exp": "“中间”（ở giữa）指位置在中间，句意为“你看中间那个怎么样”，指两边的那个中间。"
           },
           {
             "q": 58,
             "text": "A：喝点儿什么？（　）还是饮料？B：饮料，晚上还要开车回去。",
-            "a": "C"
+            "a": "C",
+            "exp": "“啤酒”（bia）是一种酒，句意为“喝啤酒还是饮料”，给对方两种选择，答者选了饮料。"
           },
           {
             "q": 59,
             "text": "A：我（　）从明天开始，每天早上6点起床。B：真的吗？太阳要从西边出来了。",
-            "a": "B"
+            "a": "B",
+            "exp": "“决定”（quyết định）表示下决心，句意为“我决定从明天开始每天早上6点起床”，表示自己已下定决心。"
           },
           {
             "q": 60,
             "text": "A：我们要去踢足球，你去不去？B：去，我还（　）最后两个句子就写完了，等我一下。",
-            "a": "A"
+            "a": "A",
+            "exp": "“差”（thiếu, còn）表示还缺、还少，句意为“我还差最后两个句子就写完了”，意思是在去之前把作业写完。"
           }
         ]
       },
@@ -6120,7 +6620,8 @@ const EXAM_DATA = [
               "又叫羊城",
               "变化很大"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "这段话说明广州除了叫花城，还叫羊城，因此选B“又叫羊城”。"
           },
           {
             "q": 62,
@@ -6131,7 +6632,8 @@ const EXAM_DATA = [
               "换菜单了",
               "离学校不远"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话提到咖啡馆在我们学校旁边，即离学校不远，因此选C。"
           },
           {
             "q": 63,
@@ -6142,7 +6644,8 @@ const EXAM_DATA = [
               "选择少了",
               "出门更容易"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话说明办年票后不用每次买票、也更便宜，对常去公园的人更方便，因此选A。"
           },
           {
             "q": 64,
@@ -6153,7 +6656,8 @@ const EXAM_DATA = [
               "去留学",
               "去那个国家看看"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话强调了解文化不能只看书，必须亲自去那个国家走一走、看一看，因此选C。"
           },
           {
             "q": 65,
@@ -6164,7 +6668,8 @@ const EXAM_DATA = [
               "没带相机",
               "去云南旅游过"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "他说上周末和同事一起去云南玩了两天，说明他去云南旅游过，因此选C。"
           },
           {
             "q": 66,
@@ -6175,7 +6680,8 @@ const EXAM_DATA = [
               "打车去",
               "坐公共汽车"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "这段话提到等了很久没等到出租车，最后只能坐公共汽车，说明一开始打算打车去，因此选B。"
           },
           {
             "q": 67,
@@ -6186,7 +6692,8 @@ const EXAM_DATA = [
               "去骑马",
               "看大熊猫"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话提到动物园会新来大熊猫，女儿还没见过，所以想带女儿去看，因此选C“看大熊猫”。"
           },
           {
             "q": 68,
@@ -6197,7 +6704,8 @@ const EXAM_DATA = [
               "要努力工作",
               "要多关心老人"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话说明再多的钱也比不上好身体，强调健康比什么都重要，因此选A。"
           },
           {
             "q": 69,
@@ -6208,7 +6716,8 @@ const EXAM_DATA = [
               "路上小心",
               "别走得太快"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "这段话解释“慢走”实际意思是让人回去路上小心，并不是真的慢点走，因此选B“路上小心”。"
           },
           {
             "q": 70,
@@ -6219,7 +6728,8 @@ const EXAM_DATA = [
               "是节日礼物",
               "是为爷爷买的"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话提到手表用了很多年、看上去有点儿旧，因此选A“已经旧了”。"
           }
         ]
       }
@@ -6344,27 +6854,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "姐，你要看的那个电视节目已经开始了。",
-            "a": "F"
+            "a": "F",
+            "exp": "对方说电视节目已经开始了，F项“好，我洗完头发就过去”表示答应洗完头发就去看，语义相配。"
           },
           {
             "q": 42,
             "text": "孩子现在不太愿意跟我说话，怎么办？",
-            "a": "C"
+            "a": "C",
+            "exp": "话里为儿子不愿跟自己说话而发愁，C项“你该多花点儿时间跟儿子在一起，多跟他聊聊天儿”正好给出建议，语义相配。"
           },
           {
             "q": 43,
             "text": "穿绿裙子的那个小朋友真可爱。",
-            "a": "A"
+            "a": "A",
+            "exp": "“穿绿裙子的那个小朋友”是在说一个小孩，A项“听说她还很聪明，每次考试都是年级第一”正是夸这个小朋友，语义相配。"
           },
           {
             "q": 44,
             "text": "你先坐下来喝杯饮料，休息一下。",
-            "a": "B"
+            "a": "B",
+            "exp": "对方劝人坐下休息，B项“跳了两个小时的舞，真累啊”说明很累，正好需要休息，语义相配。"
           },
           {
             "q": 45,
             "text": "旧的问题还没解决，新的问题又来了。",
-            "a": "D"
+            "a": "D",
+            "exp": "“旧的问题还没解决，新的问题又来了”与D项“公司最近怎么了？事情一件接着一件”都表示问题接二连三，语义相配。"
           }
         ]
       },
@@ -6380,27 +6895,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "准备好了吗？笑一笑，我要开始照了。",
-            "a": "C"
+            "a": "C",
+            "exp": "“照”指照相、拍照，C项“大家离得近一点儿，个子矮的同学站前面”是照相前让大家排队站好，语义相配。"
           },
           {
             "q": 47,
             "text": "好，但听完了就要睡觉啊。",
-            "a": "B"
+            "a": "B",
+            "exp": "“听完了”指听完故事，B项“妈妈，你给我讲个故事吧”是在请求讲故事，语义相配。"
           },
           {
             "q": 48,
             "text": "王阿姨每天都很忙。",
-            "a": "D"
+            "a": "D",
+            "exp": "“王阿姨每天都很忙”与D项“除了工作学习，她还要照顾孩子”意思一致，都是在说阿姨很忙，语义相配。"
           },
           {
             "q": 49,
             "text": "看上去很不错，相信她一定会喜欢的。",
-            "a": "A"
+            "a": "A",
+            "exp": "“相信她一定会喜欢的”是对礼物表示认可，A项“这是我昨天去商店给妹妹买的生日礼物”正是说礼物，语义相配。"
           },
           {
             "q": 50,
             "text": "那我们下午去超市吧。",
-            "a": "E"
+            "a": "E",
+            "exp": "“去超市”是为了买东西，E项“冰箱里只有牛奶和鸡蛋，没其他吃的了”说明需要去超市采购，语义相配。"
           }
         ]
       },
@@ -6417,27 +6937,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "她（　）得哭了起来。",
-            "a": "F"
+            "a": "F",
+            "exp": "“难过”（buồn）指伤心，句意为“她难过得哭了起来”，因为太伤心所以哭了。"
           },
           {
             "q": 52,
             "text": "其实问题不像你想的那么（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "“简单”（đơn giản）指容易，句意为“问题不像你想的那么简单”，说明问题比想象复杂。"
           },
           {
             "q": 53,
             "text": "请大家关上手机，飞机马上就要（　）。",
-            "a": "D"
+            "a": "D",
+            "exp": "“起飞”（cất cánh）指飞机起飞，句意为“飞机马上就要起飞了”，所以让大家关手机。"
           },
           {
             "q": 54,
             "text": "人们（　）在生病以后，才认识到健康有多么重要。",
-            "a": "A"
+            "a": "A",
+            "exp": "“总是”（luôn luôn）指常常、一向，句意为“人们总是在生病以后才认识到健康的重要”，强调一贯如此。"
           },
           {
             "q": 55,
             "text": "我这个月9号结婚，你（　）要来啊。",
-            "a": "C"
+            "a": "C",
+            "exp": "“一定”（nhất định）表示必定，句意为“我这个月9号结婚，你一定要来啊”，是强烈邀请。"
           }
         ]
       },
@@ -6454,27 +6979,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：服务员，我们这桌少了一（　）筷子。B：对不起，我马上给您拿。",
-            "a": "B"
+            "a": "B",
+            "exp": "“双”（đôi）是量词，指成对的东西，筷子用“一双”，句意为“少了一双筷子”。"
           },
           {
             "q": 57,
             "text": "A：今天先练到这儿，回去后要（　）复习。B：好的。老师再见。",
-            "a": "F"
+            "a": "F",
+            "exp": "“记得”（nhớ）指记住，句意为“回去后要记得复习”，提醒学生别忘了复习。"
           },
           {
             "q": 58,
             "text": "A：银行那边打电话让我去面试，你说我去不去啊？B：我觉得这个机会不错，你（　）试试。",
-            "a": "C"
+            "a": "C",
+            "exp": "“应该”（nên）表示应当，句意为“我觉得这个机会不错，你应该试试”，是劝对方去。"
           },
           {
             "q": 59,
             "text": "A：我（　）明天早上去北京西站买火车票。B：为什么不上网买呢？现在网上买票很方便。",
-            "a": "A"
+            "a": "A",
+            "exp": "“打算”（dự định）表示计划，句意为“我打算明天早上去北京西站买火车票”，表示已有安排。"
           },
           {
             "q": 60,
             "text": "A：我们是去爬山，你怎么穿（　）啊？B：啊，我忘记换了。",
-            "a": "E"
+            "a": "E",
+            "exp": "“皮鞋”（giày da）指皮鞋，爬山穿皮鞋不合适，句意为“你怎么穿皮鞋啊”，表示不解。"
           }
         ]
       },
@@ -6489,7 +7019,8 @@ const EXAM_DATA = [
               "漂亮极了",
               "里面有米"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话提到那个碗有好几百年的历史，即历史较长，因此选A。"
           },
           {
             "q": 62,
@@ -6500,7 +7031,8 @@ const EXAM_DATA = [
               "坐船时间短",
               "火车票更贵"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话说明船票比火车票便宜很多，也就是说火车票更贵，因此选C。"
           },
           {
             "q": 63,
@@ -6511,7 +7043,8 @@ const EXAM_DATA = [
               "去检查身体",
               "在家玩儿游戏"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话说他下午要出去、不在公司，也就是不在办公室，因此选A。"
           },
           {
             "q": 64,
@@ -6522,7 +7055,8 @@ const EXAM_DATA = [
               "容易的事后做",
               "要先做重要的事"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话教人把重要着急的事标出来先做，说明要先做重要的事，因此选C。"
           },
           {
             "q": 65,
@@ -6533,7 +7067,8 @@ const EXAM_DATA = [
               "还不能穿裙子",
               "跟南京一样冷"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "南京可以穿裙子说明热，而“我们这儿”比南京凉，还不能穿裙子，因此选B。"
           },
           {
             "q": 66,
@@ -6544,7 +7079,8 @@ const EXAM_DATA = [
               "爱看体育新闻",
               "中文水平提高了"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话明确说她的汉语水平提高了不少，因此选C。"
           },
           {
             "q": 67,
@@ -6555,7 +7091,8 @@ const EXAM_DATA = [
               "对人很热情",
               "喜欢自己的工作"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "张爷爷说做自己感兴趣的工作再累也快乐，说明他喜欢自己的工作，因此选C。"
           },
           {
             "q": 68,
@@ -6566,7 +7103,8 @@ const EXAM_DATA = [
               "关心爸妈",
               "不同意换空调"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "女儿担心空调影响爸妈休息所以要换新的，说明她关心爸妈，因此选B。"
           },
           {
             "q": 69,
@@ -6577,7 +7115,8 @@ const EXAM_DATA = [
               "啤酒好喝",
               "人们不习惯喝茶"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话明确说这个地方的茶特别有名，因此选A。"
           },
           {
             "q": 70,
@@ -6588,7 +7127,8 @@ const EXAM_DATA = [
               "能锻炼人",
               "需别人帮忙"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "这段话开头就说留学是一种锻炼，说明留学能锻炼人，因此选B。"
           }
         ]
       }
@@ -6711,27 +7251,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "我跟你一起，家里没鸡蛋了。",
-            "a": "C"
+            "a": "C",
+            "exp": "家里没鸡蛋了要买鸡蛋，C项“你先上楼，我去旁边超市买个面包”正是去超市买东西，可一起买，语义相配。"
           },
           {
             "q": 42,
             "text": "奶奶，还有多久才能吃饭啊？",
-            "a": "A"
+            "a": "A",
+            "exp": "在问还要多久吃饭，A项“面条儿快好了，我去拿碗筷”说明饭马上就好，正相对应。"
           },
           {
             "q": 43,
             "text": "现在呢？干净了吗？",
-            "a": "D"
+            "a": "D",
+            "exp": "“鼻子上有东西”需要擦掉，D项“你鼻子上有东西，左边，对，就是那儿”正是帮忙指出位置，语义相配。"
           },
           {
             "q": 44,
             "text": "是用铅笔画出来的这些吗？我看看。",
-            "a": "F"
+            "a": "F",
+            "exp": "“用铅笔画出来”指做练习题用铅笔写，F项“昨天的练习我有几个句子不明白，你给我讲讲”说的是练习里的句子，语义相配。"
           },
           {
             "q": 45,
             "text": "没有，我早上出门的时候还是晴天呢。",
-            "a": "B"
+            "a": "B",
+            "exp": "“没有”是否定回答，B项“雨越下越大了，你带伞了吗”是问有没有带伞，回答“没有”，语义相配。"
           }
         ]
       },
@@ -6747,27 +7292,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "你几乎没什么变化，还跟以前一样年轻。",
-            "a": "C"
+            "a": "C",
+            "exp": "“跟以前一样”是说很久没见、对方没变，C项“我们有七八年没见了吧”正是说分别很久，语义相配。"
           },
           {
             "q": 47,
             "text": "我不饿，就是有点儿渴。",
-            "a": "D"
+            "a": "D",
+            "exp": "“渴”需要喝水，D项“我去前面看看有没有卖饮料的”正是去找饮料给解渴，语义相配。"
           },
           {
             "q": 48,
             "text": "我最近在学习打篮球。",
-            "a": "A"
+            "a": "A",
+            "exp": "“在学习打篮球”是在学，A项“每天晚上，叔叔都会在楼下的公园里教我”正是叔叔教他，语义相配。"
           },
           {
             "q": 49,
             "text": "被小高借走了，你问他要吧。",
-            "a": "B"
+            "a": "B",
+            "exp": "“借走了”指借东西，B项“能用一下你的词典吗”正是想借词典，语义相配。"
           },
           {
             "q": 50,
             "text": "不客气，你喜欢就好。",
-            "a": "E"
+            "a": "E",
+            "exp": "“不客气”是对道谢的回答，E项“王小姐，这个帽子真漂亮，谢谢你”正是道谢，语义相配。"
           }
         ]
       },
@@ -6784,27 +7334,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "从地图上看，黄河很（　）一个“几”字。",
-            "a": "A"
+            "a": "A",
+            "exp": "“像”（giống như）指相似，句意为“黄河很像一个‘几’字”，说黄河的形状像“几”字。"
           },
           {
             "q": 52,
             "text": "我相信在她的帮助下，你的汉语水平一定会（　）的。",
-            "a": "D"
+            "a": "D",
+            "exp": "“提高”（nâng cao）指水平上升，句意为“你的汉语水平一定会提高的”，表示会有进步。"
           },
           {
             "q": 53,
             "text": "谁能（　）黑板上的这个问题？",
-            "a": "F"
+            "a": "F",
+            "exp": "“回答”（trả lời）指回答问题，句意为“谁能回答黑板上的这个问题”，是请人作答。"
           },
           {
             "q": 54,
             "text": "（　）到会议结束，大家也没想出办法来。",
-            "a": "C"
+            "a": "C",
+            "exp": "“一直”（mãi, liên tục）表示持续不断，句意为“一直到会议结束大家也没想出办法”，强调始终没有。"
           },
           {
             "q": 55,
             "text": "你是不是忘记把牛奶放冰箱里了？两包都（　）了。",
-            "a": "B"
+            "a": "B",
+            "exp": "“坏”（hỏng）指变质，句意为“两包牛奶都坏了”，因为没放冰箱所以坏了。"
           }
         ]
       },
@@ -6821,27 +7376,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：我们在哪儿（　）？B：国家体育馆北门吧，那儿离你家和我家都近。",
-            "a": "C"
+            "a": "C",
+            "exp": "“见面”（gặp mặt）指见面、会面，句意为“我们在哪儿见面”，约定见面的地点。"
           },
           {
             "q": 57,
             "text": "A：昨天我生日，儿子送给我一（　）他画的画儿。B：那你一定很高兴吧？",
-            "a": "E"
+            "a": "E",
+            "exp": "“张”（tờ, tấm）是量词，画用“一张”，句意为“儿子送给我一张他画的画儿”。"
           },
           {
             "q": 58,
             "text": "A：对不起，李经理，我迟到了。B：没关系，先坐下开会吧，以后（　）点儿。",
-            "a": "F"
+            "a": "F",
+            "exp": "“注意”（chú ý）指留意、小心，句意为“以后注意点儿”，是提醒对方下次别迟到。"
           },
           {
             "q": 59,
             "text": "A：明天30号了，记得还（　）。B：放心，我今天中午就去银行。",
-            "a": "B"
+            "a": "B",
+            "exp": "“信用卡”（thẻ tín dụng）要还钱，句意为“记得还信用卡”，对方说去银行办理。"
           },
           {
             "q": 60,
             "text": "A：桌子上有蛋糕，你吃不吃？B：不吃了，我在爷爷家吃（　）了才回来的。",
-            "a": "A"
+            "a": "A",
+            "exp": "“饱”（no）指吃饱，句意为“我在爷爷家吃饱了才回来”，所以不再吃了。"
           }
         ]
       },
@@ -6856,7 +7416,8 @@ const EXAM_DATA = [
               "现在不能决定",
               "对房子不满意"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "说话人虽然觉得房子好，但要等妻子看过才能决定，说明现在还不能决定，因此选B。"
           },
           {
             "q": 62,
@@ -6867,7 +7428,8 @@ const EXAM_DATA = [
               "医生",
               "老师"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "要给班上的学生讲故事，说明他可能是老师，因此选C。"
           },
           {
             "q": 63,
@@ -6878,7 +7440,8 @@ const EXAM_DATA = [
               "房子很矮",
               "人很热情"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话提到这座城市已经有几千年的历史了，即历史久远，因此选A。"
           },
           {
             "q": 64,
@@ -6889,7 +7452,8 @@ const EXAM_DATA = [
               "不跑步了",
               "身体很差"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "他以前每天跑步，后来因为太忙没时间跑，说明他现在不跑步了，因此选B。"
           },
           {
             "q": 65,
@@ -6900,7 +7464,8 @@ const EXAM_DATA = [
               "更容易出成绩",
               "更易解决问题"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "这段话明确说选自己喜欢的工作更容易做出成绩，因此选B。"
           },
           {
             "q": 66,
@@ -6911,7 +7476,8 @@ const EXAM_DATA = [
               "打扫洗手间",
               "回家关空调"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "他说想起来空调没关，要先回去一趟，就是回家关空调，因此选C。"
           },
           {
             "q": 67,
@@ -6922,7 +7488,8 @@ const EXAM_DATA = [
               "先了解自己",
               "让自己做好准备"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话说明机会只给有准备的人，做好准备才不会错过机会，因此选C。"
           },
           {
             "q": 68,
@@ -6933,7 +7500,8 @@ const EXAM_DATA = [
               "还在吃药",
               "感冒还没好"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话提到小狗比来的时候还胖了些，即长胖了，因此选A。"
           },
           {
             "q": 69,
@@ -6944,7 +7512,8 @@ const EXAM_DATA = [
               "奇怪的",
               "快乐的"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话明确说在儿子眼里世界每天都是新鲜的，因此选A。"
           },
           {
             "q": 70,
@@ -6955,7 +7524,8 @@ const EXAM_DATA = [
               "会影响健康",
               "只能用来打电话"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话说明现在的手机不但能听歌玩游戏，上网也很方便，因此选A“可以上网”。"
           }
         ]
       }
@@ -7079,27 +7649,32 @@ const EXAM_DATA = [
           {
             "q": 41,
             "text": "给你帽子，外面风刮得很大，别感冒了。",
-            "a": "D"
+            "a": "D",
+            "exp": "对方给帽子、怕着凉，D项“不用了，不冷，我一会儿就回来”表示不用帽子，正相对应。"
           },
           {
             "q": 42,
             "text": "我在网上查了一下，只有国家图书馆有这本词典。",
-            "a": "B"
+            "a": "B",
+            "exp": "国家图书馆离得远，B项“我下班会经过那里，要不要我明天帮你借回来”说会经过并愿意帮忙借，语义相配。"
           },
           {
             "q": 43,
             "text": "所以很多年轻人选择离开家去那儿工作。",
-            "a": "C"
+            "a": "C",
+            "exp": "“所以”前要说明原因，C项“大城市里一般机会比较多”解释年轻人去大城市工作的原因，语义相配。"
           },
           {
             "q": 44,
             "text": "我给你洗了，你先穿别的衣服吧。",
-            "a": "F"
+            "a": "F",
+            "exp": "“给你洗了”指洗衣服，F项“妈妈，我那件蓝色的衬衫呢”正是在找衣服，语义相配。"
           },
           {
             "q": 45,
             "text": "还不到三点呢，是天阴了。",
-            "a": "A"
+            "a": "A",
+            "exp": "“天阴了”指天变暗，A项“现在已经是晚上了吗？外面怎么那么黑”正是觉得外面黑，语义相配。"
           }
         ]
       },
@@ -7115,27 +7690,32 @@ const EXAM_DATA = [
           {
             "q": 46,
             "text": "香蕉，对不对？",
-            "a": "E"
+            "a": "E",
+            "exp": "“香蕉，对不对”是对谜语的回答，E项“什么水果又像月亮又像船”正是出谜语，香蕉弯弯的像月亮又像船，语义相配。"
           },
           {
             "q": 47,
             "text": "我这就去洗脸刷牙，马上睡。",
-            "a": "B"
+            "a": "B",
+            "exp": "“马上睡”是答应去睡觉，B项“你不是明天早上8点的火车吗？怎么还不休息”正催对方睡觉，语义相配。"
           },
           {
             "q": 48,
             "text": "把相机给我，我看看照得怎么样。",
-            "a": "C"
+            "a": "C",
+            "exp": "“相机”“照得怎么样”指照相，C项“你们两个站近一点儿，笑一笑，对，就是这样”正是照相时说的话，语义相配。"
           },
           {
             "q": 49,
             "text": "我最喜欢这个季节了。",
-            "a": "A"
+            "a": "A",
+            "exp": "“这个季节”需说明是哪个季节，A项“春天到了，学校里的花儿都开了，草也绿了”说的正是春天，语义相配。"
           },
           {
             "q": 50,
             "text": "后来因为我妈换工作，才搬到这里。",
-            "a": "D"
+            "a": "D",
+            "exp": "“才搬到这里”讲的是搬家原因，D项“小时候，我家就在黄河边上”说明原来住在黄河边，语义相配。"
           }
         ]
       },
@@ -7152,27 +7732,32 @@ const EXAM_DATA = [
           {
             "q": 51,
             "text": "老师，这次考试（　）用铅笔答题吗？",
-            "a": "C"
+            "a": "C",
+            "exp": "“必须”（phải, bắt buộc）表示一定要，句意为“这次考试必须用铅笔答题吗”，是询问要求。"
           },
           {
             "q": 52,
             "text": "鱼（　）是有耳朵的，只是很多人都没注意到。",
-            "a": "A"
+            "a": "A",
+            "exp": "“其实”（thực ra）表示实际上，句意为“鱼其实是有耳朵的”，说明真实情况，与“只是很多人没注意到”相配。"
           },
           {
             "q": 53,
             "text": "再想想，看能不能找到更简单的解决（　）。",
-            "a": "F"
+            "a": "F",
+            "exp": "“办法”（cách, biện pháp）指方法，句意为“找到更简单的解决办法”，与“解决”搭配。"
           },
           {
             "q": 54,
             "text": "这件事情太（　）了，让人很难相信。",
-            "a": "B"
+            "a": "B",
+            "exp": "“奇怪”（kỳ lạ）指让人惊讶、难以理解，句意为“这件事太奇怪了，让人很难相信”。"
           },
           {
             "q": 55,
             "text": "13号桌少了一双（　）和一个碗，你快送过去。",
-            "a": "D"
+            "a": "D",
+            "exp": "“筷子”（đũa）用“一双”作量词，句意为“少了一双筷子和一个碗”，正好搭配。"
           }
         ]
       },
@@ -7189,27 +7774,32 @@ const EXAM_DATA = [
           {
             "q": 56,
             "text": "A：张阿姨请我们去她家过节，带什么礼物好呢？B：带（　）红酒或者买些水果都可以。",
-            "a": "F"
+            "a": "F",
+            "exp": "“瓶”（chai）是量词，红酒用“一瓶”，句意为“带一瓶红酒或者买些水果都可以”。"
           },
           {
             "q": 57,
             "text": "A：你试着慢慢地站起来，怎么样？B：脚还是有点儿（　）。",
-            "a": "B"
+            "a": "B",
+            "exp": "“疼”（đau）指疼痛，句意为“脚还是有点儿疼”，所以站不起来。"
           },
           {
             "q": 58,
             "text": "A：经理，李先生来了，正在会议室等您。B：好，我（　）过去。",
-            "a": "A"
+            "a": "A",
+            "exp": "“马上”（ngay lập tức）表示立刻，句意为“好，我马上过去”，表示立刻就过去见李先生。"
           },
           {
             "q": 59,
             "text": "A：您好，（　）是99元7角5分。B：这是100，不用找了。",
-            "a": "C"
+            "a": "C",
+            "exp": "“一共”（tổng cộng）表示总共，句意为“一共是99元7角5分”，是结账时说的总金额。"
           },
           {
             "q": 60,
             "text": "A：你的汉语水平怎么提高得这么快？B：我每天都看（　）报纸，而且还会听半个小时的新闻。",
-            "a": "E"
+            "a": "E",
+            "exp": "“中文”（tiếng Trung）指中国语文，句意为“我每天都看中文报纸”，所以汉语水平提高快。"
           }
         ]
       },
@@ -7224,7 +7814,8 @@ const EXAM_DATA = [
               "用手机上网",
               "用手表看时间"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "他觉得自己用手表看时间更方便，所以更愿意用手表看时间，因此选C。"
           },
           {
             "q": 62,
@@ -7235,7 +7826,8 @@ const EXAM_DATA = [
               "要多关心老人",
               "做事不能着急"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "这段话用“一口一口吃、一步一步走”说明做事不能急、要慢慢来，因此选C。"
           },
           {
             "q": 63,
@@ -7246,7 +7838,8 @@ const EXAM_DATA = [
               "少生气",
               "常去检查身体"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "王校长说想年轻第一要少生气、第二要多锻炼，选项中“少生气”正符合，因此选B。"
           },
           {
             "q": 64,
@@ -7257,7 +7850,8 @@ const EXAM_DATA = [
               "不懂就问",
               "认真完成作业"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话说明经常复习才能记住学过的东西，因此选A“经常复习”。"
           },
           {
             "q": 65,
@@ -7268,7 +7862,8 @@ const EXAM_DATA = [
               "起床晚了",
               "打车上班的"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "他等不到公共汽车就坐出租车来公司，即打车上班，因此选C。"
           },
           {
             "q": 66,
@@ -7279,7 +7874,8 @@ const EXAM_DATA = [
               "还要吃药",
               "不同意吃米饭"
             ],
-            "a": "B"
+            "a": "B",
+            "exp": "医生说再开点药、一周后再来检查，说明小李还要吃药，因此选B。"
           },
           {
             "q": 67,
@@ -7290,7 +7886,8 @@ const EXAM_DATA = [
               "没带钱包",
               "很不快乐"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "他出门前总会在包里放一把伞，说明他出门时会带伞，因此选A。"
           },
           {
             "q": 68,
@@ -7301,7 +7898,8 @@ const EXAM_DATA = [
               "最近很忙",
               "是北方人"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "这段话提到王雨比过去胖了些，说明他变胖了，因此选A。"
           },
           {
             "q": 69,
@@ -7312,7 +7910,8 @@ const EXAM_DATA = [
               "爱干净",
               "喜欢唱歌"
             ],
-            "a": "C"
+            "a": "C",
+            "exp": "女儿爱唱歌也爱跳舞，还常常又唱又跳，说明她喜欢唱歌，因此选C。"
           },
           {
             "q": 70,
@@ -7323,7 +7922,8 @@ const EXAM_DATA = [
               "相信自己",
               "多和同事聊天儿"
             ],
-            "a": "A"
+            "a": "A",
+            "exp": "哥哥说想做出成绩除了认真工作没有别的选择，说明要努力工作，因此选A。"
           }
         ]
       }

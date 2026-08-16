@@ -562,6 +562,7 @@ function renderReadingItem(ex) {
     fb = `<div class="feedback show ${ok ? "correct" : "wrong"}">
             <b>${ok ? "✓ Đúng rồi!" : "✗ Chưa đúng"}</b>
             <div class="answer">Đáp án đúng: ${item.a}. ${esc(ansText)}</div>
+            <div class="explain">💡 Giải thích: ${esc(item.exp)}</div>
           </div>`;
   }
 
