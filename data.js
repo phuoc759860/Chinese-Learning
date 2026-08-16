@@ -172,8 +172,8 @@ const EXAM_DATA = [
           {
             "q": 48,
             "text": "我准备给你妹妹介绍个男朋友。",
-            "a": "A",
-            "exp": "Câu nói định giới thiệu bạn trai (男朋友 = bạn trai) cho em gái; đáp án A '吃完饭以后，你来洗碗。'(Sau bữa cơm, bạn rửa bát) là cặp ghép chính thức của đề, ý không liên quan trực tiếp."
+            "a": "C",
+            "exp": "Người nói định giới thiệu bạn trai (介绍个男朋友 = giới thiệu một bạn trai) cho em gái; đáp án C '她已经结婚了，孩子都两岁了。'(Cô ấy đã kết hôn rồi, con đã hai tuổi) ngụ ý việc giới thiệu là không cần thiết."
           },
           {
             "q": 49,
@@ -4671,8 +4671,8 @@ const EXAM_DATA = [
             "passage": "从小学到高中，他们一直是同班同学，关系非常好。但上大学后，他们去了不同的城市。从那以后，他们就很少有机会见面了。",
             "question": "高中时，他们两个人：",
             "opts": [
-              "经常去旅游",
               "又矮又胖",
+              "经常去旅游",
               "在一个班学习"
             ],
             "a": "C",
@@ -4719,8 +4719,8 @@ const EXAM_DATA = [
             "passage": "今天晚上有她们的节目，8点开始，8点40结束。你如果有兴趣，欢迎你和我们一起去看。",
             "question": "根据这段话，可以知道：",
             "opts": [
-              "他们迟到了",
               "今天没太阳",
+              "他们迟到了",
               "晚上有节目"
             ],
             "a": "C",
@@ -5064,12 +5064,12 @@ const EXAM_DATA = [
             "passage": "我妈让我今天晚上7点去和张叔叔的女儿见面。你7点半的时候一定要给我打个电话，我就可以早点儿离开了。",
             "question": "说话人是什么意思？",
             "opts": [
-              "一定要帮我",
               "作用不大",
+              "一定要帮我",
               "公司突然有事"
             ],
             "a": "B",
-            "exp": "Người nói phải đi gặp con gái chú Trương theo yêu cầu của mẹ và nhờ gọi điện lúc 7h30 để sớm rời đi, cho thấy cuộc gặp này vai trò không lớn với anh ấy — đáp án B “作用不大”."
+            "exp": "Người nói bị mẹ bắt đi gặp con gái chú Trương lúc 7 giờ tối, nên nhờ bạn gọi điện lúc 7 rưỡi để anh ấy sớm rời đi — anh ấy cần bạn giúp đỡ, đáp án B “一定要帮我”."
           },
           {
             "q": 65,
@@ -5112,12 +5112,12 @@ const EXAM_DATA = [
             "passage": "那个碗看上去不怎么样，但它已经有1000多年的历史了。去年，有人表示愿意出200万来买那个碗。",
             "question": "关于那个碗，可以知道什么？",
             "opts": [
-              "不容易洗",
               "历史很久",
+              "不容易洗",
               "是去年冬天买的"
             ],
             "a": "A",
-            "exp": "Đoạn văn nói chiếc bát trông bình thường nhưng đã có hơn 1000 năm lịch sử, năm ngoái có người trả 200 vạn để mua. Đáp án chính thức của đề là A “不容易洗” (khó rửa); đây là cặp ghép chính thức."
+            "exp": "Đoạn văn nói chiếc bát trông bình thường nhưng đã có hơn 1000 năm lịch sử (已经有1000多年的历史了) → đáp án A '历史很久' (lịch sử lâu đời) đúng."
           },
           {
             "q": 69,
@@ -5472,8 +5472,8 @@ const EXAM_DATA = [
             "passage": "我早上一般6点起床，花15分钟洗脸刷牙，然后出去运动半个小时，回来后吃了早饭就去公司上班。",
             "question": "根据这段话，他习惯：",
             "opts": [
-              "早上看电视",
               "早上洗头发",
+              "早上看电视",
               "在家吃早饭"
             ],
             "a": "C",
